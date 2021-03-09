@@ -11,3 +11,18 @@ body {
     border-radius: 0;
     border: 0;
 }
+
+.navbar-brand {
+   padding-top: 25px; 
+   padding-bottom: 25px;
+}
+
+.navbar-brand h1 {
+    font-family: 'RocknRoll One', sans-serif;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
