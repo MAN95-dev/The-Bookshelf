@@ -26,3 +26,7 @@ body {
     margin-bottom: 0;
     line-height: .75;
 }
+
+.navbar-brand a:hover {
+    text-decoration: none;
+}
