@@ -4,3 +4,10 @@ body {
     background-color: paleturquoise;
     font-family: 'RocknRoll One', sans-serif;
 }
+
+/** Header **/ 
+#header-nav {
+    background-color: lightgreen;
+    border-radius: 0;
+    border: 0;
+}
