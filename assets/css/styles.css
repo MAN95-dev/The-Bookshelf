@@ -22,5 +22,13 @@ body {
 }
 
 .navbar-nav { 
-            margin-left: auto; 
-        } 
+    margin-left: auto; 
+ } 
+
+ .active a:hover {
+  border-bottom: 1px solid balck;
+}
+
+.active {
+  border-bottom: 1px solid black;
+}
