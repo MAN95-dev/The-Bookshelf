@@ -13,6 +13,10 @@ body {
    padding-left: 25px;
 }
 
+.navbar-collapse {
+   padding-left: 25px;
+}
+
 .navbar-brand h1{
     font-family: 'RocknRoll One', sans-serif;
     color: black;
@@ -41,7 +45,7 @@ body {
 @media (min-width: 1200px) {
 
 .active a:hover {
-    border-bottom: 1px solid balck;
+    border-bottom: 1px solid black;
 }
 
 .active {
@@ -53,7 +57,7 @@ body {
 @media (min-width: 992px) and (max-width: 1199px) {
 
 .active a:hover {
-    border-bottom: 1px solid balck;
+    border-bottom: 1px solid black;
 }
 
 .active {
