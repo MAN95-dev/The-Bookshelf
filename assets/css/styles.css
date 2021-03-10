@@ -10,6 +10,7 @@ body {
 .navbar-brand {
    padding-top: 45px; 
    padding-bottom: 25px;
+   padding-left: 25px;
 }
 
 .navbar-brand h1{
