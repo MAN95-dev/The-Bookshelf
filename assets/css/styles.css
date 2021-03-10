@@ -13,6 +13,12 @@ body {
    padding-left: 25px;
 }
 
+#navbar-close {
+  color: #888;
+  width: 22px;
+  height: 14px;
+}
+
 .navbar-collapse {
    padding-left: 25px;
    padding-top: 0px; 
