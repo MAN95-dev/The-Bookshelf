@@ -13,17 +13,6 @@ body {
    padding-left: 25px;
 }
 
-#navbar-close {
-  color: #888;
-  width: 22px;
-  height: 14px;
-}
-
-.navbar-collapse {
-   padding-left: 25px;
-   padding-top: 0px; 
-}
-
 .navbar-brand h1{
     font-family: 'RocknRoll One', sans-serif;
     color: black;
@@ -40,13 +29,26 @@ body {
  } 
 
 .custom-toggler.navbar-toggler { 
-  border-color: transparent; 
+    border-color: transparent; 
 } 
         
 .custom-toggler .navbar-toggler-icon { 
- background-image: url( 
+    background-image: url( 
  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 } 
+
+.navbar-collapse {
+   padding-left: 25px;
+   padding-top: 0px; 
+}
+
+.navbar-toggler.collapsed .close-icon {
+    display: none;
+   }
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: inline;
+   }
 /** End header **/
 
 /** Large devices only **/
