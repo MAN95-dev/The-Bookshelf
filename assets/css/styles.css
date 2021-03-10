@@ -15,6 +15,7 @@ body {
 
 .navbar-collapse {
    padding-left: 25px;
+   padding-top: 0px; 
 }
 
 .navbar-brand h1{
@@ -33,18 +34,19 @@ body {
  } 
 
 .custom-toggler.navbar-toggler { 
-  border-color: black; 
+  border-color: transparent; 
 } 
         
 .custom-toggler .navbar-toggler-icon { 
  background-image: url( 
- "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+ "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 } 
 /** End header **/
 
 /** Large devices only **/
 @media (min-width: 1200px) {
 
+/** Header **/
 .active a:hover {
     border-bottom: 1px solid black;
 }
@@ -54,19 +56,30 @@ body {
 .navbar-brand {
    padding-top: 45px; 
 }
+nav li {
+    display: inline-block;
+    height: 100%;
+    padding: 30px; 
+}
 }
 
 /** Medum devices only **/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+/** Header **/
 .active a:hover {
     border-bottom: 1px solid black;
 }
 .active {
   border-bottom: 1px solid black;
 }
-navbar-brand {
+.navbar-brand {
    padding-top: 45px; 
+}
+nav li {
+    display: inline-block;
+    height: 100%;
+    padding: 30px;
 }
 }
 
