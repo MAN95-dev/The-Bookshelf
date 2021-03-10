@@ -6,10 +6,9 @@ body {
     font-family: 'RocknRoll One', sans-serif;
 }
 
-
 /** Header **/ 
 .navbar-brand {
-   padding-top: 25px; 
+   padding-top: 45px; 
    padding-bottom: 25px;
 }
 
