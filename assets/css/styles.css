@@ -25,14 +25,6 @@ body {
     margin-left: auto; 
  } 
 
- .active a:hover {
-  border-bottom: 1px solid balck;
-}
-
-.active {
-  border-bottom: 1px solid black;
-}
-
 .custom-toggler.navbar-toggler { 
   border-color: black; 
 } 
@@ -46,11 +38,25 @@ body {
 /** Large devices only **/
 @media (min-width: 1200px) {
 
+.active a:hover {
+    border-bottom: 1px solid balck;
+}
+
+.active {
+  border-bottom: 1px solid black;
+}
 }
 
 /** Medum devices only **/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+.active a:hover {
+    border-bottom: 1px solid balck;
+}
+
+.active {
+  border-bottom: 1px solid black;
+}
 }
 
 /** Small devices only **/
