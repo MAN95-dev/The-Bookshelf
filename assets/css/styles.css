@@ -6,6 +6,7 @@ body {
     font-family: 'RocknRoll One', sans-serif;
 }
 
+
 /** Header **/ 
 .navbar-brand {
    padding-top: 25px;
@@ -77,11 +78,10 @@ nav li {
 
 /** Body **/
 #page-wrap {
-     width: 600px;
+     width: 1200px;
      margin: 0 auto;
 }
 }
-
 
 /** Medum devices only **/
 @media (min-width: 992px) and (max-width: 1199px) {
