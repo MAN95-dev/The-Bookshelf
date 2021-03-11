@@ -74,7 +74,14 @@ nav li {
     height: 100%;
     padding: 30px; 
 }
+
+/** Body **/
+#page-wrap {
+     width: 600px;
+     margin: 0 auto;
 }
+}
+
 
 /** Medum devices only **/
 @media (min-width: 992px) and (max-width: 1199px) {
