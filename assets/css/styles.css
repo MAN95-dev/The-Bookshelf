@@ -30,6 +30,7 @@ body {
 
 .custom-toggler.navbar-toggler { 
     border-color: transparent; 
+    box-shadow: none;
 } 
         
 .custom-toggler .navbar-toggler-icon { 
@@ -49,6 +50,10 @@ body {
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
     display: inline;
    }
+
+.close-icon {
+    color: black; 
+}
 /** End header **/
 
 /** Large devices only **/
