@@ -73,7 +73,7 @@ nav li {
     color: black;
     background-color: yellow;
     width: 100%;
-    position: fixed;
+    position: absolute;
     font-family: 'RocknRoll One', sans-serif;
 }
 
