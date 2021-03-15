@@ -104,15 +104,17 @@ footer p u:hover {
 /** End of footer **/
 
 /** Your picks page **/
+#your-picks-title {
+    padding: 60px;
+}
+
 .category-tile { 
   position: relative;
 }
 
 .category-tile span {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
+  bottom: 0; 
   text-align: center;
   font-size: 16px;
   background-color: turquoise;
@@ -121,10 +123,6 @@ footer p u:hover {
 }
 .category-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
-}
-
-#your-picks-title + div {
-  margin-bottom: 50px;
 }
 /** End of Your picks page **/
 
