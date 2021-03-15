@@ -1,11 +1,16 @@
 body { 
     font-size: 16px;
     color: black;
-    background: pink;
+    background: #f2f3f4;
     font-family: 'RocknRoll One', sans-serif;
 }
 
 /** Header **/
+nav {
+    background-color: #e5ccc9;
+    height: 140px; 
+}
+
 .navbar-brand {
    padding-top: 25px;
    padding-bottom: 25px;
@@ -71,7 +76,7 @@ nav li {
 
 .footer { 
     color: black;
-    background-color: yellow;
+    background-color: #e8ccd7;
     width: 100%;
     position: absolute;
     font-family: 'RocknRoll One', sans-serif;
@@ -106,6 +111,7 @@ footer p u:hover {
 /** Your picks page **/
 #your-picks-title {
     padding: 60px;
+    font-size: 30px; 
 }
 
 .category-tile { 
