@@ -6,12 +6,12 @@ body {
     font-family: 'RocknRoll One', sans-serif;
 }
 
-/** Header **/ 
+/** Header **/
 .navbar-brand {
    padding-top: 25px;
    padding-bottom: 25px;
    padding-left: 25px;
-}
+} 
 
 .navbar-brand h1{
     font-family: 'RocknRoll One', sans-serif;
@@ -28,9 +28,20 @@ body {
     padding-top: 45px; 
  } 
 
+ .navbar-brand h1 {
+   padding-top: 35px;
+   padding-left: 30px;  
+}
+nav li {
+    display: inline-block;
+    height: 100%;
+    padding-right: 40px; 
+}
+
 .custom-toggler.navbar-toggler { 
     border-color: transparent; 
     box-shadow: none;
+    padding-top: 40px;
 } 
         
 .custom-toggler .navbar-toggler-icon { 
@@ -59,25 +70,12 @@ body {
 
 /** Footer **/
 
-.panel-footer { 
-    font-size: 16px;
+.footer { 
     color: black;
     background-color: yellow;
-    height: 200px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
     font-family: 'RocknRoll One', sans-serif;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 70px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 5px;
-  border-radius: 50%;
 }
 
 .fa:hover {
@@ -100,24 +98,11 @@ body {
   color: white;
 }
 
-#subscribe {
-    padding: 90px; 
-    text-align: center;
-    display: inline-block;
-    height: 100%;
-}
-
-#social-media { 
-    padding: 60px; 
-    text-align: center;
-    display: inline-block;
-    height: 100%;
-}
-
 footer p u:hover {
     opacity: 0.7;
     color: black;
 }
+
 /** End of footer **/
 
 /** Large devices only **/
@@ -130,22 +115,43 @@ footer p u:hover {
 .active {
   border-bottom: 1px solid black;
 }
-.navbar-brand {
-   padding-top: 45px; 
+/**.navbar-brand h1 {
+   padding-top: 35px;
+   padding-left: 30px;  
 }
 nav li {
     display: inline-block;
     height: 100%;
-    padding: 30px; 
+    padding-right: 40px; 
+}**/
+
+/** Footer **/
+
+#subscribe {
+    padding: 80px; 
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+#social-media { 
+    padding: 60px; 
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+.fa {
+  padding: 20px;  
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
 }
 
-/** Body **/
-#page-wrap {
-     width: 1200px;
-     margin: 0 auto;
-}
-
-/** Medum devices only **/
+/** Medium devices only **/
 @media (min-width: 992px) and (max-width: 1199px) {
 
 /** Header **/
@@ -155,25 +161,98 @@ nav li {
 .active {
   border-bottom: 1px solid black;
 }
-.navbar-brand {
-   padding-top: 45px; 
-}
-nav li {
+
+/** Footer **/
+#subscribe {
+    padding:80px; 
+    font-size: 16px;
+    text-align: center;
     display: inline-block;
     height: 100%;
-    padding: 30px;
 }
-
+#social-media { 
+    padding: 60px; 
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+.fa {
+  padding: 20px;  
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
 }
 
 /** Small devices only **/
 @media (min-width: 768px) and (max-width: 991px) {
 
+/** Header **/
+nav li {
+    display: inline-block;
+    height: 100%;
+    padding-left: 30px; 
+}
+
+/** Footer **/
+#subscribe {
+    padding:70px; 
+    font-size: 13px;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+#social-media { 
+    padding: 50px; 
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+.fa {
+  padding: 15px;  
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
 }
 
 /** Extra small devices only **/
 @media (max-width: 767px) {
 
+/** Header **/
+nav li {
+    display: inline-block;
+    height: 100%;
+    padding-left: 30px; 
+}   
 
+/** Footer **/
+#subscribe {
+    padding: 20px; 
+    font-size: 13px;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+#social-media { 
+    padding: 20px; 
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+.fa {
+  padding: 15px;  
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
 }
 }
