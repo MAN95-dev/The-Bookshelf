@@ -9,6 +9,9 @@ body {
 nav {
     background-color: #e5ccc9;
     height: 140px; 
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 
 .navbar-brand {

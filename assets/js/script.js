@@ -8,6 +8,7 @@ $(function() {
     .on('hidden.bs.collapse', function() {
       $('#navbar-hamburger').removeClass('hidden');
       $('#navbar-close').addClass('hidden');        
-    });
-  
+    }); 
 });
+
+
