@@ -170,6 +170,12 @@ footer p u:hover {
   margin: 5px 5px;
   border-radius: 50%;
 }
+
+/** Your picks page **/
+.col-md-3, .category-tile {
+    padding-left: 35px; 
+    padding-right: 35px; 
+}
 }
 
 /** Medium devices only **/
@@ -206,6 +212,12 @@ footer p u:hover {
   margin: 5px 5px;
   border-radius: 50%;
 }
+
+/** Your picks page **/
+.col-md-3, .category-tile {
+    padding-left: 15px; 
+    padding-right: 15px; 
+}
 }
 
 /** Small devices only **/
@@ -240,6 +252,12 @@ nav li {
   text-decoration: none;
   margin: 5px 5px;
   border-radius: 50%;
+}
+
+/** Your picks page **/
+.col-md-3, .category-tile {
+    padding-left: 15px; 
+    padding-right: 15px; 
 }
 }
 
