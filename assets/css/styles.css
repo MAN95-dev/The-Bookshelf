@@ -112,12 +112,14 @@ footer p u:hover {
 /** Your picks page **/
 #your-picks-title {
     padding: 60px;
+    margin-top: 60px;
     font-size: 30px; 
 }
 
 .category-tile { 
   position: relative;
   margin-bottom: 100px; 
+  justify-items: center;
 }
 
 .category-tile span {
