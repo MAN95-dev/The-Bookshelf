@@ -100,6 +100,10 @@ footer p u:hover {
 /** End of footer **/
 
 /** Your picks page **/
+.responsive {
+  width: 100%;
+  height: auto;
+}
 .category-tile { 
   position: relative;
   margin-bottom: 100px; 
@@ -171,6 +175,10 @@ footer p u:hover {
 .category-tile {
     padding-left: 60px;
 }
+.category-tile img {
+    width: 160px;
+    height: 240px; 
+}
 }
 
 /** Medium devices only **/
@@ -198,6 +206,10 @@ footer p u:hover {
     padding: 60px;
     margin-top: 60px;
     font-size: 30px; 
+}
+.category-tile img {
+    width: 160px;
+    height: 240px; 
 }
 
 /** Footer **/
@@ -265,6 +277,10 @@ nav li {
     margin-top: 60px;
     font-size: 30px; 
 }
+.category-tile img {
+    width: 140px;
+    height: 200px; 
+}
 }
 
 /** Extra small devices only **/
@@ -318,5 +334,9 @@ nav li {
     padding: 60px;
     margin-top: 40px;
     font-size: 20px; 
+}
+.category-tile img {
+    width: 140px;
+    height: 200px; 
 }
 }
