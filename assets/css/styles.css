@@ -116,6 +116,10 @@ footer p u:hover {
     font-size: 30px; 
 }
 
+.col-md-3, .category-tile {
+     padding: 0 45px;
+}
+
 .category-tile { 
   position: relative;
   margin-bottom: 100px; 
