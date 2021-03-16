@@ -340,5 +340,6 @@ nav li {
 .category-tile img {
     width: 140px;
     height: 200px; 
+    margin-left: 20px; 
 }
 }
