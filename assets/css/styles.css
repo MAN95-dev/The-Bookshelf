@@ -117,13 +117,13 @@ footer p u:hover {
 
 .category-tile { 
   position: relative;
+  margin-bottom: 100px; 
 }
 
 .category-tile span {
   position: absolute;
   display: block; 
-  bottom: 0; 
-  margin: 25px; 
+  margin-top: 20px; 
   text-align: center;
   font-size: 16px;
   background-color: turquoise;
