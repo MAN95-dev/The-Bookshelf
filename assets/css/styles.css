@@ -12,9 +12,9 @@ nav {
 }
 
 .navbar-brand {
-   padding-top: 25px;
-   padding-bottom: 25px;
-   padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
 } 
 
 .navbar-brand h1{
@@ -39,7 +39,7 @@ nav {
 nav li {
     display: inline-block;
     height: 100%;
-    padding-right: 40px; 
+    padding-right: 40px;
 }
 
 .custom-toggler.navbar-toggler { 
@@ -56,6 +56,7 @@ nav li {
 .navbar-collapse {
    padding-left: 25px;
    padding-top: 0px; 
+   background-color: #e5ccc9;
 }
 
 .navbar-toggler.collapsed .close-icon {
@@ -120,15 +121,14 @@ footer p u:hover {
 
 .category-tile span {
   position: absolute;
+  display: block; 
   bottom: 0; 
+  margin: 25px; 
   text-align: center;
   font-size: 16px;
   background-color: turquoise;
   color: black;
   opacity: .8;
-}
-.category-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
 }
 /** End of Your picks page **/
 
