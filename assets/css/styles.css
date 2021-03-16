@@ -9,9 +9,6 @@ body {
 nav {
     background: linear-gradient(to bottom, #ffff66 0%, #ffcc99 100%);
     height: 140px; 
-    position: -webkit-sticky;
-	position: sticky;
-	top: 0;
 }
 
 .navbar-brand {
@@ -110,17 +107,6 @@ footer p u:hover {
   position: relative;
   margin-bottom: 100px; 
 }
-
-.category-tile span {
-  position: absolute;
-  display: block; 
-  margin-top: 20px; 
-  text-align: center;
-  font-size: 16px;
-  background-color: #87cefa;
-  color: black;
-  opacity: .8;
-}
 /** End of Your picks page **/
 
 /** Large devices only **/
@@ -181,6 +167,16 @@ footer p u:hover {
     width: 200px;
     height: 280px; 
 }
+.category-tile span {
+  position: absolute;
+  display: block; 
+  margin-top: 20px; 
+  text-align: center;
+  font-size: 16px;
+  background-color: #87cefa;
+  color: black;
+  opacity: .8;
+}
 }
 
 /** Medium devices only **/
@@ -201,17 +197,6 @@ footer p u:hover {
 }
 .active {
   border-bottom: 1px solid black;
-}
-
-/** Your picks page **/
-#your-picks-title {
-    padding: 60px;
-    margin-top: 60px;
-    font-size: 30px; 
-}
-.category-tile img {
-    width: 160px;
-    height: 240px; 
 }
 
 /** Footer **/
@@ -236,6 +221,27 @@ footer p u:hover {
   text-decoration: none;
   margin: 5px 5px;
   border-radius: 50%;
+}
+
+/** Your picks page **/
+#your-picks-title {
+    padding: 60px;
+    margin-top: 60px;
+    font-size: 30px; 
+}
+.category-tile img {
+    width: 160px;
+    height: 240px; 
+}
+.category-tile span {
+  position: absolute;
+  display: block; 
+  margin-top: 20px; 
+  text-align: center;
+  font-size: 16px;
+  background-color: #87cefa;
+  color: black;
+  opacity: .8;
 }
 }
 
@@ -282,6 +288,16 @@ nav li {
 .category-tile img {
     width: 140px;
     height: 200px; 
+}
+.category-tile span {
+  position: absolute;
+  display: block; 
+  margin-top: 20px; 
+  text-align: center;
+  font-size: 16px;
+  background-color: #87cefa;
+  color: black;
+  opacity: .8;
 }
 }
 
@@ -341,5 +357,16 @@ nav li {
     width: 140px;
     height: 200px; 
     margin-left: 20px; 
+}
+.category-tile span {
+  position: absolute;
+  display: block; 
+  margin-top: 20px; 
+  margin-left: 20px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #87cefa;
+  color: black;
+  opacity: .8;
 }
 }
