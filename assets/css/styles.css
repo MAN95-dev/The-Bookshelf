@@ -17,16 +17,6 @@ nav {
     padding-left: 25px;
 } 
 
-.navbar-brand h1{
-    font-family: 'RocknRoll One', sans-serif;
-    color: black;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
-}
-
 .navbar-nav { 
     margin-left: auto;  
     padding-top: 45px; 
@@ -137,6 +127,15 @@ footer p u:hover {
 @media (min-width: 1200px) {
 
 /** Header **/
+.navbar-brand h1{
+    font-family: 'RocknRoll One', sans-serif;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
 .active a:hover {
     border-bottom: 1px solid black;
 }
@@ -179,6 +178,15 @@ footer p u:hover {
 @media (min-width: 992px) and (max-width: 1199px) {
 
 /** Header **/
+.navbar-brand h1{
+    font-family: 'RocknRoll One', sans-serif;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
 .active a:hover {
     border-bottom: 1px solid black;
 }
@@ -250,6 +258,14 @@ nav li {
 @media (max-width: 767px) {
 
 /** Header **/
+.navbar-brand h1{
+    font-family: 'RocknRoll One', sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 nav li {
     display: inline-block;
     height: 100%;
