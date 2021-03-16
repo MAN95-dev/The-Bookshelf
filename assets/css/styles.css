@@ -100,12 +100,6 @@ footer p u:hover {
 /** End of footer **/
 
 /** Your picks page **/
-#your-picks-title {
-    padding: 60px;
-    margin-top: 60px;
-    font-size: 30px; 
-}
-
 .category-tile { 
   position: relative;
   margin-bottom: 100px; 
@@ -169,6 +163,11 @@ footer p u:hover {
 }
 
 /** Your picks page **/
+#your-picks-title {
+    padding: 60px;
+    margin-top: 60px;
+    font-size: 30px; 
+}
 .category-tile {
     padding-left: 60px;
 }
@@ -192,6 +191,13 @@ footer p u:hover {
 }
 .active {
   border-bottom: 1px solid black;
+}
+
+/** Your picks page **/
+#your-picks-title {
+    padding: 60px;
+    margin-top: 60px;
+    font-size: 30px; 
 }
 
 /** Footer **/
@@ -226,7 +232,7 @@ footer p u:hover {
 nav li {
     display: inline-block;
     height: 100%;
-    padding-left: 30px; 
+    padding-left: 25px; 
 }
 
 /** Footer **/
@@ -252,6 +258,13 @@ nav li {
   margin: 5px 5px;
   border-radius: 50%;
 }
+
+/** Your picks page **/
+#your-picks-title {
+    padding: 60px;
+    margin-top: 60px;
+    font-size: 30px; 
+}
 }
 
 /** Extra small devices only **/
@@ -265,6 +278,10 @@ nav li {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
+}
+.navbar-brand h1 {
+   padding-top: 35px;
+   padding-left: 20px;  
 }
 nav li {
     display: inline-block;
@@ -294,5 +311,12 @@ nav li {
   text-decoration: none;
   margin: 5px 5px;
   border-radius: 50%;
+}
+
+/** Your picks page **/
+#your-picks-title {
+    padding: 60px;
+    margin-top: 40px;
+    font-size: 20px; 
 }
 }
