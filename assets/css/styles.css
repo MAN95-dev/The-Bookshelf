@@ -61,7 +61,6 @@ nav li {
 }
 /** End of header **/
 
-
 /** Footer **/
 
 .footer { 
@@ -321,7 +320,7 @@ nav li {
     display: inline-block;
     height: 100%;
     padding-left: 30px; 
-}   
+}  
 
 /** Footer **/
 #subscribe {
