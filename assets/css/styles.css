@@ -2,8 +2,7 @@ body {
     padding-top: 90px;
     font-size: 16px;
     color: black;
-    background: #f2f3f4;
-    font-family: 'RocknRoll One', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /** Header **/
@@ -31,6 +30,7 @@ nav li {
     display: inline-block;
     height: 100%;
     padding-right: 40px;
+    font-family: 'RocknRoll One', sans-serif;
 }
 
 .custom-toggler.navbar-toggler { 
@@ -238,6 +238,7 @@ footer p u:hover {
   display: block; 
   margin-top: 20px; 
   text-align: center;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   background-color: #87cefa;
   color: black;
