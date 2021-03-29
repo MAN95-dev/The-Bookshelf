@@ -93,6 +93,18 @@ footer p u:hover {
 }
 /** End of footer **/
 
+/** Club picks page **/
+#club-picks {
+    padding: 60px;
+    margin-top: 20px;
+
+}
+
+.latest-pick {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 /** Your picks page **/
 .responsive {
   width: 100%;
