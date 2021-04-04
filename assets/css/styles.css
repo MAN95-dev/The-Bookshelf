@@ -94,10 +94,6 @@ footer p u:hover {
 /** End of footer **/
 
 /** Club picks page **/
-#club-picks {
-    padding-top: 80px;
-}
-
 .latest-pick {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -108,7 +104,6 @@ hr {
     width: 70%;
     margin: auto;
 }
-
 
 /** Your picks page **/
 .responsive {
@@ -122,7 +117,6 @@ hr {
 /** End of Your picks page **/
 
 /** Login page **/
-
 .myform {
     margin-top: 100px;
     margin-bottom: 80px;
@@ -146,9 +140,7 @@ hr {
     text-transform:uppercase;
 }
          
-.mybtn{
-    border-radius:50px;
-}
+
         
 .login-or {
     position: relative;
