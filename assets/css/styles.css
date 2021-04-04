@@ -94,16 +94,8 @@ footer p u:hover {
 /** End of footer **/
 
 /** Club picks page **/
-.latest-pick {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
 
-hr {
-    border: 1px solid black;
-    width: 70%;
-    margin: auto;
-}
+/** End of Club picks page **/
 
 /** Your picks page **/
 .responsive {
@@ -119,7 +111,7 @@ hr {
 /** Login page **/
 .myform {
     margin-top: 100px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 	position: relative;
 	display: -ms-flexbox;
 	display: flex;
@@ -139,9 +131,7 @@ hr {
 .tx-tfm{
     text-transform:uppercase;
 }
-         
-
-        
+                 
 .login-or {
     position: relative;
     color: #aaa;
@@ -190,7 +180,6 @@ hr {
 }
 
 /** Footer **/
-
 #subscribe {
     padding: 80px; 
     font-size: 16px;
