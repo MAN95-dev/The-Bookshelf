@@ -17,6 +17,8 @@ $('nav').affix({
       }
 })
 
+/* Login page */
+
 $("#signup").click(function() {
 $("#first").fadeOut("fast", function() {
 $("#second").fadeIn("fast");
@@ -58,8 +60,6 @@ $("#first").fadeIn("fast");
              }
            });
          });
-         
-
 
 $(function() {
   
@@ -92,3 +92,5 @@ $(function() {
     }
   });
 });
+
+/* Login page */
