@@ -95,9 +95,8 @@ footer p u:hover {
 
 /** Who we are **/
 .founder img {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 80px;
+    margin-top: 120px;
+    margin-left: 50px;
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -109,10 +108,23 @@ footer p u:hover {
     margin-bottom: 60px;
 }
 
+.about h2 {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 50px;
+    margin-left: 60px;
+}
+
+.about p {
+    margin-top: 30px;
+    margin-left: 60px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
 .about-us {
     margin: 130px;
-
     background-color: #FF2692;
+    border-radius: 20px;
 }
 
 /** End of Who we are **/
