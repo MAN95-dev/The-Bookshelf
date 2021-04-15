@@ -127,6 +127,26 @@ footer p u:hover {
     border-radius: 20px;
 }
 
+.home-tile {
+    display: inline-block;
+}
+
+.home-tile img {
+    width: 160px;
+    height: 240px; 
+    
+}
+.home-tile span {
+  position: absolute;
+  display: block; 
+  margin-top: 20px; 
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #87cefa;
+  color: black;
+  opacity: .8;
+}
 /** End of Who we are **/
 
 /** Club picks page **/
