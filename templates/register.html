@@ -8,17 +8,19 @@
 				<div class="myform form ">
 					 <div class="logo mb-3">
 						 <div class="col-md-12 text-center">
-							<h3>Login</h3>
+							<h3>Register</h3>
 						 </div>
 					</div>
-                   <form action="" method="post" name="login">
+                   <form method="POST" action="{{url_for('register') }}">
                            <div class="form-group">
-                              <label for="exampleInputEmail1">Email address</label>
-                              <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                              <label for="username">Username</label>
+                              <input type="username" name="username"  id="username"  minlength="5" maxlength="15" 
+                              pattern="^[a-zA-Z0-9]{5,15}$" class="form-control" placeholder="Enter Username" required>
                            </div>
                            <div class="form-group">
-                              <label for="exampleInputEmail1">Password</label>
-                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                              <label for="password">Password</label>
+                              <input type="password" name="password" id="password" minlength="5" maxlength="15" 
+                                pattern="^[a-zA-Z0-9]{5,15}$" class="form-control" placeholder="Enter Password" required>
                            </div>
                            <div class="col-md-12 text-center ">
                               <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
@@ -37,6 +39,6 @@
 			</div>
 		</div>
       </div> 
-      </div>          
+      </div>                   
 
 {% endblock %}
