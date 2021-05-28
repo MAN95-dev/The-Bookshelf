@@ -1,45 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Bookshelf</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap">    
-</head>
-<body>
- <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><h1>The Bookshelf</h1></a>
-                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        <div class="close-icon py-1">✖</div>
-                    </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Who we are</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="club-picks.html">Club picks</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link active" href="your-picks.html">Your picks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Log in</a>
-                     </li>
-                 </ul>
-            </div>
-            </div>
-        </nav>
-    </header>
+{% extends "base.html" %}
+{% block content %}
 
     <div id="your-picks" class="container">
-        <h2 id="your-picks-title" class="text-center">Bookshelf member picks</h2>
+        <h2 id="your-picks-title" class="text-center">{{ username }}'s picks</h2>
         <section class="row">
             <div class="col-md-3 col-sm-4 col-6">
                 <div class="category-tile">
@@ -128,25 +91,4 @@
         </section>
     </div>
 
-<section>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div id="subscribe" class= "col-md-6">
-                <p>Not a Bookshelf member? <u>Sign up here</u></p>
-            </div>
-            <div id="social-media" class="col-sm-6" >
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>  
-                <a href="#" class="fa fa-twitter"></a> 
-            </div>
-        </div>
-    </div>
-</footer>   
-</section>
-
- <script src="js/jquery-2.1.4.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>  
- <link rel="stylesheet" href="assets/js/script.js">
-</body>
-</html>
+{% endblock %}
