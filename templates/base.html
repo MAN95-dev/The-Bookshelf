@@ -41,7 +41,7 @@
                             <a class="nav-link" href="{{ url_for('your_picks', username=session['user']) }}">Your picks</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Log out</a>
+                            <a class="nav-link" href="{{url_for('logout') }}">Log out</a>
                         </li>
                     {% else %}
                         <li class="nav-item">
