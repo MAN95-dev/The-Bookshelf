@@ -62,8 +62,9 @@
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
-        <div class="row flashes">
-            <h4>{{ message }}</h4>
+        <div class="alert success flashes">
+            <span class="closebtn">&times;</span>  
+            <strong>{{ message }}</strong>
         </div>
         {% endfor %}
         {% endif %}
