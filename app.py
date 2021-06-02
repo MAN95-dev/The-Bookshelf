@@ -17,12 +17,17 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
 @app.route("/")
 @app.route("/get_books")
 def get_books():
     books = mongo.db.tasks.find()
     return render_template("index.html", books=books)
+
+
+@app.route("/club_picks")
+def club_picks():
+    club_picks = mongo.db.club_picks.find()
+    return render_template("club_picks.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
