@@ -12,8 +12,7 @@ body {
   color: white;
   opacity: 1;
   transition: 0.6s;
-  margin-bottom: 15px;
-  margin-top: 100px;
+  margin-top: 90px;
   width: 30%;
   text-align: center;
   left: 35%;
@@ -90,7 +89,6 @@ nav li {
 /** End of header **/
 
 /** Footer **/
-
 .footer { 
     color: black;
     background-color: #ffff66;
@@ -198,7 +196,7 @@ footer p u:hover {
 
 /** Login page **/
 .myform {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 50px;
 	position: relative;
 	display: -ms-flexbox;
@@ -215,7 +213,15 @@ footer p u:hover {
 	outline: 0;
 	max-width: 500px;
 }
-        
+
+.form-group{
+    margin: 5px;
+}
+
+.mybtn {
+    margin-top: 20px;
+}
+  
 .tx-tfm{
     text-transform:uppercase;
 }
@@ -224,7 +230,7 @@ footer p u:hover {
     position: relative;
     color: #aaa;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -233,7 +239,7 @@ footer p u:hover {
     display: block;
     position: absolute;
     left: 50%;
-    top: -2px;
+    top: 10px;
     margin-left: -25px;
     background-color: #fff;
     width: 50px;
