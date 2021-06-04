@@ -17,22 +17,31 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+# Display home page 
 @app.route("/")
-@app.route("/get_books")
-def get_books():
-    books = mongo.db.tasks.find()
-    return render_template("index.html", books=books)
+@app.route("/home")
+def home():
+    #Check if there is a user in session 
+    if "user" in session:
+        user = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+        return render_template("index.html", user=user)
+    else:
+        return render_template("index.html")
 
 
+# View club books
 @app.route("/club_picks")
 def club_picks():
     club_picks = mongo.db.club_picks.find()
     return render_template("club_picks.html")
 
 
+# Sign up page 
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
+        # Check if the username already exists in the database 
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
@@ -46,6 +55,7 @@ def register():
         }
         mongo.db.users.insert_one(register)
 
+        # Put the new user into "session" cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("your_picks", username=session["user"]))
@@ -53,10 +63,11 @@ def register():
     return render_template("register.html")
 
 
+# Login page
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        # check if username exists in db
+        # check if username exists in the database
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
@@ -82,16 +93,37 @@ def login():
     return render_template("login.html")
 
 
+# Display profile page 
 @app.route("/your_picks/<username>", methods=["GET", "POST"])
 def your_picks(username):
-    # grab the session user's username from db
+    # grab the session user's username from the database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
+    # get the session users books from the database
+    your_picks = list(mongo.db.your_picks.find())
     
     if session["user"]:
-        return render_template("your_picks.html", username=username)
+        return render_template("your_picks.html", username=username, your_picks=your_picks)
 
     return redirect(url_for("login"))
+
+
+# Add a new book into the database 
+@app.route("/add_book", methods=["GET", "POST"])
+def add_book():
+    if request.method == "POST":
+        your_picks = {
+            "book_name": request.form.get("book_name"),
+            "book_author": request.form.get("book_author"),
+            "img-url": request.form.get("img_url"),
+            "buy-url": request.form.get("buy_url"),
+            "synopsis": request.form.get("synopsis"),
+            "your_review": request.form.get("your_review"),
+            "created_by": session["user"]
+        }
+        mongo.db.your_picks.insert_one(your_picks)
+        flash("Book successfully added")
+        return redirect(url_for("your_picks"))
 
 
 @app.route("/logout")

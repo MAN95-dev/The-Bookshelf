@@ -3,90 +3,77 @@
 
     <div id="your-picks" class="container">
         <h2 id="your-picks-title" class="text-center">{{ username }}'s picks</h2>
+       
+        <!-- Add Book -->
         <section class="row">
+            <div class="modal fade modal-dialog modal-dialog-centered" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <form class="row" method="POST" action="{{url_for('add_book') }}">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                            <div class="modal-body">
+
+                                <!-- Add Book -->
+                                <div class="row input-field">
+                                    <label for="book_name">Book:</label>
+                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
+                                </div>
+
+                                <!-- Book Author -->
+                                <div class="row input-field">
+                                    <label for="book_name">Book:</label>
+                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
+                                </div>
+
+                                <!-- Image URL -->
+                                <div class="row input-field">
+                                    <label for="book_name">Book:</label>
+                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
+                                </div>
+
+                                <!-- Synopsis -->
+                                <div class="row input-field">
+                                    <label for="book_name">Book:</label>
+                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
+                                </div>
+
+                                <!-- Your Review -->
+                                <div class="row input-field">
+                                    <label for="book_name">Book:</label>
+                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
+                                </div>
+
+                                <!-- Buy URL -->
+                                <div class="row input-field">
+                                    <label for="book_name">Book:</label>
+                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="row input-field">
+                                    <label for="book_name">Book:</label>
+                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
+                                </div>
+                            </div>
+                                <!-- Close Modal -->
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+                                </div>      
+                    </form>
+            </div> 
+            </div>
+
+
+
+            
             <div class="col-md-3 col-sm-4 col-6">
                 <div class="category-tile">
                     <img src="assets/images/your-picks/the-guest-list.jpg" alt="The Guest List">
                     <span>Michelle's pick</span>
                 </div>
-            </div>
-                <div class="col-md-3 col-sm-4 col-6"> 
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/the-jane-austin-society.jpeg" alt="The Jane Austin Society">
-                    <span>Mark's pick</span>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/the-midnight-library.jpeg" alt="The Midnight Library">
-                    <span>Saskea's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/the-vanishing-half.jpg" alt="The Vanishing Half">
-                    <span>Cara's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/american-dirt.jpg" alt="American Dirt">
-                    <span>Sash's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/big-summer.jpeg" alt="Big Summer">
-                    <span>Veru's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/anxious-people.jpeg" alt="Anxious People">
-                    <span>Sara's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/half-of-a-yellow-sun.jpeg" alt="Half of a Yellow Sun">
-                    <span>Jodi's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/dear-edward.jpeg" alt="Dear Edward">
-                    <span>Megan's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/my-dark-vanessa.jpg" alt="My Dark Vanessa">
-                    <span>Jamie's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/the-jigsaw-man.jpeg" alt="The Jigsaw Man">
-                    <span>Matt's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/the-glass-hotel.jpeg" alt="The Glass Hotel">
-                    <span>Amy's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/the-girl-with-the-louding-voice.jpeg" alt="The Girl with the Louding Voice">
-                    <span>Finn's pick</span>
-                </div>  
-            </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/such-a-fun-age.jpg" alt="Such a Fun Age">
-                    <span>Aaron's pick</span>
-                </div>  
             </div>
         </section>
     </div>
