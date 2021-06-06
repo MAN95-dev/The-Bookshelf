@@ -8,9 +8,8 @@
 {% for your_pick in your_picks %}
     <div class="col-md-3 col-sm-4 col-6"> 
         <div class="category-tile">
-            <img src="{{url_for('static', filename='images/club-picks/beach-read.png')}}" 
-            alt="Beach read">
-            <span>Apr '21 pick</span>
+            <img src="{{ your_picks.img_url }}">
+            <span>{{ your_picks.created_by }}</span>
         </div>
     </div>
 {% endfor %}
