@@ -180,6 +180,20 @@ footer p u:hover {
 /** End of Who we are **/
 
 /** Club picks page **/
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.category-tile { 
+  position: relative;
+  margin-bottom: 100px; 
+}
+
+/** Modals **/
+.modal-btn {
+    margin-top: 10px;
+    margin-left: 40px;
+}
 
 /** End of Club picks page **/
 

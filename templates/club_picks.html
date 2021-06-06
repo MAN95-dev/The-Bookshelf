@@ -8,8 +8,8 @@
                 <div class="category-tile">
                         <img src="{{url_for('static', filename='images/club-picks/a-long-petal-of-the-sea.png')}}" 
                         alt="A long petal of the sea">
-                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
+                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    May '21 pick
                  </button>
                 </div>
             </div>
@@ -17,21 +17,74 @@
 
             <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <div class="row">
+                            <div class="col-md-4 category-tile">
+                                <img src="{{url_for('static', filename='images/club-picks/a-long-petal-of-the-sea.png')}}" 
+                                alt="A long petal of the sea">
+                                <span>May '21 pick</span>
+                            </div>
+                            <div class="col-md-8">
+                                <h3>A Long Petal of the Sea</h3>
+                                <h5>Isabel Allende</h5><br>
+                                <h5>Synopsis</h5>
+                                <p>From the author of The House of the Spirits, this epic novel spanning decades and 
+                                    crossing continents follows two young people as they flee the aftermath of the Spanish 
+                                    Civil War in search of a place to call home. In the late 1930s, civil war grips Spain.
+                                </p><br>
+                                 <p><a href="https://www.amazon.com/Long-Petal-Sea-Novel-Random/dp/0593172051/ref=sr_1_2?dchild=1&keywords=A+long+petal+of+the+sea&qid=1622992861&sr=8-2" 
+                                    target="_blank" id="signup">Available on Amazon</a></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>The Bookshelf review</h4><br>
+                                <p>
+                                    Two refugees from the Spanish Civil War cross the Atlantic Ocean to Chile and a 
+                                    half-century of political and personal upheavals.We meet Victor Dalmau and Roser 
+                                    Bruguera in 1938 as it is becoming increasingly clear that the Republican cause 
+                                    they support is doomed. When they reunite in France as penniless refugees, Roser 
+                                    has survived a harrowing flight across the Pyrenees while heavily pregnant and 
+                                    given birth to the son of Victor’s brother Guillem, killed at the Battle of the 
+                                    Ebro. Victor, evacuated with the wounded he was tending in a makeshift hospital, 
+                                    learns of a ship outfitted by poet Pablo Neruda to take exiles to a new life in 
+                                    Chile, but he and Roser must marry in order to gain a berth. Allende (In the Midst 
+                                    of Winter, 2017, etc.) expertly sets up this forced intimacy between two very 
+                                    different people: Resolute, realistic Roser never looks back and doggedly pursues 
+                                    a musical career in Chile while Victor, despite being fast-tracked into medical 
+                                    school by socialist politician Salvador Allende (a relative of the author's), 
+                                    remains melancholy and nostalgic for his homeland. Their platonic affection deepens 
+                                    into physical love and lasting commitment in an episodic narrative that reaches a 
+                                    catastrophic climax with the 1973 coup overthrowing Chile’s democratically elected 
+                                    government. For Victor and Roser, this is a painful reminder of their losses in 
+                                    Spain and the start of new suffering. The wealthy, conservative del Solar family 
+                                    provides a counterpoint to the idealistic Dalmaus; snobbish, right-wing patriarch 
+                                    Isidro and his hysterically religious wife, Laura, verge on caricature, but Allende 
+                                    paints more nuanced portraits of eldest son Felipe, who smooths the refugees’ early 
+                                    days in Chile, and daughter Ofelia, whose brief affair with Victor has lasting 
+                                    consequences. Allende tends to describe emotions and events rather than delve into 
+                                    them, and she paints the historical backdrop in very broad strokes, but she is an 
+                                    engaging storyteller. A touching close in 1994 brings one more surprise and unexpected 
+                                    hope for the future to 80-year-old Victor.A trifle facile, but this decades-spanning 
+                                    drama is readable and engrossing throughout.
+                                </p>
+                            </div>
+                        </div>  
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
                     </div>
                 </div>
                 </div>
+
+
             <div class="col-md-3 col-sm-4 col-6"> 
                 <div class="category-tile">
                     <img src="{{url_for('static', filename='images/club-picks/beach-read.png')}}" 
