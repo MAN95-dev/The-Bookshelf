@@ -108,22 +108,9 @@ def your_picks(username):
     return redirect(url_for("login"))
 
 
-# Add a new book into the database 
-@app.route("/add_book", methods=["GET", "POST"])
+@app.route("/add_book")
 def add_book():
-    if request.method == "POST":
-        your_picks = {
-            "book_name": request.form.get("book_name"),
-            "book_author": request.form.get("book_author"),
-            "img-url": request.form.get("img_url"),
-            "buy-url": request.form.get("buy_url"),
-            "synopsis": request.form.get("synopsis"),
-            "your_review": request.form.get("your_review"),
-            "created_by": session["user"]
-        }
-        mongo.db.your_picks.insert_one(your_picks)
-        flash("Book successfully added")
-        return redirect(url_for("your_picks"))
+    return render_template("add_book.html")
 
 
 @app.route("/logout")

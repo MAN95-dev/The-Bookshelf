@@ -1,24 +1,50 @@
-  
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">Add Book</h3>
-
-    <div class="row">
-        <form class="col s12" method="POST" action="">
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">First Name</label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Telephone</label>
-                </div>
-            </div>
-        </form>
-    </div>
+<div class="container">
+        <div class="row">
+			<div class="col-md-5 mx-auto">
+			<div id="first">
+				<div class="myform form ">
+					 <div class="logo mb-3">
+						 <div class="col-md-12 text-center">
+							<h3>Add book</h3>
+						 </div>
+					</div>
+                   <form method="POST" action="">
+                           <div class="form-group">
+                               <i class="fa fa-book" aria-hidden="true"></i>
+                               <label for="icon_book">Title</label> 
+                               <input type="text" class="validate form-control" id="icon_book"> 
+                           </div>
+                           <div class="form-group">
+                               <i class="fa fa-user" aria-hidden="true"></i>
+                               <label for="password">Author</label> 
+                               <input type="text" class="validate form-control"> 
+                           </div>
+                            <div class="form-group">
+                               <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                               <label for="icon_image">Image URL</label> 
+                               <input type="text" class="validate form-control"> 
+                           </div>
+                           <div class="form-group">
+                               <i class="fa fa-comment" aria-hidden="true"></i>
+                               <label for="icon_comment">Synopsis</label> 
+                               <input type="text" class="validate form-control"> 
+                           </div>
+                              <div class="form-group">
+                               <i class="fa fa-pencil" aria-hidden="true"></i>
+                               <label for="icon_pencil">Your review</label> 
+                               <input type="text" class="validate form-control"> 
+                           </div>
+                           <div class="col-md-12 text-center ">
+                              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Submit</button>
+                           </div>
+                        </form>
+                     </div>
+			</div>
+		</div>
+      </div> 
+      </div>   
 
 {% endblock %}

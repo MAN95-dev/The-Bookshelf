@@ -3,79 +3,16 @@
 
     <div id="your-picks" class="container">
         <h2 id="your-picks-title" class="text-center">{{ username }}'s picks</h2>
-       
-        <!-- Add Book -->
-        <section class="row">
-            <div class="modal fade modal-dialog modal-dialog-centered" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <form class="row" method="POST" action="{{url_for('add_book') }}">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                            <div class="modal-body">
-
-                                <!-- Add Book -->
-                                <div class="row input-field">
-                                    <label for="book_name">Book:</label>
-                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
-                                </div>
-
-                                <!-- Book Author -->
-                                <div class="row input-field">
-                                    <label for="book_name">Book:</label>
-                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
-                                </div>
-
-                                <!-- Image URL -->
-                                <div class="row input-field">
-                                    <label for="book_name">Book:</label>
-                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
-                                </div>
-
-                                <!-- Synopsis -->
-                                <div class="row input-field">
-                                    <label for="book_name">Book:</label>
-                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
-                                </div>
-
-                                <!-- Your Review -->
-                                <div class="row input-field">
-                                    <label for="book_name">Book:</label>
-                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
-                                </div>
-
-                                <!-- Buy URL -->
-                                <div class="row input-field">
-                                    <label for="book_name">Book:</label>
-                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
-                                </div>
-
-                                <!-- Submit Button -->
-                                <div class="row input-field">
-                                    <label for="book_name">Book:</label>
-                                    <input id="book_name" name="book_name" type="text" class="validate" minlength="3" maxlength="50" required>
-                                </div>
-                            </div>
-                                <!-- Close Modal -->
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
-                                </div>      
-                    </form>
-            </div> 
-            </div>
-
-
-
-            
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="assets/images/your-picks/the-guest-list.jpg" alt="The Guest List">
-                    <span>Michelle's pick</span>
-                </div>
-            </div>
-        </section>
     </div>
+       
+{% for your_pick in your_picks %}
+    <div class="col-md-3 col-sm-4 col-6"> 
+        <div class="category-tile">
+            <img src="{{url_for('static', filename='images/club-picks/beach-read.png')}}" 
+            alt="Beach read">
+            <span>Apr '21 pick</span>
+        </div>
+    </div>
+{% endfor %}
 
 {% endblock %}
