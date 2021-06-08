@@ -228,16 +228,70 @@
                 </div>
                 </div>
 
-
-
-            
-            <div class="col-md-3 col-sm-4 col-6">
+            <!-- Clrescent City -->
+            <div class="col-md-3 col-sm-4 col-6">   
                 <div class="category-tile">
-                    <img src="{{url_for('static', filename='images/club-picks/clap-when-you-land.png')}}" 
-                    alt="Clap when you land">
-                    <span>Mar '21 pick</span>
-                </div>  
+                        <img src="{{url_for('static', filename='images/club-picks/crescent-city.png')}}" 
+                        alt="Crescent City">
+            <!-- Modal button -->
+                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#crescentCity">
+                    Feb '21 pick
+                 </button>
+                </div>
             </div>
+
+            <!-- Modal -->
+                <div class="modal fade" id="crescentCity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body about-book">
+                        <div class="row">
+                            <div class="col-md-4 book-tile">
+                                <img src="{{url_for('static', filename='images/club-picks/crescent-city.png')}}" 
+                                alt="Crescent City">
+                                <span>Feb '21 pick</span>
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="fw-bold">Crescent City</h3>
+                                <h5 class="fw-bold">Sarah J. Maas</h5><br>
+                                <h5 class="fw-bold">Synopsis</h5>
+                                <p>Synopsis. #1 New York Times bestselling author Sarah J. Maas launches her brand-new CRESCENT 
+                                    CITY series with House of Earth and Blood: the story of half-Fae and half-human Bryce Quinlan 
+                                    as she seeks revenge in a contemporary fantasy world of magic, danger, and searing romance.
+                                </p><br>
+                                 <p><a href="https://www.amazon.com/House-Earth-Blood-Crescent-City/dp/1635574048/ref=tmm_hrd_swatch
+                                    _0?_encoding=UTF8&qid=1623164311&sr=8-1" 
+                                    target="_blank" id="signup">Available on Amazon</a></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="fw-bold">The Bookshelf review</h4><br>
+                                <p>If your looking for a story that blends fantasy, adult romance, mystery, and suspense Crescent 
+                                    City by Sarah J. Maas is the book for you. This novel was masterfully written to the point that 
+                                    I'm sitting here debating rereading it like one might rewatch their favorite movie because I can't 
+                                    get enough. Bryce Quinlan and Hunt Athalar are unforgettable characters you will fall madly in 
+                                    love with. You will laugh at all the witty banter and cry with each of these beloved characters.
+                                    My only advice to fellow readers is to push past the first 60 pages and you won't regret it. 
+                                    Crescent City is the first book in this series and I will be counting the hours until the second 
+                                    is released!
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+
             <div class="col-md-3 col-sm-4 col-6">
                 <div class="category-tile">
                     <img src="{{url_for('static', filename='images/club-picks/crescent-city.png')}}" 
