@@ -4,10 +4,12 @@
     <div id="club-picks" class="container">
         <h2 id="your-picks-title" class="text-center">Discover our latest picks</h2>
         <section class="row">
+        <!-- A long petal of the sea -->
             <div class="col-md-3 col-sm-4 col-6">   
                 <div class="category-tile">
                         <img src="{{url_for('static', filename='images/club-picks/a-long-petal-of-the-sea.png')}}" 
                         alt="A long petal of the sea">
+            <!-- Modal button -->
                  <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     May '21 pick
                  </button>
@@ -21,17 +23,17 @@
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body about-book">
                         <div class="row">
-                            <div class="col-md-4 category-tile">
+                            <div class="col-md-4 book-tile">
                                 <img src="{{url_for('static', filename='images/club-picks/a-long-petal-of-the-sea.png')}}" 
                                 alt="A long petal of the sea">
                                 <span>May '21 pick</span>
                             </div>
                             <div class="col-md-8">
-                                <h3>A Long Petal of the Sea</h3>
-                                <h5>Isabel Allende</h5><br>
-                                <h5>Synopsis</h5>
+                                <h3 class="fw-bold">A Long Petal of the Sea</h3>
+                                <h5 class="fw-bold">Isabel Allende</h5><br>
+                                <h5 class="fw-bold">Synopsis</h5>
                                 <p>From the author of The House of the Spirits, this epic novel spanning decades and 
                                     crossing continents follows two young people as they flee the aftermath of the Spanish 
                                     Civil War in search of a place to call home. In the late 1930s, civil war grips Spain.
@@ -43,7 +45,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
-                                <h4>The Bookshelf review</h4><br>
+                                <h4 class="fw-bold">The Bookshelf review</h4><br>
                                 <p>
                                     Two refugees from the Spanish Civil War cross the Atlantic Ocean to Chile and a 
                                     half-century of political and personal upheavals.We meet Victor Dalmau and Roser 

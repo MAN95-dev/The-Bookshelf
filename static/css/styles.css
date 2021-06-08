@@ -187,6 +187,27 @@ footer p u:hover {
     margin-left: 40px;
 }
 
+.book-tile img {
+    width: 200px;
+    height: 280px; 
+}
+
+.book-tile span {
+  position: absolute;
+  display: block; 
+  margin-top: 20px; 
+  text-align: center;
+  font-size: 16px;
+  background-color: #87cefa;
+  color: black;
+  opacity: .8;
+}
+
+.about-book {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 /** End of Club picks page **/
 
 /** Your picks page **/
