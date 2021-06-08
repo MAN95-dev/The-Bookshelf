@@ -127,7 +127,7 @@ footer p u:hover {
 .founder img {
     margin-top: 120px;
     margin-left: 50px;
-    height: 300px;
+    height: 350px;
     width: 300px;
     border-radius: 50%;
 
@@ -142,6 +142,7 @@ footer p u:hover {
     font-family: 'RocknRoll One', sans-serif;
     font-size: 50px;
     margin-left: 60px;
+    margin-top: 60px;
 }
 
 .about p {
@@ -152,9 +153,8 @@ footer p u:hover {
 }
 
 .about-us {
-    margin: 130px;
-    background-color: #FF2692;
-    border-radius: 20px;
+    background-image: linear-gradient(#ffcc99, #ffff66);
+    height: 530px;
 }
 
 .home-tile {

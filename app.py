@@ -93,19 +93,18 @@ def login():
     return render_template("login.html")
 
 
-# Display profile page 
 @app.route("/your_picks/<username>", methods=["GET", "POST"])
 def your_picks(username):
-    # grab the session user's username from the database
+    # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    # get the session users books from the database
-    your_picks = list(mongo.db.your_picks.find())
-    
+
     if session["user"]:
-        return render_template("your_picks.html", username=username, your_picks=your_picks)
+        return render_template("your_picks.html", username=username)
 
     return redirect(url_for("login"))
+
+
 
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
@@ -115,6 +114,7 @@ def add_book():
             "author_name": request.form.get("author_name"),
             "img_url": request.form.get("img_url"),
             "buy_url": request.form.get("buy_url"),
+            "synopsis": request.form.get("synopsis"),
             "your_review": request.form.get("your_review"),
             "created_by": session["user"]
         }

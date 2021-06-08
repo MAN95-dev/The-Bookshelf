@@ -1,16 +1,56 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div id="your-picks" class="container">
-        <h2 id="your-picks-title" class="text-center">{{ username }}'s picks</h2>
-    </div>
-       
+<div id="your-picks" class="container">
+    <h2 id="your-picks-title" class="text-center">{{ username }}'s picks</h2>
+</div>
+
 {% for your_pick in your_picks %}
-    <div class="col-md-3 col-sm-4 col-6"> 
-        <div class="category-tile">
-            <img src="{{ your_picks.img_url }}" >
-            <span>{{ your_picks.created_by }}</span>
+<div class="col-md-3 col-sm-4 col-6">
+    <div class="category-tile">
+        <a href="{{ url_for('your_picks', book_name=your_picks._id) }}"></a><img src="{{ your_picks.img_url }}" alt="{{ your_picks.book_name }}"></a>
+        <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            by: {{ your_picks.created_by }}
+        </button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4 category-tile">
+                        <img src="{{ your_picks.img_url }}" alt="{{ your_picks.book_name }}">
+                        <span>by: {{ your_picks.created_by }}</span>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>{{ your_picks.book_name }}</h3>
+                        <h5>{{ your_picks.author_name }}</h5><br>
+                        <h5>Synopsis</h5>
+                        <p>{{ your_picks.synopsis }}</p><br>
+                        <p><a href="{{ your_picks.buy_url }}"
+                                target="_blank" id="signup">Available on Amazon</a></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>{{ username }}'s review</h4><br>
+                        <p>{{ your_picks.your_review }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
+            </div>
         </div>
+    </div>
+</div>
     </div>
 {% endfor %}
 
