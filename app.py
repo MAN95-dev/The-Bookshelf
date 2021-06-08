@@ -100,7 +100,10 @@ def your_picks(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("your_picks.html", username=username)
+        your_picks = mongo.db.your_picks.find()
+        #TODO: Get your_picks from database and add to render template - see line 36 for similar query
+        # print([i for i in your_picks])
+        return render_template("your_picks.html", username=username, your_picks=your_picks)
 
     return redirect(url_for("login"))
 
@@ -120,7 +123,8 @@ def add_book():
         }
         mongo.db.your_picks.insert_one(your_picks)
         flash("Book Successfully Added")
-        return redirect(url_for("your_picks"))
+        return redirect(url_for("your_picks", username=session["user"]))
+
 
     return render_template("add_book.html")
 

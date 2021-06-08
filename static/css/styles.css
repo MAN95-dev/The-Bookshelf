@@ -157,26 +157,18 @@ footer p u:hover {
     height: 530px;
 }
 
-.home-tile {
-    display: inline-block;
+.square {
+  height: 300px;
+  width: 300px;
+  background-color:pink;
+  margin-left: 90px;
+  text-align: center;
 }
 
-.home-tile img {
-    width: 160px;
-    height: 240px; 
-    
+.why-us{
+    position: relative;
 }
-.home-tile span {
-  position: absolute;
-  display: block; 
-  margin-top: 20px; 
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  background-color: #87cefa;
-  color: black;
-  opacity: .8;
-}
+
 /** End of Who we are **/
 
 /** Club picks page **/
