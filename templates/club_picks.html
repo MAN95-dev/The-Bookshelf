@@ -157,15 +157,80 @@
                 </div>
                 </div>
 
-
-
-            <div class="col-md-3 col-sm-4 col-6"> 
+            <!-- Clap When You Land -->
+            <div class="col-md-3 col-sm-4 col-6">   
                 <div class="category-tile">
-                    <img src="{{url_for('static', filename='images/club-picks/beach-read.png')}}" 
-                    alt="Beach read">
-                    <span>Apr '21 pick</span>
+                        <img src="{{url_for('static', filename='images/club-picks/clap-when-you-land.png')}}" 
+                        alt="Clap when you land">
+            <!-- Modal button -->
+                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#clapWhenYouLand">
+                    Mar '21 pick
+                 </button>
                 </div>
             </div>
+
+            <!-- Modal -->
+                <div class="modal fade" id="clapWhenYouLand" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body about-book">
+                        <div class="row">
+                            <div class="col-md-4 book-tile">
+                                <img src="{{url_for('static', filename='images/club-picks/clap-when-you-land.png')}}" 
+                                alt="Clap when you land">
+                                <span>Mar '21 pick</span>
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="fw-bold">Clap When You Land</h3>
+                                <h5 class="fw-bold">Elizabeth Acevedo</h5><br>
+                                <h5 class="fw-bold">Synopsis</h5>
+                                <p>In New York City, Yahaira Rios is called to the principal's office, where her mother is waiting 
+                                    to tell her that her father, her hero, has died in a plane crash. Separated by distance — and 
+                                    Papi's secrets — the two girls are forced to face a new reality in which their father is dead 
+                                    and their lives are forever altered.
+                                </p><br>
+                                 <p><a href="https://www.amazon.com/Clap-When-Land-Elizabeth-Acevedo/dp/0062882767/ref=sr_1_1?dchild
+                                    =1&keywords=Clap+when+you+land&qid=1623161163&sr=8-1" 
+                                    target="_blank" id="signup">Available on Amazon</a></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="fw-bold">The Bookshelf review</h4><br>
+                                <p>A novel-in-verse that explores the intricacies of love and mourning. Clap When You Land tells 
+                                    the story of Camino and Yahaira, two sisters whose fates become intertwined when a tragic 
+                                    accident forces them to discover the truth about their father—and each other. On the day of 
+                                    her father’s arrival to the Dominican Republic, Camino Rios skips a math test to go to the 
+                                    airport, where she finds a group of people crowded around a TV screen. Across the pond in New 
+                                    York, Yahaira Rios is called into her school’s main office where her mother, red-eyed and 
+                                    weeping, awaits with news: Her father’s plane has crashed, and there are no survivors. As the 
+                                    sisters —who are unaware of one another’s existence—grapple with their grief and attempt to 
+                                    navigate a world without their father, they uncover their families’ long-kept secrets and 
+                                    eventually find their way to each other. Clap When You Land is an affecting novel, one that 
+                                    portrays themes of grief, sexual assault, sisterhood, betrayal, cultural identity, and family 
+                                    with great care and empathy. It is written in alternating points of view, a technique that allows 
+                                    for a thorough exploration of the protagonists’ inner lives. Heartfelt and raw, Acevedo’s verse is 
+                                    deft at sifting through the complicated emotions that arise in the wake of great loss, and particularly 
+                                    poignant in those moments when it is not afraid to linger on the characters’ imperfections. A powerful 
+                                    and vibrant work that will leave you thinking long after you’ve put it down.
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+            
             <div class="col-md-3 col-sm-4 col-6">
                 <div class="category-tile">
                     <img src="{{url_for('static', filename='images/club-picks/clap-when-you-land.png')}}" 
