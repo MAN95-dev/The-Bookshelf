@@ -290,15 +290,72 @@
                 </div>
                 </div>
 
-
-
-            <div class="col-md-3 col-sm-4 col-6">
+             <!-- From Blood and Ash -->
+            <div class="col-md-3 col-sm-4 col-6">   
                 <div class="category-tile">
-                    <img src="{{url_for('static', filename='images/club-picks/crescent-city.png')}}" 
-                    alt="Crescent City">
-                    <span>Feb '21 pick</span>
-                </div>  
+                        <img src="{{url_for('static', filename='images/club-picks/from-blood-and-ash.png')}}" 
+                        alt="From Blood and Ash">
+            <!-- Modal button -->
+                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#fromBloodAndAsh">
+                    Jan '21 pick
+                 </button>
+                </div>
             </div>
+
+            <!-- Modal -->
+                <div class="modal fade" id="fromBloodAndAsh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body about-book">
+                        <div class="row">
+                            <div class="col-md-4 book-tile">
+                                <img src="{{url_for('static', filename='images/club-picks/from-blood-and-ash.png')}}" 
+                                alt="From Blood and Ash">
+                                <span>Jan '21 pick</span>
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="fw-bold">From Blood and Ash</h3>
+                                <h5 class="fw-bold">Jennifer L. Armentrout</h5><br>
+                                <h5 class="fw-bold">Synopsis</h5>
+                                <p>Forsaken by the gods and feared by mortals, a fallen kingdom is rising once more, determined to take 
+                                    back what they believe is theirs through violence and vengeance. And as the shadow of those cursed 
+                                    draws closer, the line between what is forbidden and what is right becomes blurred.
+                                </p><br>
+                                 <p><a href="https://www.amazon.com/Blood-Ash-Jennifer-L-Armentrout-ebook/dp/B086JMSSVH/ref=sr_1_1?dchild
+                                    =1&keywords=from+blood+and+ash&qid=1623209967&sr=8-1" 
+                                    target="_blank" id="signup">Available on Amazon</a></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="fw-bold">The Bookshelf review</h4><br>
+                                <p>From Blood and Ash starts off really slow. Like mind-numbingly slow. There’s a huge info-dump in 
+                                    chapter 1, very little dialogue, and not a lot happening. That is until the final sentence of 
+                                    Chapter 1. Then JLA provides just the right hook not to lose me. From Blood and Ash gets a lot 
+                                    of rave reviews from my Facebook group and I knew I had to stick with it and give her a chance.
+                                    One reader related From Blood and Ash to House of Earth and Blood. It’s got a really slow and 
+                                    long build-up, but your patience is rewarded. The key moment happened for me somewhere around the 
+                                    40% mark, and by the end of Chapter 25 I was addicted, hook, line, and sinker. While I spent 6 days 
+                                    reading the first 40%, the last 60% was finished in a single 6-hour long reading session. I could not 
+                                    put the book down.
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+          
             <div class="col-md-3 col-sm-4 col-6">
                 <div class="category-tile">
                     <img src="{{url_for('static', filename='images/club-picks/from-blood-and-ash.png')}}" 
