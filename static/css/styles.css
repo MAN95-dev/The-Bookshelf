@@ -154,8 +154,8 @@ footer p u:hover {
 
 .about-us {
     background-image: linear-gradient(#ffcc99, #ffff66);
+    left: 0;
     height: 530px;
-    width: 100%;
 }
 
 .square {
@@ -166,8 +166,12 @@ footer p u:hover {
   text-align: center;
 }
 
-.why-us{
-    position: relative;
+.why-us h3{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 50px;
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
 }
 
 /** End of Who we are **/
