@@ -1,374 +1,440 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div id="club-picks" class="container">
-        <h2 id="your-picks-title" class="text-center">Discover our latest picks</h2>
-        <section class="row">
+<div id="club-picks" class="container">
+    <h2 id="your-picks-title" class="text-center">Discover our latest picks</h2>
+    <section class="row">
         <!-- A long petal of the sea -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/a-long-petal-of-the-sea.png')}}" 
-                        alt="A long petal of the sea">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#aLongPetaloftheSea">
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/a-long-petal-of-the-sea.png')}}"
+                    alt="A long petal of the sea">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#aLongPetaloftheSea">
                     May '21 pick
-                 </button>
-                </div>
+                </button>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="aLongPetaloftheSea" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- Modal -->
+        <div class="modal fade" id="aLongPetaloftheSea" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body about-book">
                         <div class="row">
                             <div class="col-md-4 book-tile">
-                                <img src="{{url_for('static', filename='images/club-picks/a-long-petal-of-the-sea.png')}}" 
-                                alt="A long petal of the sea">
+                                <img src="{{url_for('static', filename='images/club-picks/a-long-petal-of-the-sea.png')}}"
+                                    alt="A long petal of the sea">
                                 <span>May '21 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">A Long Petal of the Sea</h3>
                                 <h5 class="fw-bold">Isabel Allende</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>From the author of The House of the Spirits, this epic novel spanning decades and 
-                                    crossing continents follows two young people as they flee the aftermath of the Spanish 
-                                    Civil War in search of a place to call home. In the late 1930s, civil war grips Spain.
+                                <p>From the author of The House of the Spirits, this epic novel spanning decades and
+                                    crossing continents follows two young people as they flee the aftermath of the
+                                    Spanish
+                                    Civil War in search of a place to call home. In the late 1930s, civil war grips
+                                    Spain.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Long-Petal-Sea-Novel-Random/dp/0593172051/ref=sr_1_2?dchild=1&keywords=A+long+petal+of+the+sea&qid=1622992861&sr=8-2" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Long-Petal-Sea-Novel-Random/dp/0593172051/ref=sr_1_2?dchild=1&keywords=A+long+petal+of+the+sea&qid=1622992861&sr=8-2"
+                                        target="_blank" id="signup">Available on Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>Two refugees from the Spanish Civil War cross the Atlantic Ocean to Chile and a 
-                                    half-century of political and personal upheavals.We meet Victor Dalmau and Roser 
-                                    Bruguera in 1938 as it is becoming increasingly clear that the Republican cause 
-                                    they support is doomed. When they reunite in France as penniless refugees, Roser 
-                                    has survived a harrowing flight across the Pyrenees while heavily pregnant and 
-                                    given birth to the son of Victor’s brother Guillem, killed at the Battle of the 
-                                    Ebro. Victor, evacuated with the wounded he was tending in a makeshift hospital, 
-                                    learns of a ship outfitted by poet Pablo Neruda to take exiles to a new life in 
-                                    Chile, but he and Roser must marry in order to gain a berth. Allende (In the Midst 
-                                    of Winter, 2017, etc.) expertly sets up this forced intimacy between two very 
-                                    different people: Resolute, realistic Roser never looks back and doggedly pursues 
-                                    a musical career in Chile while Victor, despite being fast-tracked into medical 
-                                    school by socialist politician Salvador Allende (a relative of the author's), 
-                                    remains melancholy and nostalgic for his homeland. Their platonic affection deepens 
-                                    into physical love and lasting commitment in an episodic narrative that reaches a 
-                                    catastrophic climax with the 1973 coup overthrowing Chile’s democratically elected 
-                                    government. For Victor and Roser, this is a painful reminder of their losses in 
-                                    Spain and the start of new suffering. The wealthy, conservative del Solar family 
-                                    provides a counterpoint to the idealistic Dalmaus; snobbish, right-wing patriarch 
-                                    Isidro and his hysterically religious wife, Laura, verge on caricature, but Allende 
-                                    paints more nuanced portraits of eldest son Felipe, who smooths the refugees’ early 
-                                    days in Chile, and daughter Ofelia, whose brief affair with Victor has lasting 
-                                    consequences. Allende tends to describe emotions and events rather than delve into 
-                                    them, and she paints the historical backdrop in very broad strokes, but she is an 
-                                    engaging storyteller. A touching close in 1994 brings one more surprise and unexpected 
-                                    hope for the future to 80-year-old Victor.A trifle facile, but this decades-spanning 
+                                <p>Two refugees from the Spanish Civil War cross the Atlantic Ocean to Chile and a
+                                    half-century of political and personal upheavals.We meet Victor Dalmau and Roser
+                                    Bruguera in 1938 as it is becoming increasingly clear that the Republican cause
+                                    they support is doomed. When they reunite in France as penniless refugees, Roser
+                                    has survived a harrowing flight across the Pyrenees while heavily pregnant and
+                                    given birth to the son of Victor’s brother Guillem, killed at the Battle of the
+                                    Ebro. Victor, evacuated with the wounded he was tending in a makeshift hospital,
+                                    learns of a ship outfitted by poet Pablo Neruda to take exiles to a new life in
+                                    Chile, but he and Roser must marry in order to gain a berth. Allende (In the Midst
+                                    of Winter, 2017, etc.) expertly sets up this forced intimacy between two very
+                                    different people: Resolute, realistic Roser never looks back and doggedly pursues
+                                    a musical career in Chile while Victor, despite being fast-tracked into medical
+                                    school by socialist politician Salvador Allende (a relative of the author's),
+                                    remains melancholy and nostalgic for his homeland. Their platonic affection deepens
+                                    into physical love and lasting commitment in an episodic narrative that reaches a
+                                    catastrophic climax with the 1973 coup overthrowing Chile’s democratically elected
+                                    government. For Victor and Roser, this is a painful reminder of their losses in
+                                    Spain and the start of new suffering. The wealthy, conservative del Solar family
+                                    provides a counterpoint to the idealistic Dalmaus; snobbish, right-wing patriarch
+                                    Isidro and his hysterically religious wife, Laura, verge on caricature, but Allende
+                                    paints more nuanced portraits of eldest son Felipe, who smooths the refugees’ early
+                                    days in Chile, and daughter Ofelia, whose brief affair with Victor has lasting
+                                    consequences. Allende tends to describe emotions and events rather than delve into
+                                    them, and she paints the historical backdrop in very broad strokes, but she is an
+                                    engaging storyteller. A touching close in 1994 brings one more surprise and
+                                    unexpected
+                                    hope for the future to 80-year-old Victor.A trifle facile, but this decades-spanning
                                     drama is readable and engrossing throughout.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- Beach Read -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/beach-read.png')}}" 
-                        alt="Beach read">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#beachRead">
-                    Apr '21 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="beachRead" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- Beach Read -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/beach-read.png')}}" alt="Beach read">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#beachRead">
+                    Apr '21 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="beachRead" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body about-book">
                         <div class="row">
                             <div class="col-md-4 book-tile">
-                                <img src="{{url_for('static', filename='images/club-picks/beach-read.png')}}" 
-                                alt="Beach read">
+                                <img src="{{url_for('static', filename='images/club-picks/beach-read.png')}}"
+                                    alt="Beach read">
                                 <span>Apr '21 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">Beach Read</h3>
                                 <h5 class="fw-bold">Emily Henry</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>January Andrews writes bestselling romance. When she pens a happily ever after, he 
-                                    kills off his entire cast. They're polar opposites. In fact, the only thing they have 
-                                    in common is that for the next three months, they're living in neighboring beach 
+                                <p>January Andrews writes bestselling romance. When she pens a happily ever after, he
+                                    kills off his entire cast. They're polar opposites. In fact, the only thing they
+                                    have
+                                    in common is that for the next three months, they're living in neighboring beach
                                     houses, broke, and bogged down with writer's block.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Beach-Read-Emily-Henry/dp/1984806734/ref=sr_1_1?dchild=
-                                    1&keywords=beach+read&qid=1623160594&sr=8-1" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Beach-Read-Emily-Henry/dp/1984806734/ref=sr_1_1?dchild=
+                                    1&keywords=beach+read&qid=1623160594&sr=8-1" target="_blank" id="signup">Available
+                                        on Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>Two struggling authors spend the summer writing and falling in love in a quaint beach town. 
-                                    January Andrews has just arrived in the small town of North Bear Shores with some serious 
-                                    baggage. Her father has been dead for a year, but she still hasn’t come to terms with what 
-                                    she found out at his funeral—he had been cheating on her mother for years. January plans to 
-                                    spend the summer cleaning out and selling the house her father and “That Woman” lived in 
-                                    together. But she’s also a down-on-her-luck author facing writer’s block, and she no longer 
-                                    believes in the happily-ever-after she’s made the benchmark of her work. Her steadily dwindling 
-                                    bank account, though, is a daily reminder that she must sell her next book, and fast. 
-                                    Serendipitously, she discovers that her new next-door neighbor is Augustus Everett, the darling 
-                                    of the literary fiction set and her former college rival/crush. Gus also happens to be struggling 
-                                    with his next book (and some serious trauma that unfolds throughout the novel). Though the two 
-                                    get off to a rocky start, they soon make a bet: Gus will try to write a romance novel, and January 
-                                    will attempt “bleak literary fiction.” They spend the summer teaching each other the art of their 
-                                    own genres—January takes Gus on a romantic outing to the local carnival; Gus takes January to the 
-                                    burned-down remains of a former cult—and they both process their own grief, loss, and trauma through 
-                                    this experiment. There are more than enough steamy scenes to sustain the slow-burn romance, and smart 
-                                    commentary on the placement and purpose of “women’s fiction” joins with crucial conversations about 
+                                <p>Two struggling authors spend the summer writing and falling in love in a quaint beach
+                                    town.
+                                    January Andrews has just arrived in the small town of North Bear Shores with some
+                                    serious
+                                    baggage. Her father has been dead for a year, but she still hasn’t come to terms
+                                    with what
+                                    she found out at his funeral—he had been cheating on her mother for years. January
+                                    plans to
+                                    spend the summer cleaning out and selling the house her father and “That Woman”
+                                    lived in
+                                    together. But she’s also a down-on-her-luck author facing writer’s block, and she no
+                                    longer
+                                    believes in the happily-ever-after she’s made the benchmark of her work. Her
+                                    steadily dwindling
+                                    bank account, though, is a daily reminder that she must sell her next book, and
+                                    fast.
+                                    Serendipitously, she discovers that her new next-door neighbor is Augustus Everett,
+                                    the darling
+                                    of the literary fiction set and her former college rival/crush. Gus also happens to
+                                    be struggling
+                                    with his next book (and some serious trauma that unfolds throughout the novel).
+                                    Though the two
+                                    get off to a rocky start, they soon make a bet: Gus will try to write a romance
+                                    novel, and January
+                                    will attempt “bleak literary fiction.” They spend the summer teaching each other the
+                                    art of their
+                                    own genres—January takes Gus on a romantic outing to the local carnival; Gus takes
+                                    January to the
+                                    burned-down remains of a former cult—and they both process their own grief, loss,
+                                    and trauma through
+                                    this experiment. There are more than enough steamy scenes to sustain the slow-burn
+                                    romance, and smart
+                                    commentary on the placement and purpose of “women’s fiction” joins with crucial
+                                    conversations about
                                     mental health to add multiple intriguing layers to the plot.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- Clap When You Land -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/clap-when-you-land.png')}}" 
-                        alt="Clap when you land">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#clapWhenYouLand">
-                    Mar '21 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="clapWhenYouLand" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- Clap When You Land -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/clap-when-you-land.png')}}"
+                    alt="Clap when you land">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#clapWhenYouLand">
+                    Mar '21 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="clapWhenYouLand" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body about-book">
                         <div class="row">
                             <div class="col-md-4 book-tile">
-                                <img src="{{url_for('static', filename='images/club-picks/clap-when-you-land.png')}}" 
-                                alt="Clap when you land">
+                                <img src="{{url_for('static', filename='images/club-picks/clap-when-you-land.png')}}"
+                                    alt="Clap when you land">
                                 <span>Mar '21 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">Clap When You Land</h3>
                                 <h5 class="fw-bold">Elizabeth Acevedo</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>In New York City, Yahaira Rios is called to the principal's office, where her mother is waiting 
-                                    to tell her that her father, her hero, has died in a plane crash. Separated by distance — and 
-                                    Papi's secrets — the two girls are forced to face a new reality in which their father is dead 
+                                <p>In New York City, Yahaira Rios is called to the principal's office, where her mother
+                                    is waiting
+                                    to tell her that her father, her hero, has died in a plane crash. Separated by
+                                    distance — and
+                                    Papi's secrets — the two girls are forced to face a new reality in which their
+                                    father is dead
                                     and their lives are forever altered.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Clap-When-Land-Elizabeth-Acevedo/dp/0062882767/ref=sr_1_1?dchild
-                                    =1&keywords=Clap+when+you+land&qid=1623161163&sr=8-1" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Clap-When-Land-Elizabeth-Acevedo/dp/0062882767/ref=sr_1_1?dchild
+                                    =1&keywords=Clap+when+you+land&qid=1623161163&sr=8-1" target="_blank"
+                                        id="signup">Available on Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>A novel-in-verse that explores the intricacies of love and mourning. Clap When You Land tells 
-                                    the story of Camino and Yahaira, two sisters whose fates become intertwined when a tragic 
-                                    accident forces them to discover the truth about their father—and each other. On the day of 
-                                    her father’s arrival to the Dominican Republic, Camino Rios skips a math test to go to the 
-                                    airport, where she finds a group of people crowded around a TV screen. Across the pond in New 
-                                    York, Yahaira Rios is called into her school’s main office where her mother, red-eyed and 
-                                    weeping, awaits with news: Her father’s plane has crashed, and there are no survivors. As the 
-                                    sisters —who are unaware of one another’s existence—grapple with their grief and attempt to 
-                                    navigate a world without their father, they uncover their families’ long-kept secrets and 
-                                    eventually find their way to each other. Clap When You Land is an affecting novel, one that 
-                                    portrays themes of grief, sexual assault, sisterhood, betrayal, cultural identity, and family 
-                                    with great care and empathy. It is written in alternating points of view, a technique that allows 
-                                    for a thorough exploration of the protagonists’ inner lives. Heartfelt and raw, Acevedo’s verse is 
-                                    deft at sifting through the complicated emotions that arise in the wake of great loss, and particularly 
-                                    poignant in those moments when it is not afraid to linger on the characters’ imperfections. A powerful 
+                                <p>A novel-in-verse that explores the intricacies of love and mourning. Clap When You
+                                    Land tells
+                                    the story of Camino and Yahaira, two sisters whose fates become intertwined when a
+                                    tragic
+                                    accident forces them to discover the truth about their father—and each other. On the
+                                    day of
+                                    her father’s arrival to the Dominican Republic, Camino Rios skips a math test to go
+                                    to the
+                                    airport, where she finds a group of people crowded around a TV screen. Across the
+                                    pond in New
+                                    York, Yahaira Rios is called into her school’s main office where her mother,
+                                    red-eyed and
+                                    weeping, awaits with news: Her father’s plane has crashed, and there are no
+                                    survivors. As the
+                                    sisters —who are unaware of one another’s existence—grapple with their grief and
+                                    attempt to
+                                    navigate a world without their father, they uncover their families’ long-kept
+                                    secrets and
+                                    eventually find their way to each other. Clap When You Land is an affecting novel,
+                                    one that
+                                    portrays themes of grief, sexual assault, sisterhood, betrayal, cultural identity,
+                                    and family
+                                    with great care and empathy. It is written in alternating points of view, a
+                                    technique that allows
+                                    for a thorough exploration of the protagonists’ inner lives. Heartfelt and raw,
+                                    Acevedo’s verse is
+                                    deft at sifting through the complicated emotions that arise in the wake of great
+                                    loss, and particularly
+                                    poignant in those moments when it is not afraid to linger on the characters’
+                                    imperfections. A powerful
                                     and vibrant work that will leave you thinking long after you’ve put it down.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- Clrescent City -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/crescent-city.png')}}" 
-                        alt="Crescent City">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#crescentCity">
-                    Feb '21 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="crescentCity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- Clrescent City -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/crescent-city.png')}}" alt="Crescent City">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#crescentCity">
+                    Feb '21 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="crescentCity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body about-book">
                         <div class="row">
                             <div class="col-md-4 book-tile">
-                                <img src="{{url_for('static', filename='images/club-picks/crescent-city.png')}}" 
-                                alt="Crescent City">
+                                <img src="{{url_for('static', filename='images/club-picks/crescent-city.png')}}"
+                                    alt="Crescent City">
                                 <span>Feb '21 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">Crescent City</h3>
                                 <h5 class="fw-bold">Sarah J. Maas</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>Synopsis. #1 New York Times bestselling author Sarah J. Maas launches her brand-new CRESCENT 
-                                    CITY series with House of Earth and Blood: the story of half-Fae and half-human Bryce Quinlan 
-                                    as she seeks revenge in a contemporary fantasy world of magic, danger, and searing romance.
+                                <p>Synopsis. #1 New York Times bestselling author Sarah J. Maas launches her brand-new
+                                    CRESCENT
+                                    CITY series with House of Earth and Blood: the story of half-Fae and half-human
+                                    Bryce Quinlan
+                                    as she seeks revenge in a contemporary fantasy world of magic, danger, and searing
+                                    romance.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/House-Earth-Blood-Crescent-City/dp/1635574048/ref=tmm_hrd_swatch
-                                    _0?_encoding=UTF8&qid=1623164311&sr=8-1" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/House-Earth-Blood-Crescent-City/dp/1635574048/ref=tmm_hrd_swatch
+                                    _0?_encoding=UTF8&qid=1623164311&sr=8-1" target="_blank" id="signup">Available on
+                                        Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>If your looking for a story that blends fantasy, adult romance, mystery, and suspense Crescent 
-                                    City by Sarah J. Maas is the book for you. This novel was masterfully written to the point that 
-                                    I'm sitting here debating rereading it like one might rewatch their favorite movie because I can't 
-                                    get enough. Bryce Quinlan and Hunt Athalar are unforgettable characters you will fall madly in 
-                                    love with. You will laugh at all the witty banter and cry with each of these beloved characters.
-                                    My only advice to fellow readers is to push past the first 60 pages and you won't regret it. 
-                                    Crescent City is the first book in this series and I will be counting the hours until the second 
+                                <p>If your looking for a story that blends fantasy, adult romance, mystery, and suspense
+                                    Crescent
+                                    City by Sarah J. Maas is the book for you. This novel was masterfully written to the
+                                    point that
+                                    I'm sitting here debating rereading it like one might rewatch their favorite movie
+                                    because I can't
+                                    get enough. Bryce Quinlan and Hunt Athalar are unforgettable characters you will
+                                    fall madly in
+                                    love with. You will laugh at all the witty banter and cry with each of these beloved
+                                    characters.
+                                    My only advice to fellow readers is to push past the first 60 pages and you won't
+                                    regret it.
+                                    Crescent City is the first book in this series and I will be counting the hours
+                                    until the second
                                     is released!
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-             <!-- From Blood and Ash -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/from-blood-and-ash.png')}}" 
-                        alt="From Blood and Ash">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#fromBloodAndAsh">
-                    Jan '21 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="fromBloodAndAsh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- From Blood and Ash -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/from-blood-and-ash.png')}}"
+                    alt="From Blood and Ash">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#fromBloodAndAsh">
+                    Jan '21 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="fromBloodAndAsh" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body about-book">
                         <div class="row">
                             <div class="col-md-4 book-tile">
-                                <img src="{{url_for('static', filename='images/club-picks/from-blood-and-ash.png')}}" 
-                                alt="From Blood and Ash">
+                                <img src="{{url_for('static', filename='images/club-picks/from-blood-and-ash.png')}}"
+                                    alt="From Blood and Ash">
                                 <span>Jan '21 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">From Blood and Ash</h3>
                                 <h5 class="fw-bold">Jennifer L. Armentrout</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>Forsaken by the gods and feared by mortals, a fallen kingdom is rising once more, determined to take 
-                                    back what they believe is theirs through violence and vengeance. And as the shadow of those cursed 
+                                <p>Forsaken by the gods and feared by mortals, a fallen kingdom is rising once more,
+                                    determined to take
+                                    back what they believe is theirs through violence and vengeance. And as the shadow
+                                    of those cursed
                                     draws closer, the line between what is forbidden and what is right becomes blurred.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Blood-Ash-Jennifer-L-Armentrout-ebook/dp/B086JMSSVH/ref=sr_1_1?dchild
-                                    =1&keywords=from+blood+and+ash&qid=1623209967&sr=8-1" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Blood-Ash-Jennifer-L-Armentrout-ebook/dp/B086JMSSVH/ref=sr_1_1?dchild
+                                    =1&keywords=from+blood+and+ash&qid=1623209967&sr=8-1" target="_blank"
+                                        id="signup">Available on Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>From Blood and Ash starts off really slow. Like mind-numbingly slow. There’s a huge info-dump in 
-                                    chapter 1, very little dialogue, and not a lot happening. That is until the final sentence of 
-                                    Chapter 1. Then JLA provides just the right hook not to lose me. From Blood and Ash gets a lot 
-                                    of rave reviews from my Facebook group and I knew I had to stick with it and give her a chance.
-                                    One reader related From Blood and Ash to House of Earth and Blood. It’s got a really slow and 
-                                    long build-up, but your patience is rewarded. The key moment happened for me somewhere around the 
-                                    40% mark, and by the end of Chapter 25 I was addicted, hook, line, and sinker. While I spent 6 days 
-                                    reading the first 40%, the last 60% was finished in a single 6-hour long reading session. I could not 
+                                <p>From Blood and Ash starts off really slow. Like mind-numbingly slow. There’s a huge
+                                    info-dump in
+                                    chapter 1, very little dialogue, and not a lot happening. That is until the final
+                                    sentence of
+                                    Chapter 1. Then JLA provides just the right hook not to lose me. From Blood and Ash
+                                    gets a lot
+                                    of rave reviews from my Facebook group and I knew I had to stick with it and give
+                                    her a chance.
+                                    One reader related From Blood and Ash to House of Earth and Blood. It’s got a really
+                                    slow and
+                                    long build-up, but your patience is rewarded. The key moment happened for me
+                                    somewhere around the
+                                    40% mark, and by the end of Chapter 25 I was addicted, hook, line, and sinker. While
+                                    I spent 6 days
+                                    reading the first 40%, the last 60% was finished in a single 6-hour long reading
+                                    session. I could not
                                     put the book down.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- Writers and Lovers -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/writers-&-lovers.png')}}"
-                        alt="Writers and lovers">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#writersAndLovers">
-                    Dec '20 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="writersAndLovers" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- Writers and Lovers -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/writers-&-lovers.png')}}"
+                    alt="Writers and lovers">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#writersAndLovers">
+                    Dec '20 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="writersAndLovers" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -376,72 +442,94 @@
                         <div class="row">
                             <div class="col-md-4 book-tile">
                                 <img src="{{url_for('static', filename='images/club-picks/writers-&-lovers.png')}}"
-                                alt="Writers and lovers">
+                                    alt="Writers and lovers">
                                 <span>Dec '20 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">Writers and Lovers</h3>
                                 <h5 class="fw-bold">Lily King</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>Writers & Lovers is a book about passion, desire, grief, determination, and finding one's way. 
-                                    It's also about craving love, family, and success. And it's about learning to stop worrying so 
-                                    much about how men "are perceiving you, at the great expense of what you yourself are feeling 
+                                <p>Writers & Lovers is a book about passion, desire, grief, determination, and finding
+                                    one's way.
+                                    It's also about craving love, family, and success. And it's about learning to stop
+                                    worrying so
+                                    much about how men "are perceiving you, at the great expense of what you yourself
+                                    are feeling
                                     about them."
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Writers-Lovers-Lily-King/dp/0802148549/ref=tmm_pap_swatch_0?_
-                                    encoding=UTF8&qid=1623210336&sr=8-1" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Writers-Lovers-Lily-King/dp/0802148549/ref=tmm_pap_swatch_0?_
+                                    encoding=UTF8&qid=1623210336&sr=8-1" target="_blank" id="signup">Available on
+                                        Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>A Boston-area waitress manages debt, grief, medical troubles, and romantic complications as she 
-                                    finishes her novel. “There are so many things I can’t think about in order to write in the 
-                                    morning,” Casey explains at the opening of King’s (Euphoria, 2014, etc.) latest. The top three 
-                                    are her mother’s recent death, her crushing student loans, and the married poet she recently had 
-                                    a steaming-hot affair with at a writer’s colony. But having seen all but one of her writer friends 
-                                    give up on the dream, 31-year-old Casey is determined to stick it out. After those morning hours 
-                                    at her desk in her teensy garage apartment, she rides her banana bike to work at a restaurant in 
-                                    Harvard Square—a setting the author evokes in delicious detail, recalling Stephanie Danler’s 
-                                    Sweetbitter, though with a lighter touch. Casey has no sooner resolved to forget the infidel poet 
-                                    than a few more writers show up on her romantic radar. She rejects a guy at a party who reveals he’s 
-                                    only written 11 1/2 pages in three years—“That kind of thing is contagious”—to find herself torn 
-                                    between a widowed novelist with two young sons and a guy with an irresistible broken tooth from the 
-                                    novelist's workshop. Casey was one of the top two golfers in the country when she was 14, and the 
-                                    mystery of why she gave up the sport altogether is entangled with the mystery of her estrangement 
-                                    from her father, the latter theme familiar from King’s earlier work. In fact, with its young 
-                                    protagonist, its love triangle, and its focus on literary ambition, this charmingly written 
-                                    coming-of-age story would be an impressive debut novel. But after the originality and impact of 
+                                <p>A Boston-area waitress manages debt, grief, medical troubles, and romantic
+                                    complications as she
+                                    finishes her novel. “There are so many things I can’t think about in order to write
+                                    in the
+                                    morning,” Casey explains at the opening of King’s (Euphoria, 2014, etc.) latest. The
+                                    top three
+                                    are her mother’s recent death, her crushing student loans, and the married poet she
+                                    recently had
+                                    a steaming-hot affair with at a writer’s colony. But having seen all but one of her
+                                    writer friends
+                                    give up on the dream, 31-year-old Casey is determined to stick it out. After those
+                                    morning hours
+                                    at her desk in her teensy garage apartment, she rides her banana bike to work at a
+                                    restaurant in
+                                    Harvard Square—a setting the author evokes in delicious detail, recalling Stephanie
+                                    Danler’s
+                                    Sweetbitter, though with a lighter touch. Casey has no sooner resolved to forget the
+                                    infidel poet
+                                    than a few more writers show up on her romantic radar. She rejects a guy at a party
+                                    who reveals he’s
+                                    only written 11 1/2 pages in three years—“That kind of thing is contagious”—to find
+                                    herself torn
+                                    between a widowed novelist with two young sons and a guy with an irresistible broken
+                                    tooth from the
+                                    novelist's workshop. Casey was one of the top two golfers in the country when she
+                                    was 14, and the
+                                    mystery of why she gave up the sport altogether is entangled with the mystery of her
+                                    estrangement
+                                    from her father, the latter theme familiar from King’s earlier work. In fact, with
+                                    its young
+                                    protagonist, its love triangle, and its focus on literary ambition, this charmingly
+                                    written
+                                    coming-of-age story would be an impressive debut novel. But after the originality
+                                    and impact of
                                     Euphoria, it might feel a bit slight.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- If I aHad Your Face -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/if-I-had-your-face.png')}}"
-                        alt="If I had your face">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#ifIHadYourFace">
-                    Nov '20 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="ifIHadYourFace" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- If I aHad Your Face -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/if-I-had-your-face.png')}}"
+                    alt="If I had your face">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#ifIHadYourFace">
+                    Nov '20 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="ifIHadYourFace" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -449,70 +537,88 @@
                         <div class="row">
                             <div class="col-md-4 book-tile">
                                 <img src="{{url_for('static', filename='images/club-picks/if-I-had-your-face.png')}}"
-                                alt="If I had your face">
+                                    alt="If I had your face">
                                 <span>Nov '20 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">If I Had Your Face</h3>
                                 <h5 class="fw-bold">Frances Cha</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>Cha's novel revolves around four young women who live in the same apartment building. There's Kyuri, 
-                                    whose many surgeries have earned her a job at a room salon, a popular type of bar where men pay to 
+                                <p>Cha's novel revolves around four young women who live in the same apartment building.
+                                    There's Kyuri,
+                                    whose many surgeries have earned her a job at a room salon, a popular type of bar
+                                    where men pay to
                                     drink with beautiful women.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/If-Had-Your-Face-Novel/dp/0593129482/ref=sr_1_1?dchild=1&keywords=f+
-                                    i+had+your+face&qid=1623211130&sr=8-1" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/If-Had-Your-Face-Novel/dp/0593129482/ref=sr_1_1?dchild=1&keywords=f+
+                                    i+had+your+face&qid=1623211130&sr=8-1" target="_blank" id="signup">Available on
+                                        Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>disturbing look at the unrealistic beauty standards placed on Korean women. Cha's timely debut deftly 
-                                    explores the impact of impossible beauty standards and male-dominated family money on South Korean 
-                                    women. Kyuri, Miho, Ara, and Sujin are two sets of working-class roommates who befriend each other, 
-                                    and Wonna is a married woman who lives on a different floor of the same apartment complex in Seoul. 
-                                    All are struggling financially. As Wonna laments, "Unless you are born into a chaebol family or your 
-                                    parents were the fantastically lucky few who purchased land in Gangnam decades ago, you have to work 
-                                    and work and work for a salary that isn't even enough to buy a house...." Because of Kyuri's successful 
-                                    plastic surgeries, men hire her to be their companion at after-work "room salons," giving her an enviable 
-                                    stock of designer purses and spending money. Sujin is saving up for surgery to attain the same face as 
-                                    Kyuri, but Cha shows how all the women are impacted by these standards. Ara's work as a hairdresser makes 
-                                    her literally invested in part of the beauty industry, and even though artist Miho hopes her talent will 
-                                    allow her to rise on her own, she finds herself dependent on the whims of a wealthy boyfriend. At times, 
-                                    the voices of the many characters can blur and the timeline can be confusing. Wonna is the least developed 
-                                    character and interacts with the others only in a plot twist at the end of the book. However, taken together, 
-                                    Cha's empathetic portraits allow readers to see the impact of economic inequity, entrenched classism, and 
-                                    patriarchy on her hard-working characters' lives. Cha grew up in the United States, South Korea, and Hong 
+                                <p>disturbing look at the unrealistic beauty standards placed on Korean women. Cha's
+                                    timely debut deftly
+                                    explores the impact of impossible beauty standards and male-dominated family money
+                                    on South Korean
+                                    women. Kyuri, Miho, Ara, and Sujin are two sets of working-class roommates who
+                                    befriend each other,
+                                    and Wonna is a married woman who lives on a different floor of the same apartment
+                                    complex in Seoul.
+                                    All are struggling financially. As Wonna laments, "Unless you are born into a
+                                    chaebol family or your
+                                    parents were the fantastically lucky few who purchased land in Gangnam decades ago,
+                                    you have to work
+                                    and work and work for a salary that isn't even enough to buy a house...." Because of
+                                    Kyuri's successful
+                                    plastic surgeries, men hire her to be their companion at after-work "room salons,"
+                                    giving her an enviable
+                                    stock of designer purses and spending money. Sujin is saving up for surgery to
+                                    attain the same face as
+                                    Kyuri, but Cha shows how all the women are impacted by these standards. Ara's work
+                                    as a hairdresser makes
+                                    her literally invested in part of the beauty industry, and even though artist Miho
+                                    hopes her talent will
+                                    allow her to rise on her own, she finds herself dependent on the whims of a wealthy
+                                    boyfriend. At times,
+                                    the voices of the many characters can blur and the timeline can be confusing. Wonna
+                                    is the least developed
+                                    character and interacts with the others only in a plot twist at the end of the book.
+                                    However, taken together,
+                                    Cha's empathetic portraits allow readers to see the impact of economic inequity,
+                                    entrenched classism, and
+                                    patriarchy on her hard-working characters' lives. Cha grew up in the United States,
+                                    South Korea, and Hong
                                     Kong and is a former Seoul-based culture and travel editor for CNN.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- In Five Years -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/in-five-years.png')}}"
-                        alt="In five years">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#inFiveYears">
-                    Oct '20 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="inFiveYears" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- In Five Years -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/in-five-years.png')}}" alt="In five years">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#inFiveYears">
+                    Oct '20 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="inFiveYears" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -520,70 +626,89 @@
                         <div class="row">
                             <div class="col-md-4 book-tile">
                                 <img src="{{url_for('static', filename='images/club-picks/in-five-years.png')}}"
-                                alt="In five years">
+                                    alt="In five years">
                                 <span>Oct '20 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">In Five Years</h3>
                                 <h5 class="fw-bold">Rebecca Serle</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>In Five Years is a striking, moving love story about Dannie Kohan, a high-powered corporate lawyer 
-                                    who has everything planned out. The story opens on the day she interviews for her dream job, nails 
+                                <p>In Five Years is a striking, moving love story about Dannie Kohan, a high-powered
+                                    corporate lawyer
+                                    who has everything planned out. The story opens on the day she interviews for her
+                                    dream job, nails
                                     it, and gets engaged to her longtime boyfriend—all according to her five-year plan.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Five-Years-Novel-Rebecca-Serle/dp/1982137444/ref=tmm_hrd_swatch_0?_
-                                    encoding=UTF8&qid=1623211037&sr=8-1" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Five-Years-Novel-Rebecca-Serle/dp/1982137444/ref=tmm_hrd_swatch_0?_
+                                    encoding=UTF8&qid=1623211037&sr=8-1" target="_blank" id="signup">Available on
+                                        Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p> After acing a job interview and accepting a marriage proposal, Dannie Kohan has had the perfect day. 
-                                    That is, until she awakens to find herself five years in the future with a completely different man.
-                                    Just one hour in that alternate reality shakes Dannie to her core. After all, highly ambitious Dannie 
-                                    and her boyfriend, David, have plotted out their lives in minute detail, and the sexy man in her 
-                                    dream—was it a dream?—is most certainly not in the script. Serle (The Dinner List, 2018) deftly spins 
-                                    these magical threads into Dannie’s perfectly structured life, leaving not only Dannie, but also the 
-                                    reader wondering whether Dannie time traveled or hallucinated. Her best friend, Bella, would delight 
-                                    in the story given that she thinks Dannie is much too straight-laced, and some spicy dreaming might 
-                                    push Dannie to find someone more passionate than David. Unfortunately, glamorous Bella is in Europe 
-                                    with her latest lover. Ever pragmatic, Dannie consults her therapist, who almost concurs that it was 
-                                    likely a dream, and throws herself into her work. Pleased to have landed the job at a prestigious 
-                                    law firm, Dannie easily loses her worries in litigation. Soon four and a half years have passed with 
-                                    no wedding date set, and Bella is back in the U.S. with a new man in her life. A man who turns out to 
-                                    be literally the man of Dannie’s dream. The sheer fact of Aaron Gregory’s existence forces Dannie to 
-                                    reevaluate her trust in the laws of physics as well as her decision to marry David, a decision that 
-                                    seems less believable with each passing day. And as the architecture of Dannie’s overplanned life 
-                                    disintegrates, Serle twists and twines the remnants of her dream into a surprising future.
+                                <p> After acing a job interview and accepting a marriage proposal, Dannie Kohan has had
+                                    the perfect day.
+                                    That is, until she awakens to find herself five years in the future with a
+                                    completely different man.
+                                    Just one hour in that alternate reality shakes Dannie to her core. After all, highly
+                                    ambitious Dannie
+                                    and her boyfriend, David, have plotted out their lives in minute detail, and the
+                                    sexy man in her
+                                    dream—was it a dream?—is most certainly not in the script. Serle (The Dinner List,
+                                    2018) deftly spins
+                                    these magical threads into Dannie’s perfectly structured life, leaving not only
+                                    Dannie, but also the
+                                    reader wondering whether Dannie time traveled or hallucinated. Her best friend,
+                                    Bella, would delight
+                                    in the story given that she thinks Dannie is much too straight-laced, and some spicy
+                                    dreaming might
+                                    push Dannie to find someone more passionate than David. Unfortunately, glamorous
+                                    Bella is in Europe
+                                    with her latest lover. Ever pragmatic, Dannie consults her therapist, who almost
+                                    concurs that it was
+                                    likely a dream, and throws herself into her work. Pleased to have landed the job at
+                                    a prestigious
+                                    law firm, Dannie easily loses her worries in litigation. Soon four and a half years
+                                    have passed with
+                                    no wedding date set, and Bella is back in the U.S. with a new man in her life. A man
+                                    who turns out to
+                                    be literally the man of Dannie’s dream. The sheer fact of Aaron Gregory’s existence
+                                    forces Dannie to
+                                    reevaluate her trust in the laws of physics as well as her decision to marry David,
+                                    a decision that
+                                    seems less believable with each passing day. And as the architecture of Dannie’s
+                                    overplanned life
+                                    disintegrates, Serle twists and twines the remnants of her dream into a surprising
+                                    future.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- Regretting you -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/regretting-you.png')}}"
-                        alt="Regretting you">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#regrettingYou">
-                    Sep '20 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="regrettingYou" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- Regretting you -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/regretting-you.png')}}" alt="Regretting you">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#regrettingYou">
+                    Sep '20 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="regrettingYou" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -591,68 +716,84 @@
                         <div class="row">
                             <div class="col-md-4 book-tile">
                                 <img src="{{url_for('static', filename='images/club-picks/regretting-you.png')}}"
-                                alt="Regretting you">
+                                    alt="Regretting you">
                                 <span>Sep '20 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">Regretting you</h3>
                                 <h5 class="fw-bold">Colleen Hoover</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>When tragedy strikes, a mother and daughter forge a new life. Morgan felt obligated to marry her 
-                                    high school sweetheart, Chris, when she got pregnant with their daughter, Clara. But she secretly 
-                                    got along much better with Chris' thoughtful best friend, Jonah, who was dating her sister, Jenny.
+                                <p>When tragedy strikes, a mother and daughter forge a new life. Morgan felt obligated
+                                    to marry her
+                                    high school sweetheart, Chris, when she got pregnant with their daughter, Clara. But
+                                    she secretly
+                                    got along much better with Chris' thoughtful best friend, Jonah, who was dating her
+                                    sister, Jenny.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Regretting-You-Colleen-Hoover/dp/1542016428/ref=sr_1_1?dchild=
-                                    1&keywords=regretting+you&qid=1623211371&sr=8-1" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Regretting-You-Colleen-Hoover/dp/1542016428/ref=sr_1_1?dchild=
+                                    1&keywords=regretting+you&qid=1623211371&sr=8-1" target="_blank"
+                                        id="signup">Available on Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>When tragedy strikes, a mother and daughter forge a new life. Morgan felt obligated to marry her 
-                                    high school sweetheart, Chris, when she got pregnant with their daughter, Clara. But she secretly 
-                                    got along much better with Chris’ thoughtful best friend, Jonah, who was dating her sister, Jenny. 
-                                    Now her life as a stay-at-home parent has left her feeling empty but not ungrateful for what she 
-                                    has. Jonah and Jenny eventually broke up, but years later they had a one-night stand and Jenny got 
-                                    pregnant with their son, Elijah. Now Jonah is back in town, engaged to Jenny, and working at the 
-                                    local high school as Clara’s teacher. Clara dreams of being an actress and has a crush on Miller, 
-                                    who plans to go to film school, but her father doesn't approve. It doesn’t help that Miller already 
-                                    has a jealous girlfriend who stalks him via text from college. But Clara and Morgan’s home life 
-                                    changes radically when Chris and Jenny are killed in an accident, revealing long-buried secrets and 
-                                    forcing Morgan to reevaluate the life she chose when early motherhood forced her hand. Feeling 
-                                    betrayed by the adults in her life, Clara marches forward, acting both responsible and rebellious as 
-                                    she navigates her teenage years without her father and her aunt, while Jonah and Morgan's relationship 
-                                    evolves in the wake of the accident. Front-loaded with drama, the story leaves plenty of room for the 
+                                <p>When tragedy strikes, a mother and daughter forge a new life. Morgan felt obligated
+                                    to marry her
+                                    high school sweetheart, Chris, when she got pregnant with their daughter, Clara. But
+                                    she secretly
+                                    got along much better with Chris’ thoughtful best friend, Jonah, who was dating her
+                                    sister, Jenny.
+                                    Now her life as a stay-at-home parent has left her feeling empty but not ungrateful
+                                    for what she
+                                    has. Jonah and Jenny eventually broke up, but years later they had a one-night stand
+                                    and Jenny got
+                                    pregnant with their son, Elijah. Now Jonah is back in town, engaged to Jenny, and
+                                    working at the
+                                    local high school as Clara’s teacher. Clara dreams of being an actress and has a
+                                    crush on Miller,
+                                    who plans to go to film school, but her father doesn't approve. It doesn’t help that
+                                    Miller already
+                                    has a jealous girlfriend who stalks him via text from college. But Clara and
+                                    Morgan’s home life
+                                    changes radically when Chris and Jenny are killed in an accident, revealing
+                                    long-buried secrets and
+                                    forcing Morgan to reevaluate the life she chose when early motherhood forced her
+                                    hand. Feeling
+                                    betrayed by the adults in her life, Clara marches forward, acting both responsible
+                                    and rebellious as
+                                    she navigates her teenage years without her father and her aunt, while Jonah and
+                                    Morgan's relationship
+                                    evolves in the wake of the accident. Front-loaded with drama, the story leaves
+                                    plenty of room for the
                                     mother and daughter to unpack their feelings and decide what’s next.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-             <!-- Stamped -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/stamped.png')}}"
-                        alt="Stamped">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#stamped">
-                    Aug '20 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="stamped" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- Stamped -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/stamped.png')}}" alt="Stamped">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#stamped">
+                    Aug '20 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="stamped" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -660,69 +801,89 @@
                         <div class="row">
                             <div class="col-md-4 book-tile">
                                 <img src="{{url_for('static', filename='images/club-picks/stamped.png')}}"
-                                alt="Stamped">
+                                    alt="Stamped">
                                 <span>Aug '20 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">Stamped</h3>
                                 <h5 class="fw-bold">Ibram X. Kendi, Jason Reynolds</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>Kendi's National Book Award-winning Stamped from the Beginning reveals the history of racist 
-                                    ideas in America, and inspires hope for an antiracist future. It takes you on a race journey 
-                                    from then to now, shows you why we feel how we feel, and why the poison of racism lingers.
+                                <p>Kendi's National Book Award-winning Stamped from the Beginning reveals the history of
+                                    racist
+                                    ideas in America, and inspires hope for an antiracist future. It takes you on a race
+                                    journey
+                                    from then to now, shows you why we feel how we feel, and why the poison of racism
+                                    lingers.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Stamped-from-Beginning-audiobook/dp/B01N27TR96/ref=sr_1_3?dchild=
-                                    1&keywords=stamped&qid=1623212531&sr=8-3" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Stamped-from-Beginning-audiobook/dp/B01N27TR96/ref=sr_1_3?dchild=
+                                    1&keywords=stamped&qid=1623212531&sr=8-3" target="_blank" id="signup">Available on
+                                        Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>Award-winning author Reynolds (Look Both Ways, 2019, etc.) presents a young readers’ version of 
-                                    American University professor Kendi’s (How To Be an Antiracist, 2019, etc.) Stamped From the 
-                                    Beginning (2016). This volume, which is “not a history book,” chronicles racist ideology, 
-                                    specifically anti-Blackness in the U.S., from its genesis to its pernicious manifestations in 
-                                    the present day. In an open, conversational tone, Reynolds makes it clear that anti-Black racist 
-                                    ideology in the U.S. has consistently relied on the erronious belief that African people (and 
-                                    Black people in general) are “dumb” and “savage,” ideas perpetuated through the written word, 
-                                    other media, and pseudo-science. Using separationist, assimilationist, and anti-racist historical 
-                                    figures, a direct line is drawn throughout U.S history from chattel slavery through the Civil War, 
-                                    Jim Crow, the civil rights era, the war on drugs, and #BlackLivesMatter, with plenty of little-known, 
-                                    compelling, and disturbing details inserted. Readers who want to truly understand how deeply embedded 
-                                    racism is in the very fabric of the U.S., its history, and its systems will come away educated and 
-                                    enlightened. It’s a monumental feat to chronicle in so few pages the history of not only anti-Black 
-                                    racism in the U.S., but also assimilationist and anti-racist thought as well. In the process it succeeds 
-                                    at connecting “history directly...to our lives as we live them right this minute.” Worthy of inclusion 
+                                <p>Award-winning author Reynolds (Look Both Ways, 2019, etc.) presents a young readers’
+                                    version of
+                                    American University professor Kendi’s (How To Be an Antiracist, 2019, etc.) Stamped
+                                    From the
+                                    Beginning (2016). This volume, which is “not a history book,” chronicles racist
+                                    ideology,
+                                    specifically anti-Blackness in the U.S., from its genesis to its pernicious
+                                    manifestations in
+                                    the present day. In an open, conversational tone, Reynolds makes it clear that
+                                    anti-Black racist
+                                    ideology in the U.S. has consistently relied on the erronious belief that African
+                                    people (and
+                                    Black people in general) are “dumb” and “savage,” ideas perpetuated through the
+                                    written word,
+                                    other media, and pseudo-science. Using separationist, assimilationist, and
+                                    anti-racist historical
+                                    figures, a direct line is drawn throughout U.S history from chattel slavery through
+                                    the Civil War,
+                                    Jim Crow, the civil rights era, the war on drugs, and #BlackLivesMatter, with plenty
+                                    of little-known,
+                                    compelling, and disturbing details inserted. Readers who want to truly understand
+                                    how deeply embedded
+                                    racism is in the very fabric of the U.S., its history, and its systems will come
+                                    away educated and
+                                    enlightened. It’s a monumental feat to chronicle in so few pages the history of not
+                                    only anti-Black
+                                    racism in the U.S., but also assimilationist and anti-racist thought as well. In the
+                                    process it succeeds
+                                    at connecting “history directly...to our lives as we live them right this minute.”
+                                    Worthy of inclusion
                                     in every home and in curricula and libraries everywhere.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- The Book of Longings -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/the-book-of-longings.png')}}"
-                        alt="The book of longings">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#theBookOfLongings">
-                    Jul '20 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="theBookOfLongings" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- The Book of Longings -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/the-book-of-longings.png')}}"
+                    alt="The book of longings">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#theBookOfLongings">
+                    Jul '20 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="theBookOfLongings" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -730,76 +891,102 @@
                         <div class="row">
                             <div class="col-md-4 book-tile">
                                 <img src="{{url_for('static', filename='images/club-picks/the-book-of-longings.png')}}"
-                                alt="The book of longings">
+                                    alt="The book of longings">
                                 <span>Jul '20 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">The Book of Longings</h3>
                                 <h5 class="fw-bold">Sue Monk Kidd</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>Grounded in meticulous research and written with a reverential approach to Jesus's life that focuses 
-                                    on his humanity, The Book of Longings is an inspiring, unforgettable account of one woman's bold 
-                                    struggle to realize the passion and potential inside her while living in a time, place, and culture 
+                                <p>Grounded in meticulous research and written with a reverential approach to Jesus's
+                                    life that focuses
+                                    on his humanity, The Book of Longings is an inspiring, unforgettable account of one
+                                    woman's bold
+                                    struggle to realize the passion and potential inside her while living in a time,
+                                    place, and culture
                                     devised to silence her.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Book-Longings-Sue-Monk-Kidd/dp/052542976X/ref=tmm_hrd_swatch_0?_
-                                    encoding=UTF8&qid=1623213838&sr=1-1" 
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Book-Longings-Sue-Monk-Kidd/dp/052542976X/ref=tmm_hrd_swatch_0?_
+                                    encoding=UTF8&qid=1623213838&sr=1-1" target="_blank" id="signup">Available on
+                                        Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>In Kidd’s (The Invention of Wings, 2014, etc.) feminist take on the New Testament, Jesus has a wife 
-                                    whose fondest longing is to write. Ana is the daughter of Matthias, head scribe to Herod Antipas, 
-                                    tetrarch of Galilee. She demonstrates an exceptional aptitude for writing, and Matthias, for a time, 
-                                    indulges her with reed pens, papyri, and other 16 C.E. office supplies. Her mother disapproves, but 
-                                    her aunt, Yaltha, mentors Ana in the ways of the enlightened women of Alexandria, from whence Yaltha, 
-                                    suspected of murdering her brutal husband, was exiled years before. Yaltha was also forced to give 
-                                    up her daughter, Chaya, for adoption. As Ana reaches puberty, parental tolerance of her nonconformity 
-                                    wanes, outweighed by the imperative to marry her off. Her adopted brother, Judas—yes, that Judas—is s
-                                    oon disowned for his nonconformity—plotting against Antipas. On the very day Ana, age 14, meets her 
-                                    prospective betrothed, the repellent Nathanial, in the town market, she also encounters Jesus, a young 
-                                    tradesman, to whom she’s instantly drawn. Their connection deepens after she encounters Jesus in the 
-                                    cave where she is concealing her writings about oppressed women. When Nathanial dies after his betrothal 
-                                    to Ana but before their marriage, Ana is shunned for insufficiently mourning him—and after refusing to 
-                                    become Antipas’ concubine, she is about to be stoned until Jesus defuses the situation with that famous 
-                                    admonition. She marries Jesus and moves into his widowed mother’s humble compound in Nazareth, accompanied 
-                                    by Yaltha. There, poverty, not sexism, prohibits her from continuing her writing—office supplies are 
-                                    expensive. Kidd skirts the issue of miracles, portraying Jesus as a fully human and, for the period, 
-                                    accepting husband—after a stillbirth, he condones Ana’s practice of herbal birth control. A structural 
-                                    problem is posed when Jesus’ active ministry begins—what will Ana’s role be? Problem avoided when, notified 
-                                    by Judas that Antipas is seeking her arrest, she and Yaltha journey to Alexandria in search of Chaya. In 
-                                    addition to depriving her of the opportunity to write the first and only contemporaneous gospel, removing 
+                                <p>In Kidd’s (The Invention of Wings, 2014, etc.) feminist take on the New Testament,
+                                    Jesus has a wife
+                                    whose fondest longing is to write. Ana is the daughter of Matthias, head scribe to
+                                    Herod Antipas,
+                                    tetrarch of Galilee. She demonstrates an exceptional aptitude for writing, and
+                                    Matthias, for a time,
+                                    indulges her with reed pens, papyri, and other 16 C.E. office supplies. Her mother
+                                    disapproves, but
+                                    her aunt, Yaltha, mentors Ana in the ways of the enlightened women of Alexandria,
+                                    from whence Yaltha,
+                                    suspected of murdering her brutal husband, was exiled years before. Yaltha was also
+                                    forced to give
+                                    up her daughter, Chaya, for adoption. As Ana reaches puberty, parental tolerance of
+                                    her nonconformity
+                                    wanes, outweighed by the imperative to marry her off. Her adopted brother,
+                                    Judas—yes, that Judas—is s
+                                    oon disowned for his nonconformity—plotting against Antipas. On the very day Ana,
+                                    age 14, meets her
+                                    prospective betrothed, the repellent Nathanial, in the town market, she also
+                                    encounters Jesus, a young
+                                    tradesman, to whom she’s instantly drawn. Their connection deepens after she
+                                    encounters Jesus in the
+                                    cave where she is concealing her writings about oppressed women. When Nathanial dies
+                                    after his betrothal
+                                    to Ana but before their marriage, Ana is shunned for insufficiently mourning him—and
+                                    after refusing to
+                                    become Antipas’ concubine, she is about to be stoned until Jesus defuses the
+                                    situation with that famous
+                                    admonition. She marries Jesus and moves into his widowed mother’s humble compound in
+                                    Nazareth, accompanied
+                                    by Yaltha. There, poverty, not sexism, prohibits her from continuing her
+                                    writing—office supplies are
+                                    expensive. Kidd skirts the issue of miracles, portraying Jesus as a fully human and,
+                                    for the period,
+                                    accepting husband—after a stillbirth, he condones Ana’s practice of herbal birth
+                                    control. A structural
+                                    problem is posed when Jesus’ active ministry begins—what will Ana’s role be? Problem
+                                    avoided when, notified
+                                    by Judas that Antipas is seeking her arrest, she and Yaltha journey to Alexandria in
+                                    search of Chaya. In
+                                    addition to depriving her of the opportunity to write the first and only
+                                    contemporaneous gospel, removing
                                     Ana from the main action destroys the novel’s momentum.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- The Book of Lost Friends -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/the-book-of-lost-friends.png')}}"
-                        alt="The book of lost friends">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#theBookOfLostFriends">
-                    Jun '20 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="theBookOfLostFriends" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- The Book of Lost Friends -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/the-book-of-lost-friends.png')}}"
+                    alt="The book of lost friends">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#theBookOfLostFriends">
+                    Jun '20 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="theBookOfLostFriends" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -807,71 +994,91 @@
                         <div class="row">
                             <div class="col-md-4 book-tile">
                                 <img src="{{url_for('static', filename='images/club-picks/the-book-of-lost-friends.png')}}"
-                                alt="The book of lost friends">
+                                    alt="The book of lost friends">
                                 <span>Jun '20 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">The Book of Lost Friends</h3>
                                 <h5 class="fw-bold">Lisa Wingate</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>The Book of Lost Friends is a dual-timeline book. The contemporary story focuses on Benny Silva, 
-                                    a first-year teacher in tiny, impoverished Augustine, Louisiana working there for five years as 
-                                    a way to pay off her student debts. Benny is young and enthusiastic, trying to motivate downtrodden 
+                                <p>The Book of Lost Friends is a dual-timeline book. The contemporary story focuses on
+                                    Benny Silva,
+                                    a first-year teacher in tiny, impoverished Augustine, Louisiana working there for
+                                    five years as
+                                    a way to pay off her student debts. Benny is young and enthusiastic, trying to
+                                    motivate downtrodden
                                     students in 1987.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Book-Lost-Friends-Novel/dp/1984819887/ref=tmm_hrd_swatch_0?_encoding=
-                                    UTF8&qid=1623220176&sr=1-1"
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Book-Lost-Friends-Novel/dp/1984819887/ref=tmm_hrd_swatch_0?_encoding=
+                                    UTF8&qid=1623220176&sr=1-1" target="_blank" id="signup">Available on Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>Bestselling author Lisa Wingate brings to life startling stories from actual “Lost Friends” 
-                                    advertisements that appeared in Southern newspapers after the Civil War, as newly freed slaves 
-                                    desperately searched for loved ones who had been sold away. Louisiana, 1875: In the tumultuous 
-                                    era of Reconstruction, three young women set off as unwilling companions on a perilous quest: 
-                                    Hannie, a freed slave; Lavinia, the pampered heir to a now destitute plantation; and Juneau Jane, 
-                                    Lavinia’s Creole half sister. Each carries private wounds and powerful secrets as they head for 
-                                    Texas, following roads rife with vigilantes and soldiers still fighting a war lost a decade before. 
-                                    For Lavinia and Juneau Jane, the journey is one of stolen inheritance and financial desperation, 
-                                    but for Hannie, torn from her mother and siblings before slavery’s end, the pilgrimage west 
-                                    reignites an agonizing question: Could her long-lost family still be out there? Beyond the swamps 
-                                    lie the limitless frontiers of Texas and, improbably, hope. Louisiana, 1987: For first-year teacher 
-                                    Benedetta Silva, a subsidized job at a poor rural school seems like the ticket to canceling her 
-                                    hefty student debt—until she lands in a tiny, out-of-step Mississippi River town. Augustine, Louisiana, 
-                                    is suspicious of new ideas and new people, and Benny can scarcely comprehend the lives of her 
-                                    poverty-stricken students. But amid the gnarled live oaks and run-down plantation homes lie the 
-                                    century-old history of three young women, a long-ago journey, and a hidden book that could change 
+                                <p>Bestselling author Lisa Wingate brings to life startling stories from actual “Lost
+                                    Friends”
+                                    advertisements that appeared in Southern newspapers after the Civil War, as newly
+                                    freed slaves
+                                    desperately searched for loved ones who had been sold away. Louisiana, 1875: In the
+                                    tumultuous
+                                    era of Reconstruction, three young women set off as unwilling companions on a
+                                    perilous quest:
+                                    Hannie, a freed slave; Lavinia, the pampered heir to a now destitute plantation; and
+                                    Juneau Jane,
+                                    Lavinia’s Creole half sister. Each carries private wounds and powerful secrets as
+                                    they head for
+                                    Texas, following roads rife with vigilantes and soldiers still fighting a war lost a
+                                    decade before.
+                                    For Lavinia and Juneau Jane, the journey is one of stolen inheritance and financial
+                                    desperation,
+                                    but for Hannie, torn from her mother and siblings before slavery’s end, the
+                                    pilgrimage west
+                                    reignites an agonizing question: Could her long-lost family still be out there?
+                                    Beyond the swamps
+                                    lie the limitless frontiers of Texas and, improbably, hope. Louisiana, 1987: For
+                                    first-year teacher
+                                    Benedetta Silva, a subsidized job at a poor rural school seems like the ticket to
+                                    canceling her
+                                    hefty student debt—until she lands in a tiny, out-of-step Mississippi River town.
+                                    Augustine, Louisiana,
+                                    is suspicious of new ideas and new people, and Benny can scarcely comprehend the
+                                    lives of her
+                                    poverty-stricken students. But amid the gnarled live oaks and run-down plantation
+                                    homes lie the
+                                    century-old history of three young women, a long-ago journey, and a hidden book that
+                                    could change
                                     everything.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- Transcendent Kingdom -->
-            <div class="col-md-3 col-sm-4 col-6">   
-                <div class="category-tile">
-                        <img src="{{url_for('static', filename='images/club-picks/transcendent-kingdom.png')}}"
-                        alt="Transcendent Kingdom">
-            <!-- Modal button -->
-                 <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#transcendentKingdom">
-                    May '20 pick
-                 </button>
                 </div>
             </div>
+        </div>
 
-            <!-- Modal -->
-                <div class="modal fade" id="transcendentKingdom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
+        <!-- Transcendent Kingdom -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/transcendent-kingdom.png')}}"
+                    alt="Transcendent Kingdom">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#transcendentKingdom">
+                    May '20 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="transcendentKingdom" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -879,81 +1086,172 @@
                         <div class="row">
                             <div class="col-md-4 book-tile">
                                 <img src="{{url_for('static', filename='images/club-picks/transcendent-kingdom.png')}}"
-                                alt="Transcendent Kingdom">
+                                    alt="Transcendent Kingdom">
                                 <span>May '20 pick</span>
                             </div>
                             <div class="col-md-8">
                                 <h3 class="fw-bold">Transcendent Kingdom</h3>
                                 <h5 class="fw-bold">Yaa Gyasi</h5><br>
                                 <h5 class="fw-bold">Synopsis</h5>
-                                <p>Transcendent Kingdom is a deeply moving portrait of a family of Ghanaian immigrants ravaged by 
-                                    depression and addiction and grief—a novel about faith, science, religion, love. Exquisitely 
-                                    written, emotionally searing, this is an exceptionally powerful follow-up to Gyasi's phenomenal 
+                                <p>Transcendent Kingdom is a deeply moving portrait of a family of Ghanaian immigrants
+                                    ravaged by
+                                    depression and addiction and grief—a novel about faith, science, religion, love.
+                                    Exquisitely
+                                    written, emotionally searing, this is an exceptionally powerful follow-up to Gyasi's
+                                    phenomenal
                                     debut.
                                 </p><br>
-                                 <p><a href="https://www.amazon.com/Transcendent-Kingdom-novel-Yaa-Gyasi/dp/0525658181/ref=sr_1_1?dchild
-                                    =1&keywords=transcendent+kingdom&qid=1623220689&s=books&sr=1-1"
-                                    target="_blank" id="signup">Available on Amazon</a></p>
+                                <p><a href="https://www.amazon.com/Transcendent-Kingdom-novel-Yaa-Gyasi/dp/0525658181/ref=sr_1_1?dchild
+                                    =1&keywords=transcendent+kingdom&qid=1623220689&s=books&sr=1-1" target="_blank"
+                                        id="signup">Available on Amazon</a></p>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="fw-bold">The Bookshelf review</h4><br>
-                                <p>Ascientist weighs the big questions that her private trauma bequeaths her. After Homegoing (2016) 
-                                    swept through seven generations, Gyasi’s wise second novel pivots toward intimacy. It unspools 
-                                    entirely in the voice of watchful, reticent, brilliant Gifty, 28, nearly finished with her 
-                                    doctorate in neuroscience at Stanford’s School of Medicine. Her formidable mother, a home health 
-                                    care aide, has plummeted into a second severe depression, and their family pastor has dispatched 
-                                    the limp woman toward Gifty via airplane from Huntsville, Alabama, “folding her up the way you 
-                                    would a jumpsuit.” The first episode, when Gifty was 11, arrived after an opiate overdose stole 
-                                    the life of 16-year-old Nana, the firstborn son and more cherished child. Both times the Ghanaian 
-                                    matriarch has crawled mutely into bed, but this time not before asking adult Gifty if she still 
-                                    prays. “No,” says Gifty, who turns her ontological questions on lab mice. She gets them addicted 
-                                    to Ensure and then opens their brains surgically, probing the neural pathways of recklessness, 
-                                    looking for clues to creating restraint. Gifty hopes to apply her results to “the species Homo 
-                                    Sapiens, the most complex animal, the only animal who believed he had transcended his Kingdom, 
-                                    as one of my high school biology teachers used to say.” This work, Gifty insists, has zero to 
-                                    do with her brother’s death. In 54 microchapters and precise prose, Gyasi creates an ache of 
-                                    recognition, especially for readers knowledgeable about the wreckage of addiction. Still, she 
-                                    leavens this nonlinear novel with sly humor, much more than in Homegoing, as the daughter of a 
-                                    traditional woman weighs what it means to walk in the world not quite a nonbeliever. The author 
-                                    is astute about childhood grandiosity and a pious girl’s deep desire to be good; she conveys in 
-                                    brief strokes the notched, nodding hook of heroin’s oblivion. In its wake, adult Gifty sits with 
-                                    the limits of both bench science and evangelical Christianity. Nowhere does Gyasi take a cheap 
-                                    shot. Instead, she writes a final chapter that gives readers a taste of hard-won deliverance.
+                                <p>A scientist weighs the big questions that her private trauma bequeaths her. After
+                                    Homegoing (2016)
+                                    swept through seven generations, Gyasi’s wise second novel pivots toward intimacy.
+                                    It unspools
+                                    entirely in the voice of watchful, reticent, brilliant Gifty, 28, nearly finished
+                                    with her
+                                    doctorate in neuroscience at Stanford’s School of Medicine. Her formidable mother, a
+                                    home health
+                                    care aide, has plummeted into a second severe depression, and their family pastor
+                                    has dispatched
+                                    the limp woman toward Gifty via airplane from Huntsville, Alabama, “folding her up
+                                    the way you
+                                    would a jumpsuit.” The first episode, when Gifty was 11, arrived after an opiate
+                                    overdose stole
+                                    the life of 16-year-old Nana, the firstborn son and more cherished child. Both times
+                                    the Ghanaian
+                                    matriarch has crawled mutely into bed, but this time not before asking adult Gifty
+                                    if she still
+                                    prays. “No,” says Gifty, who turns her ontological questions on lab mice. She gets
+                                    them addicted
+                                    to Ensure and then opens their brains surgically, probing the neural pathways of
+                                    recklessness,
+                                    looking for clues to creating restraint. Gifty hopes to apply her results to “the
+                                    species Homo
+                                    Sapiens, the most complex animal, the only animal who believed he had transcended
+                                    his Kingdom,
+                                    as one of my high school biology teachers used to say.” This work, Gifty insists,
+                                    has zero to
+                                    do with her brother’s death. In 54 microchapters and precise prose, Gyasi creates an
+                                    ache of
+                                    recognition, especially for readers knowledgeable about the wreckage of addiction.
+                                    Still, she
+                                    leavens this nonlinear novel with sly humor, much more than in Homegoing, as the
+                                    daughter of a
+                                    traditional woman weighs what it means to walk in the world not quite a nonbeliever.
+                                    The author
+                                    is astute about childhood grandiosity and a pious girl’s deep desire to be good; she
+                                    conveys in
+                                    brief strokes the notched, nodding hook of heroin’s oblivion. In its wake, adult
+                                    Gifty sits with
+                                    the limits of both bench science and evangelical Christianity. Nowhere does Gyasi
+                                    take a cheap
+                                    shot. Instead, she writes a final chapter that gives readers a taste of hard-won
+                                    deliverance.
                                 </p>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- You Should See Me in a Crown -->
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="category-tile">
+                <img src="{{url_for('static', filename='images/club-picks/you-should-see-me-in-a-crown.png')}}"
+                    alt="You should see me in a crown">
+                <!-- Modal button -->
+                <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#youShouldSeeMeInACrown">
+                    Apr '20 pick
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="youShouldSeeMeInACrown" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body about-book">
+                        <div class="row">
+                            <div class="col-md-4 book-tile">
+                                <img src="{{url_for('static', filename='images/club-picks/you-should-see-me-in-a-crown.png')}}"
+                                    alt="You should see me in a crown">
+                                <span>Apr '20 pick</span>
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="fw-bold">You Should See Me in a Crown</h3>
+                                <h5 class="fw-bold">Leah Johnson</h5><br>
+                                <h5 class="fw-bold">Synopsis</h5>
+                                <p>You Should See Me in a Crown is a debut young adult novel by Leah Johnson, published
+                                    by Scholastic
+                                    in June 2020. The story follows Liz Lighty, who hatches a plan to leave the 'small,
+                                    rich,
+                                    prom-obsessed midwestern town' she lives in because she feels 'too black, too poor,
+                                    too awkward'
+                                    to live her best life there.
+                                </p><br>
+                                <p><a href="https://www.amazon.com/You-Should-See-Me-Crown/dp/1338503294/ref=sr_1_1?dchild=1&keywords
+                                    =you+should+see+me+in+a+crown&qid=1623221331&s=books&sr=1-1" target="_blank"
+                                        id="signup">Available on Amazon</a></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="fw-bold">The Bookshelf review</h4><br>
+                                <p>A wallflower runs for prom queen. After being snubbed by her best friend, Jordan, in
+                                    favor of his
+                                    new football friends on the first day of high school, Liz Lighty felt acute shame
+                                    about being
+                                    herself and all the things that made her different: her height, being Black and
+                                    queer, and not
+                                    having enough money. She began wearing her hair pulled back, chose less colorful
+                                    clothing, and did
+                                    her best to blend in so no one would notice her. But now, as a senior, Liz has to
+                                    put herself in
+                                    the spotlight to secure her future. Because despite doing everything right—excellent
+                                    grades, solid
+                                    extracurriculars, and playing first-chair clarinet—she doesn’t win a much-needed
+                                    scholarship at her
+                                    dream school. When her brother convinces her that running for prom queen—with its
+                                    $10,000 scholarship
+                                    prize—is the answer, she enters the competition. The race for the crown gets
+                                    complicated when Liz falls
+                                    for one of the other competitors, Jordan tries to rekindle their friendship, and a
+                                    friend urges her to
+                                    change everything about herself in order to win. While the hullabaloo around prom
+                                    seems far-fetched, the
+                                    lead-up to the dance is pitch-perfect rom-com. Johnson does an excellent job of
+                                    portraying the anxiety
+                                    and internalized self-hatred from being different in a mostly White, affluent small
+                                    town. Liz and Jordan
+                                    are Black; supporting characters appear White by default.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                     </div>
                 </div>
-                </div>
-
-
-
-        
-         
-          
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="{{url_for('static', filename='images/club-picks/transcendent-kingdom.png')}}"
-                    alt="Transcendent Kingdom">
-                    <span>May '20 pick</span>
-                </div>  
             </div>
-            <div class="col-md-3 col-sm-4 col-6">
-                <div class="category-tile">
-                    <img src="{{url_for('static', filename='images/club-picks/you-should-see-me-in-a-crown.png')}}"
-                    alt="You should see me in a crown">
-                    <span>Apr '20 pick</span>
-                </div>  
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
+</div>
 
-    {% endblock %}
-
+{% endblock %}
