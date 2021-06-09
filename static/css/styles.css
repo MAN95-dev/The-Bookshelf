@@ -18,7 +18,9 @@ body {
   left: 35%;
 }
 
-.alert.success {background-color: #04AA6D;}
+.alert.success {
+    background-color: #04AA6D;
+}
 
 .closebtn {
   margin-left: 15px;
@@ -32,7 +34,7 @@ body {
 }
 
 .closebtn:hover {
-  color: black;
+    color: black;
 }
 /** Flash messages **/
 
@@ -162,8 +164,23 @@ footer p u:hover {
   height: 300px;
   width: 300px;
   background-color:pink;
-  margin-left: 90px;
+  margin-left: 0;
   text-align: center;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 300px solid #555;
 }
 
 .why-us h3{
