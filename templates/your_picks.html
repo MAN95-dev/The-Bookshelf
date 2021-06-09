@@ -5,19 +5,22 @@
     <h2 id="your-picks-title" class="text-center">{{ username }}'s picks</h2>
 </div>
 
+<section class="row">
 {% for your_picks in your_picks %}
 <div class="col-md-3 col-sm-4 col-6">
     <div class="category-tile">
         <a href="{{ url_for('your_picks', username=your_picks._id) }}"></a><img src="{{ your_picks.img_url }}"
             alt="{{ your_picks.book_name }}"></a>
-        <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <!-- Note:  data-bs-target="#book-{{ your_picks._id }}" -->
+        <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#book-{{ your_picks._id }}">
             {{ your_picks.created_by }}'s pick
         </button>
     </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Note:  id="book-{{ your_picks._id }}" -->
+<div class="modal fade" id="book-{{ your_picks._id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -53,5 +56,6 @@
 </div>
 </div>
 {% endfor %}
+</section>
 
 {% endblock %}
