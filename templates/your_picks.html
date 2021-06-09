@@ -8,7 +8,8 @@
 {% for your_picks in your_picks %}
 <div class="col-md-3 col-sm-4 col-6">
     <div class="category-tile">
-        <a href="{{ url_for('your_picks', username=your_picks._id) }}"></a><img src="{{ your_picks.img_url }}" alt="{{ your_picks.book_name }}"></a>
+        <a href="{{ url_for('your_picks', username=your_picks._id) }}"></a><img src="{{ your_picks.img_url }}"
+            alt="{{ your_picks.book_name }}"></a>
         <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
             {{ your_picks.created_by }}'s pick
         </button>
@@ -33,8 +34,7 @@
                         <h5>{{ your_picks.author_name }}</h5><br>
                         <h5>Synopsis</h5>
                         <p>{{ your_picks.synopsis }}</p><br>
-                        <p><a href="{{ your_picks.buy_url }}"
-                                target="_blank" id="signup">Available on Amazon</a></p>
+                        <p><a href="{{ your_picks.buy_url }}" target="_blank" id="signup">Available on Amazon</a></p>
                     </div>
                 </div>
                 <hr>

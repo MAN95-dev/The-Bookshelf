@@ -33,27 +33,28 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{url_for('home') }}">Who we are</a>
                         </li>
-                    {% if session.user %}
+                        {% if session.user %}
                         <li class="nav-item">
                             <a class="nav-link" href="{{url_for('club_picks') }}">Club picks</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('your_picks', username=session['user']) }}">Your picks</a>
+                            <a class="nav-link" href="{{ url_for('your_picks', username=session['user']) }}">Your
+                                picks</a>
                         </li>
-                          <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="{{url_for('add_book') }}">Add book</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url_for('logout') }}">Log out</a>
                         </li>
-                    {% else %}
+                        {% else %}
                         <li class="nav-item">
                             <a class="nav-link" href="{{url_for('login') }}">Log in</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url_for('register') }}">Register</a>
                         </li>
-                    {% endif %}
+                        {% endif %}
                     </ul>
                 </div>
             </div>
@@ -66,7 +67,7 @@
         {% if messages %}
         {% for message in messages %}
         <div class="alert success flashes">
-             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             <strong>{{ message }}</strong>
         </div>
         {% endfor %}
@@ -83,7 +84,8 @@
         <div class="container">
             <div class="row">
                 <div id="subscribe" class="col-md-6">
-                    <p class="text-center">Not a Bookshelf member?<a href="{{url_for('register') }}" id="signup"> Sign up here</a></p>
+                    <p class="text-center">Not a Bookshelf member?<a href="{{url_for('register') }}" id="signup"> Sign
+                            up here</a></p>
                 </div>
                 <div id="social-media" class="col-sm-6">
                     <a href="#" class="fa fa-facebook"></a>

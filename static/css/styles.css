@@ -155,6 +155,7 @@ footer p u:hover {
 .about-us {
     background-image: linear-gradient(#ffcc99, #ffff66);
     height: 530px;
+    width: 100%;
 }
 
 .square {

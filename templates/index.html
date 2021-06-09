@@ -1,53 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="container-fluid">
-        <div class="row about-us">
-            <div class="col-md-7 about">
-                <h2>Only The Best<br>Bookclub Ever!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                       et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                       aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                       dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                       deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="col-md-5 founder">
-                <img src="{{url_for('static', filename='images/founder.png')}}"
-                alt="Picture of the founder">
-            </div>
+<div class="container">
+    <div class="row about-us">
+        <div class="col-md-7 about">
+            <h2>Only The Best<br>Bookclub Ever!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia
+                deserunt mollit anim id est laborum.</p>
         </div>
-     <div class="row why-us">
-            <div class="col-md-12">
-                <h3>Why the bookshelf?</h3>
-            </div>
-            <div class="col-md-4 square">
-                <P>The lovers of story</P>
-            </div>
-             <div class="col-md-4 square">
-                <P>The lovers of story</P>
-            </div>
-             <div class="col-md-4 square">
-                <P>The lovers of story</P>
-            </div>
-    </div>
-    </div>
-
-<section>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div id="subscribe" class= "col-md-6">
-                <p>Not a Bookshelf member? <u>Sign up here</u></p>
-            </div>
-            <div id="social-media" class="col-sm-6" >
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>  
-                <a href="#" class="fa fa-twitter"></a> 
-            </div>
+        <div class="col-md-5 founder">
+            <img src="{{url_for('static', filename='images/founder.png')}}" alt="Picture of the founder">
         </div>
     </div>
-</footer>   
-</section>
+    <div class="row why-us">
+        <div class="col-md-12">
+            <h3>Why the bookshelf?</h3>
+        </div>
+        <div class="col-md-4 square">
+            <P>The lovers of story</P>
+        </div>
+        <div class="col-md-4 square">
+            <P>The lovers of story</P>
+        </div>
+        <div class="col-md-4 square">
+            <P>The lovers of story</P>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
-
