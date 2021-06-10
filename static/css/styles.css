@@ -168,66 +168,10 @@ footer p u:hover {
     text-align: center;
 }
 
-.why-us {
-    align-items: center;
-    -webkit-box-align: center;
-}
-
-.square {
-    height: 300px;
-    width: 300px;
-}
-
-.square-1 {
-    background-color: #C6ED8D;
-}
-
-.square-2 {
-    background-color: #7DE3C8;
-}
-
-.square-3 {
-    background-color: #8D96ED;
-}
-
-.square-4 {
-    background-color: #FC9E86;
-}
-
-
-.square-5 {
-    background-color: #85C9ED;
-}
-
-.square-6 {
-    background-color: #FFDFD3;
-}
-
-.circle {
-  height: 230px;
-  width: 230px;
-  background-color: #555;
-  border-radius: 50%;
-  margin-left: 20px;
-  margin-top: 35px;
-}
-
-.triangle-up {
-	width: 0;
-	height: 0;
-	border-left: 115px solid transparent;
-	border-right: 115px solid transparent;
-    border-bottom: 230px solid #555;
-    margin-left: 20px;
-    margin-top: 35px;
-}
-
-.small-square {
-    height: 230px;
-    width: 230px;
-    background-color: #555;
-    margin-left: 20px;
-    margin-top: 35px;
+.why-us img {
+    width: 80%;
+    height: 80%;
+    margin-left: 120px;
 }
 
 .donate-books {
@@ -250,6 +194,8 @@ footer p u:hover {
     margin-bottom: 80px;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
 }
 
 .donate-books-container {
