@@ -156,7 +156,6 @@ footer p u:hover {
 
 .about-us {
     background-image: linear-gradient(#ffcc99, #ffff66);
-    left: 0;
     height: 530px;
 }
 
@@ -187,11 +186,17 @@ footer p u:hover {
 
 .donate-books h5 {
     font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.donate-books h6 {
+    font-size: 25px;
+    margin-bottom: 0;
 }
 
 .donate-books p {
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     margin-left: 10px;
     margin-right: 10px;
     text-align: justify;
