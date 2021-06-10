@@ -160,36 +160,105 @@ footer p u:hover {
     height: 530px;
 }
 
-.square {
-  height: 300px;
-  width: 300px;
-  background-color:pink;
-  margin-left: 0;
-  text-align: center;
-}
-
-.circle {
-  height: 200px;
-  width: 200px;
-  background-color: #555;
-  border-radius: 50%;
-}
-
-.triangle-up {
-	width: 0;
-	height: 0;
-	border-left: 150px solid transparent;
-	border-right: 150px solid transparent;
-	border-bottom: 300px solid #555;
-}
-
-h3{
+.why-us h3{
     margin-top: 60px;
     margin-bottom: 60px;
     font-size: 50px;
     font-family: 'RocknRoll One', sans-serif;
     text-align: center;
 }
+
+.why-us {
+    align-items: center;
+    -webkit-box-align: center;
+}
+
+.square {
+    height: 300px;
+    width: 300px;
+}
+
+.square-1 {
+    background-color: #C6ED8D;
+}
+
+.square-2 {
+    background-color: #7DE3C8;
+}
+
+.square-3 {
+    background-color: #8D96ED;
+}
+
+.square-4 {
+    background-color: #FC9E86;
+}
+
+
+.square-5 {
+    background-color: #85C9ED;
+}
+
+.square-6 {
+    background-color: #FFDFD3;
+}
+
+.circle {
+  height: 230px;
+  width: 230px;
+  background-color: #555;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 115px solid transparent;
+	border-right: 115px solid transparent;
+    border-bottom: 230px solid #555;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.small-square {
+    height: 230px;
+    width: 230px;
+    background-color: #555;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.donate-books {
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.donate-books h3 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 50px;
+}
+
+.donate-books h5 {
+    font-size: 30px;
+}
+
+.donate-books p {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.donate-books-container {
+    background-color: #F5F5F5;
+    margin-top: 100px;
+}
+
+
+
 
 /** End of Who we are **/
 
