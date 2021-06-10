@@ -3,7 +3,6 @@ body {
     font-size: 18px;
     color: black;
     font-family: 'Roboto', sans-serif;
-    width: 100%;
 }
 
 /** Flash messages **/
@@ -133,7 +132,6 @@ footer p u:hover {
     height: 350px;
     width: 300px;
     border-radius: 50%;
-
 }
 
 .about {
@@ -208,10 +206,9 @@ footer p u:hover {
     background-color: #F5F5F5;
     margin-top: 100px;
 }
-
 /** End of Who we are **/
 
-/** Club picks page **/
+/** Club picks  **/
 .responsive {
   width: 100%;
   height: auto;
@@ -247,7 +244,6 @@ footer p u:hover {
     margin-left: 40px;
     margin-right: 40px;
 }
-
 /** End of Club picks page **/
 
 /** Your picks page **/
@@ -261,7 +257,7 @@ footer p u:hover {
 }
 /** End of Your picks page **/
 
-/** Login page **/
+/** Login / Register page **/
 .myform {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -318,7 +314,7 @@ footer p u:hover {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
-/** End of Login page **/
+/** End of Login / Register page **/
 
 /** Large devices only **/
 @media (min-width: 1200px) {
