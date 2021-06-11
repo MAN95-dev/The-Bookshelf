@@ -54,7 +54,7 @@
                         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
                         {% if session.user|lower == your_picks.created_by|lower %}
                             <a class="btn btn-warning" href="{{ url_for('edit_book', your_picks_id=your_picks._id) }}" role="button">Edit</a>
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>  
+                            <a class="btn btn-danger" href="{{ url_for('delete_book', your_picks_id=your_picks._id) }}" role="button">Delete</a>
                         {% endif %}
                 </div>
             </div>

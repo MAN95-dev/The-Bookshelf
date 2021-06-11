@@ -149,6 +149,13 @@ def edit_book(your_picks_id):
     return render_template("edit_book.html", your_picks=your_picks)
 
 
+@app.route("/delete_book/<your_picks_id>")
+def delete_book(your_picks_id):
+    mongo.db.your_picks.remove({"_id": ObjectId(your_picks_id)})
+    flash("Book Successfully Deleted")
+    return redirect(url_for("your_picks", username=session["user"]))
+
+
 @app.route("/logout")
 def logout():
     # remove user from session cookie
