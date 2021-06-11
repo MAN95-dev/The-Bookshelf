@@ -130,7 +130,7 @@ def add_book():
 
 
 @app.route("/edit_book/<your_picks_id>", methods=["GET", "POST"])
-def edit_task(your_picks_id):
+def edit_book(your_picks_id):
     your_picks = mongo.db.your_picks.find_one({"_id": ObjectId(your_picks_id)})
     return render_template("edit_book.html", your_picks=your_picks)
 
