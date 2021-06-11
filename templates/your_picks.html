@@ -11,7 +11,7 @@
         <div class="category-tile">
             <a href="{{ url_for('your_picks', username=your_picks._id) }}"></a><img src="{{ your_picks.img_url }}"
                 alt="{{ your_picks.book_name }}"></a>
-     <!-- Modal button -->
+            <!-- Modal button -->
             <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
                 data-bs-target="#book-{{ your_picks._id }}">
                 {{ your_picks.created_by }}'s pick
@@ -51,16 +51,42 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
-                        {% if session.user|lower == your_picks.created_by|lower %}
-                            <a class="btn btn-warning" href="{{ url_for('edit_book', your_picks_id=your_picks._id) }}" role="button">Edit</a>
-                            <a class="btn btn-danger" href="{{ url_for('delete_book', your_picks_id=your_picks._id) }}" role="button">Delete</a>
-                        {% endif %}
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
+                    {% if session.user|lower == your_picks.created_by|lower %}
+                    <a class="btn btn-warning" href="{{ url_for('edit_book', your_picks_id=your_picks._id) }}"
+                        role="button">Edit</a>
+                    <!-- Modal button for Delete Book modal -->
+                    <button class="btn btn-danger" data-bs-target="#modal-delete" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Delete</button>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
     </div>
+    <!-- Close Modal -->
+
+    <!-- Modal for Delete Book -->
+    <div class="modal fade" id="modal-delete" tabindex="-1" aria-labelledby="modal-delete-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-delete-label">Delete Book</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete this book?</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-block mybtn btn-secondary "
+                        href="{{ url_for('your_picks', username=session['user']) }}" role="button">Cancel</a>
+                    <a class="btn btn-block mybtn btn-danger"
+                        href="{{ url_for('delete_book', your_picks_id=your_picks._id) }}" role="button">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Close Modal -->
     {% endfor %}
 </section>
 
