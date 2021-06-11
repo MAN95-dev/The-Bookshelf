@@ -83,7 +83,8 @@ As a visitor to The Bookshelf website I expect/want/need:
 
 2. The site to be laid out in a way that is easy to navigate, so that I can find what I need. 
 
-3. The site to be responsive and navigable for various device sizes; desktop, tablet, and phone. For the content to look good on all of the devices.
+3. The site to be responsive and navigable for various device sizes; desktop, tablet, and phone. For the content to look good 
+   on all of the devices.
 
 4. To learn more about The Bookshelf. 
 
@@ -99,4 +100,47 @@ As a visitor to The Bookshelf website I expect/want/need:
 
 10. To be notified that I have logged out of my account. 
 
+## Design Choices
+
+The Bookshelf has a very relaxed and fun feel to it, with emphasis on displaying books in an easy to see manner. The following 
+design choices were made bearing this in mind:
+
+### Fonts
+- The primary font 'exo' was chosen to be the main text of this site as it is simple, and looks professional. 
+
+- The secondary font 'Roboto' was chosen for the main headings as it is very popular, looks professional, and styles well in both 
+lower and uppercase.
+
+### Icons
+- Very few icons were used, as to avoid overcrowding. 
+- The **envelope** icon was placed next to the site owners email address to make it stand out, and to make it's purpose clear when 
+  doing a quick glance.
+- The **phone** icon was placed next to the site owners phone number to make it standout, and to make it's purpose clear when doing 
+  a quick glance. 
+- The **Facebook logo** icon, **Instagram logo** icon, **LinkedIn logo** icon, and **GitHub logo** icon are included in the footer 
+  to lead visitors to the site owners social media accounts.
+
+### Colours
+- bright pink: #FF1493
+- purple: #FF00FF
+- green: #32CD32
+- bright green:#00FF00
+- blue: #00BFFF
+- bright blue: #40CCFF
+- white: #f4f4f4
+
+- The bright contrasting colors were chosen for this website because they standout on the dark background, which helps highlight 
+  important information. The bright colors also add an element of fun to the website. 
+
+## Wireframes
+
+These wireframes were created using [Balsamiq](https://balsamiq.com/) during the design and planning process for this project. 
+
+*[Who we are](/static/docs/wireframe-who-we-are.png)
+*[Log in](/static/docs/wireframe-log-in.png)
+*[Register](/static/docs/wireframe-register.png)
+*[Club picks](/static/docs/wireframe-club-picks.png)
+*[Your picks](/static/docs/wireframe-your-picks.png)
+*[Add book](/static/docs/wireframe-add-book.png)
+*[Log out](/static/docs/wireframe-log-out.png)
 
