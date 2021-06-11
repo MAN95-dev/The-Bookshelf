@@ -2,7 +2,7 @@
 third project for the Code Institute Full Stack Web Development diploma. The purpose of The Bookshelf is to be an online book club 
 that allows members to view The Bookshelf’s monthly recommendations, as well as provide and share book recommendations of the users 
 own liking. The website is designed to share literary experiences, specifically for those looking for book suggestions and wanting to 
-share their own books that they have enjoyed. 
+share their own books that they have read and enjoyed. 
 
 ## Table of Contents
 1. [UX](#ux)
@@ -65,14 +65,16 @@ User goals are:
 - To join an online book club. 
 - Find new reading material via the book club. 
 - Share books that I have enjoyed with other book club members. 
+- Share reviews about the books I have read. 
 - To be able to add, edit, and delete books on the website. 
 - Be able to navigate the website easily and view detailed information on books. 
 
 ### The Bookshelf’s Goals
 
 The goals of The Bookshelf are:
-- Provide a platform where users can find books recommendations via the book club and its members. 
+- Provide a platform where users can find book recommendations via the book club and its members. 
 - For book club members to be able to add, edit, and delete books that they would like to share. 
+- Provide a platform for book club members to share reviews about the books they would like to add. 
 - For book club members to be able to view books in detail, including a purchase link. 
 
 ## User Stories
@@ -92,13 +94,17 @@ As a visitor to The Bookshelf website I expect/want/need:
 
 6. To be able to click on books for further information about them. 
 
-7. A purchase link to be provided for each book.
+7. A purchase link to be provided for each book, in the event that I would like to buy it. 
 
 8. To be able to add, edit, and delete books that I would like to share with others. 
 
-9. To be able to log in and out with ease. 
+9. To be able to write reviews about the books I would like to share. 
 
-10. To be notified that I have logged out of my account. 
+10. To be able to log in and out with ease. 
+
+11. To be notified that I have logged in or out of my account. 
+
+12. To be notified about changes that are made, inlcluding adding, editing, and deleting books. 
 
 ## Design Choices
 
