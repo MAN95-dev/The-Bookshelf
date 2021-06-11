@@ -144,3 +144,89 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 *[Add book](/static/docs/wireframe-add-book.png)
 *[Log out](/static/docs/wireframe-log-out.png)
 
+# Features
+ 
+## Existing Features
+
+### Elements on every page
+
+#### Navbar
+- The navbar features on every page. 
+
+- The navigation bar features the website name ‘The’ Bookshelf on the far left, and website pages on the far right which include Who we are, Club picks, Your picks, Add book, and Log out when logged in as a user.  When not logged in the navigation bar only displays Who we are, Log in, and Register. 
+
+- **In desktop view** on the left side of the navbar is the name of the website ‘The ‘Bookshelf’. On the right side of the navbar are the links to the website pages. 
+
+- **In tablet and mobile view** the website name name remains on the left side of the navigation bar, where users would expect it to be. The burger icon which displays the full navigation menu is on the far right.
+
+#### Footer
+
+- The footer features on every page. 
+
+- The footer features the site owners email address, phone number, and links to social media accounts. 
+
+- The footer features links to the site owners social media accounts for Facebook, Instagram, LinkedIn, and GitHub. 
+
+- The content is displayed in white, when the user hovers over a link, the text turns black and the background turns white.
+
+### Who we are
+
+![Home page](/assets/img/resume-website/home.png)
+
+**Introdcution**
+- Below the navbar is a circular profile picture and next to that is a description of the site owner. 
+- Below the description are three buttons 'My Skills', 'My Porfolio', and 'Lets connect'.
+- 'My Skills' takes you to the Resume page. 
+- 'My Portfolio' takes you to the Projects page.
+- 'Lets Connect' takes you to the Contact page. 
+
+
+**Three reasons to hire**
+- Below the three buttons are three blocks containing 'Skills', 'Best Practice', and 'Experience'. 
+- 'Skills' includes the different languages the site owner is proficient in. 
+- 'Best practice' includes coding best practices by the site owner.
+- 'Experience' provides a very brief summary of the site owners work experience. 
+
+### Resume Page
+
+![Resume page](/assets/img/resume-website/resume.png)
+
+**My languages**
+- This section includes languages and frameworks that the site owner is proficient in, including HTML/CSS, Java/jQuery/ Python/Django. 
+
+**Education**
+- This section gives the educational background of the site owner. 
+- It includes three different insertions of different content studied at different universities. 
+- All information is displayed in a column alongside experience. 
+
+**Experience**
+- This section displays the site owners work experience. 
+- It includes three different jobs and details what the role included. 
+- All information is displayed in a column alongside education.
+
+### Project Page
+
+![Projects page](/assets/img/resume-website/project.png)
+
+- Includes three different projects completed by the site owner, 'Resume', 'Love Running', and 'Coders Coffeehouse'. 
+- Each project includes an image of the project and a brief description of the project.  
+- The projects are seperated by solid lines, creating a row for each project. 
+
+### Contact page
+
+![Contact page](/assets/img/resume-website/contact.png)
+
+- The contact page provides a contact form for the user to get in touch with the site owner. 
+- The contact form includes Name, Email, and Your Message that you would like to leave. 
+- There is a green 'Send Message' button below to submit the completed contact form. 
+
+## Features for Future Releases
+
+1. **Chatbox for potential clients**
+    - Having a chatbox on the Contact page, that allows people to chat with you and leave you messages. 
+2. **More projects added to the project page**
+    - Once more projects have been completed, adding those to the Projects page.
+    - Each project having a link to the live project. 
+3. **Review page for clients to add reviews**
+    - A review page that allows previous clients to add review about the work done for them and how satisfied they are with the final product. 
+    - Possibly a star rating. 
