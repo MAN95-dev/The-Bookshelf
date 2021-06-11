@@ -74,3 +74,29 @@ The goals of The Bookshelf are:
 - Provide a platform where users can find books recommendations via the book club and its members. 
 - For book club members to be able to add, edit, and delete books that they would like to share. 
 - For book club members to be able to view books in detail, including a purchase link. 
+
+## User Stories
+
+As a visitor to The Bookshelf website I expect/want/need:
+
+1. To be able to easily find the information I am looking for, the layout needs to make sense so that I am not put off. 
+
+2. The site to be laid out in a way that is easy to navigate, so that I can find what I need. 
+
+3. The site to be responsive and navigable for various device sizes; desktop, tablet, and phone. For the content to look good on all of the devices.
+
+4. To learn more about The Bookshelf. 
+
+5. To be able to connect to The Bookshelf’s social media accounts. 
+
+6. To be able to click on books for further information about them. 
+
+7. A purchase link to be provided for each book.
+
+8. To be able to add, edit, and delete books that I would like to share with others. 
+
+9. To be able to log in and out with ease. 
+
+10. To be notified that I have logged out of my account. 
+
+
