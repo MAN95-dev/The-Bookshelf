@@ -108,23 +108,26 @@ As a visitor to The Bookshelf website I expect/want/need:
 
 ## Design Choices
 
-The Bookshelf has a very relaxed and fun feel to it, with emphasis on displaying books in an easy to see manner. The following 
-design choices were made bearing this in mind:
+The Bookshelf has a fun feel to it, with emphasis on displaying books in an easy to read manner. The following design choices were 
+made bearing this in mind:
 
 ### Fonts
-- The primary font 'exo' was chosen to be the main text of this site as it is simple, and looks professional. 
+- The primary font 'Roboto' was chosen to be the main text of this site as it is easy to read, looks professional, and goes well 
+  with the secondary font. 
 
-- The secondary font 'Roboto' was chosen for the main headings as it is very popular, looks professional, and styles well in both 
-lower and uppercase.
+- The secondary font 'Rocknroll One' was chosen for the headings as it looks fun, and is easy to read. 
 
 ### Icons
 - Very few icons were used, as to avoid overcrowding. 
-- The **envelope** icon was placed next to the site owners email address to make it stand out, and to make it's purpose clear when 
-  doing a quick glance.
-- The **phone** icon was placed next to the site owners phone number to make it standout, and to make it's purpose clear when doing 
-  a quick glance. 
-- The **Facebook logo** icon, **Instagram logo** icon, **LinkedIn logo** icon, and **GitHub logo** icon are included in the footer 
-  to lead visitors to the site owners social media accounts.
+- The following icons were used in [Add book]() page to emphasize each sections purpose:        
+   - The **book** icon was placed next to 'Title'. 
+   - The **user** icon was placed next to 'Author'.
+   - The **file image** icon was placed next to 'Image URL'. 
+   - The **credit card** icon was placed next to 'Amazon store URL'. 
+   - The **comment** icon was placed next to 'Synopsis'. 
+   - The **pencil** icon was placed next to 'Your review'. 
+- The **Facebook logo** icon, **Instagram logo** icon, **Twitter logo** icon, are included in the footer to lead visitors to The 
+  Bookshelf's social media accounts.
 
 ### Colours
 - bright pink: #FF1493
