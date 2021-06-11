@@ -56,7 +56,7 @@
                     <a class="btn btn-warning" href="{{ url_for('edit_book', your_picks_id=your_picks._id) }}"
                         role="button">Edit</a>
                     <!-- Modal button for Delete Book modal -->
-                    <button class="btn btn-danger" data-bs-target="#modal-delete" data-bs-toggle="modal"
+                    <button class="btn btn-danger" data-bs-target="#modal-delete{{ your_picks._id }}" data-bs-toggle="modal"
                         data-bs-dismiss="modal">Delete</button>
                     {% endif %}
                 </div>
@@ -67,7 +67,7 @@
     <!-- Close Modal -->
 
     <!-- Modal for Delete Book -->
-    <div class="modal fade" id="modal-delete" tabindex="-1" aria-labelledby="modal-delete-label" aria-hidden="true">
+    <div class="modal fade" id="modal-delete{{ your_picks._id }}" tabindex="-1" aria-labelledby="modal-delete-label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
