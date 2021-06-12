@@ -144,13 +144,13 @@ made bearing this in mind:
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the design and planning process for this project. 
 
-*[Who we are](/static/images/wireframes/wireframe-who-we-are.png)
-*[Log in](/static/docs/wireframe-log-in.png)
-*[Register](/static/docs/wireframe-register.png)
-*[Club picks](/static/docs/wireframe-club-picks.png)
-*[Your picks](/static/docs/wireframe-your-picks.png)
-*[Add book](/static/docs/wireframe-add-book.png)
-*[Log out](/static/docs/wireframe-log-out.png)
+- [Who we are](/static/images/wireframes/wireframe-who-we-are.png)
+- [Log in](/static/images/wireframes/wireframe-log-in.png)
+- [Register](/static/images/wireframes/wireframe-register.png)
+- [Club picks](/static/images/wireframes/wireframe-club-picks.png)
+- [Your picks](/static/images/wireframes/wireframe-your-picks.png)
+- [Add book](/static/images/wireframes/wireframe-add-book.png)
+- [Log out](/static/images/wireframes/wireframe-log-out.png)
 
 # Features
  
@@ -159,23 +159,32 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 ### Elements on every page
 
 #### Navbar
-- The navbar features on every page. 
 
-- The navigation bar features the website name ‘The’ Bookshelf on the far left, and website pages on the far right which include Who we are, Club picks, Your picks, Add book, and Log out when logged in as a user.  When not logged in the navigation bar only displays Who we are, Log in, and Register. 
+![Navbar](/static/images/navbar.png)
 
-- **In desktop view** on the left side of the navbar is the name of the website ‘The ‘Bookshelf’. On the right side of the navbar are the links to the website pages. 
+- The navbar features on every page. It is bright, with a mixture of two colours, creating an ombre effect. 
 
-- **In tablet and mobile view** the website name name remains on the left side of the navigation bar, where users would expect it to be. The burger icon which displays the full navigation menu is on the far right.
+- **In desktop view**  The navigation bar features the website name ‘The’ Bookshelf' on the far left, and website pages on the far right.
+  
+- A user who is logged in will see the options of Who we are, Club picks, Your picks, Add book, and Log out. 
+
+- A user or visitor who is not logged in will see the options of Who we are, Log in, and Register. 
+
+- **In desktop view** 
+- **In tablet and mobile view** 
 
 #### Footer
 
-- The footer features on every page. 
+![Footer](/static/images/footer.png)
 
-- The footer features the site owners email address, phone number, and links to social media accounts. 
+- The footer features on every page. It is deliberatly large and bright to attract visitors to sign up and become members and/or visit 
+  The Bookshelf's social media pages. 
 
-- The footer features links to the site owners social media accounts for Facebook, Instagram, LinkedIn, and GitHub. 
+- The footer includes a tag line 'Not a Bookshelf member? Sign up here' with a clickable link that takes the user to the register page. 
+  This is located on the left hand side of the footer.  
 
-- The content is displayed in white, when the user hovers over a link, the text turns black and the background turns white.
+- The footer features links to The Bookshelf's social media accounts for Facebook, Instagram, and Twitter. These icons are located
+  on the right hand side of the footer. 
 
 ### Who we are
 
