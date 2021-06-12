@@ -332,9 +332,11 @@ To allow you to access all functionality on the site locally, ensure you have cr
 Please click the links above for documentation on how to set these up and retrieve the necessary environment variables.
 
 ### Instructions
-1. Save a copy of the github repository located at https://github.com/AJGreaves/thehouseofmouse by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
+1. Save a copy of the github repository located at https://github.com/MAN95-dev/the-bookshelf by clicking the "download zip" button at 
+   the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the 
+   repository with the following command.
     ```
-    git clone https://github.com/AJGreaves/thehouseofmouse
+    git clone https://github.com/MAN95-dev/the-bookshelf
     ```
 
 2. Open your preferred IDE, open a terminal session in the unzip folder or cd to the correct location.
@@ -343,13 +345,15 @@ Please click the links above for documentation on how to set these up and retrie
     ```
     python -m .venv venv
     ```  
-_NOTE: The `python` part of this command and the ones in other steps below assumes  you are working with a windows operating system. Your Python command may differ, such as `python3` or `py`_
+_NOTE: The `python` part of this command and the ones in other steps below assumes  you are working with a windows operating system. 
+Your Python command may differ, such as `python3` or `py`_
 
 4. Activate the .venv with the command:
     ```
     .venv\Scripts\activate 
     ```
-_Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further instructions._
+_Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](
+    https://docs.python.org/3/library/venv.html) for further instructions._
 
 5. If needed, Upgrade pip locally with
     ```
@@ -363,39 +367,41 @@ _Again this **command may differ depending on your operating system**, please ch
 
 7. Set up the following environment variables within your IDE. 
 
-    - If using VSCode, locate the `settings.json` file within the .vscode directory and add your environment variables as below. Do not forget to restart your machine to activate your environment variables or your code will not be able to see them: 
+    - If using VSCode, locate the `settings.json` file within the .vscode directory and add your environment variables as below. 
+      Do not forget to restart your machine to activate your environment variables or your code will not be able to see them: 
 
     ```json
     "terminal.integrated.env.windows": {
         "HOSTNAME": "<enter hostname here>",
         "DEV": "1",
-        "SECRET_KEY": "<enter key here>",
-        "STRIPE_PUBLISHABLE": "<enter key here>",
-        "STRIPE_SECRET": "<enter key here>",
-        "EMAILJS_USER_ID": "<enter key here>",
-        "STRIPE_SUCCESS_URL": "<enter url here>",
-        "STRIPE_CANCEL_URL": "<enter url here>",
-        "AWS_ACCESS_KEY_ID": "<enter key here>",
-        "AWS_SECRET_ACCESS_KEY": "<enter key here>",
-        "AWS_STORAGE_BUCKET_NAME": "<enter bucket name here>",
+        "IP": "<your IP>",
+        "MONGO_DBNAME": "<your database name on MongoDB>",
+        "MONGO_URI": "<your URI to your MongoDB database>",
+        "PORT": "<your port>",
+        "SECRET_KEY": "<your secret key>" 
     }
     ```
 
-    - If using an IDE that includes a `bashrc` file, open this file and enter all the environment variables listed above using the following format: 
+    - If using an IDE that includes a `bashrc` file, open this file and enter all the environment variables listed above using the 
+      following format: 
     ```
     HOSTNAME="<enter key here>"
     ```
     - `HOSTNAME` should be the local address for the site when running within your own IDE.
-    - `DEV` environment variable is set only within the development environment, it does not exist in the deployed version, making it possible to have different settings for the two environments. For example setting DEBUG to True only when working in development and not on the deployed site.
+    - `DEV` environment variable is set only within the development environment, it does not exist in the deployed version, making it 
+      possible to have different settings for the two environments. For example setting DEBUG to True only when working in development 
+      and not on the deployed site.
 
-8. If you have restarted your machine to activate your environment variables, do not forget to reactivate your virtual environment with the command used at step 4.
+8. If you have restarted your machine to activate your environment variables, do not forget to reactivate your virtual environment with 
+   the command used at step 4.
 
 9. Migrate the admin panel models to create your database template with the terminal command
     ```
     python manage.py migrate
     ```
 
-10. Create your superuser to access the django admin panel and database with the following command, and then follow the steps to add your admin username and password:
+10. Create your superuser to access the django admin panel and database with the following command, and then follow the steps to add your 
+    admin username and password:
     ```
     python manage.py createsuperuser
     ```
@@ -405,14 +411,15 @@ _Again this **command may differ depending on your operating system**, please ch
     python manage.py runserver
     ```
 
-12. Once the program is running, go to the local link provided and add `/admin` to the end of the ur. Here log in with your superuser account and create instances of ShippingDestination and Product within the new database.
+12. Once the program is running, go to the local link provided and add `/admin` to the end of the ur. Here log in with your superuser 
+    account and create instances of ShippingDestination and Product within the new database.
 
 13. Once instances of these items exist in your database your local site will run as expected.
 
 
 ## Heroku Deployment
 
-To deploy The House of Mouse webshop to heroku, take the following steps:
+To deploy The Bookshelf website to heroku, take the following steps:
 
 1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
 
@@ -420,7 +427,8 @@ To deploy The House of Mouse webshop to heroku, take the following steps:
 
 3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
 
-3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to whichever is applicable for your location.
+3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. 
+   Give it a name and set the region to whichever is applicable for your location.
 
 4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
 
@@ -432,30 +440,23 @@ To deploy The House of Mouse webshop to heroku, take the following steps:
 
 | Key | Value |
 --- | ---
-AWS_ACCESS_KEY_ID | `<your secret key>`
-AWS_SECRET_ACCESS_KEY | `<your secret key>`
-AWS_STORAGE_BUCKET_NAME | `<your AWS S3 bucket name>`
-DATABASE_URL | `<your postgres database url>`
-EMAILJS_USER_ID | `<your secret key>`
-HOSTNAME | `<your heroku app hostname>`
+IP | `<your IP>`
+MONGO_DBNAME | `<your database name on MongoDB>`
+MONGO_URI | `<your URI to your MongoDB database>`
+PORT | `<your port>`
 SECRET_KEY | `<your secret key>`
-STRIPE_CANCEL_URL | `<link to all-products page in your app>`
-STRIPE_PUBLISHABLE | `<your secret key>`
-STRIPE_SECRET | `<your secret key>`
-STRIPE_SUCCESS_URL | `<link to checkout/confirm page in your app>`
 
 8. From the command line of your local IDE:
     - Enter the heroku postres shell 
     - Migrate the database models 
     - Create your superuser account in your new database
     
-     Instructions on how to do these steps can be found in the [heroku devcenter documentation](https://devcenter.heroku.com/articles/heroku-postgresql).
+     Instructions on how to do these steps can be found in the 
+     [heroku devcenter documentation](https://devcenter.heroku.com/articles/heroku-postgresql).
 
 9. In your heroku dashboard, click "Deploy". Scroll down to "Manual Deploy", select the master branch then click "Deploy Branch".
 
 10. Once the build is complete, click the "View app" button provided.
-
-11. From the link provided add `/admin` to the end of the url, log in with your superuser account and create instances of ShippingDestination and Product within the new database.
 
 12. Once instances of these items exist in your database your heroku site will run as expected.
 
