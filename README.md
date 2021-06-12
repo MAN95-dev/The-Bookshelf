@@ -26,9 +26,7 @@ share their own books that they have read and enjoyed.
     - [Features for Future Releases](#features-for-future-releases)
 
 3. [Information Arcitecture](#information-architecture)
-	- [Database choice](#data-models)
-	- [Data models](#data-models)
-
+	- [Database choice](#database-choice)
 
 3. [Technologies Used](#technologies-used)
     - [Tools](#tools)
@@ -241,7 +239,6 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 ![Clubs picks](/assets/img/resume-website/resume.png)
 
 **Modals**
-- 
 
 ### Your picks
 
@@ -263,11 +260,87 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ## Features for Future Releases
 
-1. **Chatbox for potential clients**
-    - Having a chatbox on the Contact page, that allows people to chat with you and leave you messages. 
-2. **More projects added to the project page**
-    - Once more projects have been completed, adding those to the Projects page.
-    - Each project having a link to the live project. 
-3. **Review page for clients to add reviews**
-    - A review page that allows previous clients to add review about the work done for them and how satisfied they are with the final product. 
-    - Possibly a star rating. 
+1. **Being able to upvote books**
+    - Having a star rating available in a book's modal for users to vote for. 
+    - The star rating is displayed in each book's modal, giving the user an idea of how other members felt about the book. 
+
+2. **Users being able to add reviews to The Bookshelf's picks and members books**
+    - Having an option for users to write a reviews on books added by The Bookshelf and its members. 
+    - The option would be available on each of the book's modals next to the done, edit, and delete buttons. 
+    - The reviews would appear under the orginal review added. 
+
+# Information Arcitecture
+
+### Database Choice
+- According to project instructions, the document-based database MongoDB is used. Here is a visual of the collections:
+
+
+# Technologies Used
+
+### Tools
+- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) to handle version control.
+- [GitHub](https://github.com/) to store and share all project code remotely. 
+- [Balsamiq](https://balsamiq.com/) to create the wireframes for this project.
+
+### Libraries
+- [JQuery](https://jquery.com) to ensure a responsive mobile navbar.
+- [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
+- [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for the footer.
+- [Google Fonts](https://fonts.google.com/) to style the website fonts.
+
+### Languages
+- This project uses HTML, CSS, and JavaScript programming languages.
+
+# Testing 
+ 
+- See seperate [TESTING.md](https://github.com/PillowFishSticks/My-Resume/blob/master/TESTING.md) file. 
+
+# Deployment
+
+## GitHub Deployment
+
+This project is hosted in GitHub pages
+
+1. On the menu on the top of the project's repository on GitHub select **Settings.** 
+2. Scroll down to the GitHub **Pages** section. 
+3. Inside that section, click on the drop down menu under **Source** and select **Master Branch**. 
+4. The page refreshes auttomatically and the website is now deployed. 
+5. The link to the webpage is in the GitHub **Pages** section down below. 
+
+## To run the project locally 
+
+To clone this project from GitHub
+
+1. Under the repository's name, click **Clone or download**. 
+2. In the **Clone with HTTPs** section, copy the given URL. 
+3. In your IDE of choice, open **Git Bash**. 
+4. Change the current working directory to the location where you want the cloned directory to be made. 
+5. Type **git clone**, and then paste the URL copied from GitHub.
+6. Press **enter** and the clone will be created. 
+
+# Credits
+
+## Images
+- Project images were taken from Code Institutes mini projects that we had to complete.
+    - [Resume](https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4)
+    - [Love Running](https://github.com/Code-Institute-Solutions/Love-Running-Solutions)
+    - [Codders CoffeeHouse](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/d6dd40a51a9543e78b59924c739abff5/2f123befba874366823427fa9f2a2262/)
+- The profile image was taken from my personal collection of photos. 
+
+## Code
+
+- The following websites helped me undestand and create my website, by viewing examples and explanatons.
+    - [W3schools](https://www.w3schools.com/)
+    - [Bootsnipp](https://bootsnipp.com/)
+
+- The following website provided inspiration for my website.
+    - [Website Inspiration](https://www.webdesign-inspiration.com/web-designs/style/dark)
+
+- The README file was taken from both Tim Nelson's 'IATA Map' project and Anna Greave's 'The House of Mouse' project to use as a template.
+    - [The House of Mouse by Anna Greaves ](https://github.com/AJGreaves/thehouseofmouse)
+    - [IATA Map](https://github.com/TravelTimN/ci-milestone02-ifd) 
+
+## Acknowledgements
+
+ - Special thanks to my mentor Precious, for his time, and guidance with this project. 
+ - Code Institute tutors for helping support and guide me in the right direction with my code.
