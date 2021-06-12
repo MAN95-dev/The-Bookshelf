@@ -144,7 +144,7 @@ made bearing this in mind:
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the design and planning process for this project. 
 
-*[Who we are](/static/docs/wireframe-who-we-are.png)
+*[Who we are](/static/images/wireframes/wireframe-who-we-are.png)
 *[Log in](/static/docs/wireframe-log-in.png)
 *[Register](/static/docs/wireframe-register.png)
 *[Club picks](/static/docs/wireframe-club-picks.png)
