@@ -130,16 +130,15 @@ made bearing this in mind:
   Bookshelf's social media accounts.
 
 ### Colours
-- bright pink: #FF1493
-- purple: #FF00FF
-- green: #32CD32
-- bright green:#00FF00
-- blue: #00BFFF
-- bright blue: #40CCFF
-- white: #f4f4f4
+- Yellow: #ffff66
+- Orange: #ffcc99
+- Light blue: #87cefa
+- Light grey: #87cefa
 
-- The bright contrasting colors were chosen for this website because they standout on the dark background, which helps highlight 
-  important information. The bright colors also add an element of fun to the website. 
+- The bright orange and yellow were chosen for the navbar and footer as they provide a fun, happy feel to the website. No other bright 
+  colours were used as the book covers provide an array of different colours. The light gray was chosen for the 'Donate Books' section
+  as it goes well with the bright colours, but provides a subtle colour to a page filled with bright colours. The light blue was chosen
+  to highlight monthly and user picks in the modals. 
 
 ## Wireframes
 
