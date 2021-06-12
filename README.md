@@ -15,18 +15,19 @@ share their own books that they have read and enjoyed.
 
 2. [Features](#features)
     - [Existing Features](#existing-features)
+        - [Elements on every page](#elements-on-every-page)
         - [Who we are](#who-we-are)
-	- [Login](#log-in)
-	- [Register](#register)
+	    - [Login](#log-in)
+	    - [Register](#register)
         - [Club picks](#club-picks)
         - [Your picks](#your-picks)
         - [Add book](#add-book)
-   	- [Log out](#log-out)
+   	    - [Log out](#log-out)
     - [Features for Future Releases](#features-for-future-releases)
 
 3. [Information Arcitecture](#information-architecture)
 	- [Database choice](#data-models)
-	- [Data models(#data-models)
+	- [Data models](#data-models)
 
 
 3. [Technologies Used](#technologies-used)
@@ -170,7 +171,6 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 - A user or visitor who is not logged in will see the options of Who we are, Log in, and Register. 
 
-- **In desktop view** 
 - **In tablet and mobile view** 
 
 #### Footer
@@ -188,54 +188,62 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ### Who we are
 
-![Home page](/assets/img/resume-website/home.png)
+**About The Bookshelf**
 
-**Introdcution**
-- Below the navbar is a circular profile picture and next to that is a description of the site owner. 
-- Below the description are three buttons 'My Skills', 'My Porfolio', and 'Lets connect'.
-- 'My Skills' takes you to the Resume page. 
-- 'My Portfolio' takes you to the Projects page.
-- 'Lets Connect' takes you to the Contact page. 
+![About The Bookshelf](/static/images/who-we-are.png)
+
+- 'Who we are' includes a section about The Bookshelf. This includes a short blurb about The Bookshelf, the founder, and some of the
+  different features it includes. 
+
+- The blurb is positioned on the left hand side. 
+
+- An image of the founder is located on the right hand side, shaped in an oval. 
+
+- The blurb and image are encompassed in the same colour as the navbar. This creates a uniform background, blending the navbar with 
+  the blurb and image. 
+
+**Why The Bookshelf?**
+
+![Why The Bookshelf?](/static/images/why-the-bookshelf.png)
+
+- This section is located in the middle of the 'Who we are' page. It includes six blocks with verious shapes and colours. Each block 
+  includes a unique shape with some information about The Bookshelf. 
+
+- This section is used to create a fun way of telling visitors more about The Bookshelf. Short sentences make it easy for visitors
+  to gain knowledge about the website, without having to read long paragraphs. 
+  
+
+**Donate Books**
+
+![Donate Books](/static/images/donate-books.png)
+
+### Log in
+
+### Register
 
 
-**Three reasons to hire**
-- Below the three buttons are three blocks containing 'Skills', 'Best Practice', and 'Experience'. 
-- 'Skills' includes the different languages the site owner is proficient in. 
-- 'Best practice' includes coding best practices by the site owner.
-- 'Experience' provides a very brief summary of the site owners work experience. 
+### Club picks
 
-### Resume Page
+![Clubs picks](/assets/img/resume-website/resume.png)
 
-![Resume page](/assets/img/resume-website/resume.png)
+**Modals**
+- 
 
-**My languages**
-- This section includes languages and frameworks that the site owner is proficient in, including HTML/CSS, Java/jQuery/ Python/Django. 
+### Your picks
 
-**Education**
-- This section gives the educational background of the site owner. 
-- It includes three different insertions of different content studied at different universities. 
-- All information is displayed in a column alongside experience. 
+![Your picks](/assets/img/resume-website/project.png)
 
-**Experience**
-- This section displays the site owners work experience. 
-- It includes three different jobs and details what the role included. 
-- All information is displayed in a column alongside education.
+- 
 
-### Project Page
+**Modals**
 
-![Projects page](/assets/img/resume-website/project.png)
+### Add book
 
-- Includes three different projects completed by the site owner, 'Resume', 'Love Running', and 'Coders Coffeehouse'. 
-- Each project includes an image of the project and a brief description of the project.  
-- The projects are seperated by solid lines, creating a row for each project. 
+- 
 
-### Contact page
+### Log out
 
-![Contact page](/assets/img/resume-website/contact.png)
-
-- The contact page provides a contact form for the user to get in touch with the site owner. 
-- The contact form includes Name, Email, and Your Message that you would like to leave. 
-- There is a green 'Send Message' button below to submit the completed contact form. 
+- 
 
 ## Features for Future Releases
 
