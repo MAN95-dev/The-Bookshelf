@@ -39,8 +39,8 @@ share their own books that they have read and enjoyed.
     - See seperate [TESTING.md](https://github.com/PillowFishSticks/My-Resume/blob/master/TESTING.md) file.
 
 6. [Deployment](#deployment)
-- [How to run this project locally](#how-to-run-this-project-locally)
-- [Heroku Deployment](#heroku-deployment)
+    - [How to run this project locally](#how-to-run-this-project-locally)
+    - [Heroku Deployment](#heroku-deployment)
  
 7. [Credits](#credits)
 - [Content](#content)
@@ -211,15 +211,29 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 - This section is used to create a fun way of telling visitors more about The Bookshelf. Short sentences make it easy for visitors
   to gain knowledge about the website, without having to read long paragraphs. 
-  
 
 **Donate Books**
 
 ![Donate Books](/static/images/donate-books.png)
 
+- This is the last section of the 'Who we are' page. 'Donate Books' is a section provided to visitors/users to give them an option of 
+  where to donate books they might not want anymore. It is divided into three sections, each section having its own column. 
+
+- This includes a 'Who?' section, which tells the visitors/users who they could donate their books to, which includes a link to their 
+  website. 
+
+- The next section includes 'Why?', which tells the visitors/users why they should use Better World Books. 
+
+- The last section includes 'How?', which tells the visitors/users how they can go about donating books or how to support Better
+  World Books. 
+
 ### Log in
 
+![Log in](/static/images/login.png)
+
 ### Register
+
+![Register](/static/images/register.png)
 
 
 ### Club picks
@@ -242,6 +256,8 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - 
 
 ### Log out
+
+![Log out](/static/images/logout.png)
 
 - 
 
