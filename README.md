@@ -272,8 +272,23 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 # Information Arcitecture
 
 ### Database Choice
-- According to project instructions, the document-based database MongoDB is used. Here is a visual of the collections:
+- According to project instructions, the document-based database MongoDB is used. 
 
+- The database 'theBookshelf' has two collections 'users' and 'your_picks'.
+
+**users**
+
+![users](/static/images/db-users.png)
+
+- **users** contains information about the user, including a unique id, their username, and a hashed password. 
+    
+**your_picks**
+
+![your_picks](/static/images/db-your-picks.png)
+
+- **your_picks** contains information about the books added to the 'Your picks' page. 
+- This includes the book's title, author, a link to the book cover, a link to the Amazon store, a synopsis, a review written by
+  the users, and who the added book was created by. 
 
 # Technologies Used
 
