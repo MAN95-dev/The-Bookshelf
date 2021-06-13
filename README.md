@@ -288,7 +288,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 - **your_picks** contains information about the books added to the 'Your picks' page. 
 - This includes the book's title, author, a link to the book cover, a link to the Amazon store, a synopsis, a review written by
-  the users, and who the added book was created by. 
+  the user, and who the added book was created by. 
 
 # Technologies Used
 
@@ -324,13 +324,6 @@ The following **must be installed** on your machine:
     - [Python 3](https://www.python.org/downloads/)
     - [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
-To allow you to access all functionality on the site locally, ensure you have created free accounts with the following services:
-    - [Stripe](https://dashboard.stripe.com/register)
-    - [AWS](https://aws.amazon.com/) and [set up an S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
-    - [emailjs](https://www.emailjs.com/)
-
-Please click the links above for documentation on how to set these up and retrieve the necessary environment variables.
-
 ### Instructions
 1. Save a copy of the github repository located at https://github.com/MAN95-dev/the-bookshelf by clicking the "download zip" button at 
    the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the 
@@ -345,7 +338,7 @@ Please click the links above for documentation on how to set these up and retrie
     ```
     python -m .venv venv
     ```  
-_NOTE: The `python` part of this command and the ones in other steps below assumes  you are working with a windows operating system. 
+_NOTE: The `python` part of this command and the ones in other steps below assumes you are working with a windows operating system. 
 Your Python command may differ, such as `python3` or `py`_
 
 4. Activate the .venv with the command:
@@ -400,22 +393,10 @@ _Again this **command may differ depending on your operating system**, please ch
     python manage.py migrate
     ```
 
-10. Create your superuser to access the django admin panel and database with the following command, and then follow the steps to add your 
-    admin username and password:
-    ```
-    python manage.py createsuperuser
-    ```
-
-11. You can now run the program locally with the following command: 
+10. You can now run the program locally with the following command: 
     ```
     python manage.py runserver
     ```
-
-12. Once the program is running, go to the local link provided and add `/admin` to the end of the ur. Here log in with your superuser 
-    account and create instances of ShippingDestination and Product within the new database.
-
-13. Once instances of these items exist in your database your local site will run as expected.
-
 
 ## Heroku Deployment
 
