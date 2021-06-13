@@ -408,16 +408,16 @@ To deploy The Bookshelf website to heroku, take the following steps:
 
 3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
 
-3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. 
+4. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. 
    Give it a name and set the region to whichever is applicable for your location.
 
-4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+5. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
 
-5. Confirm the linking of the heroku app to the correct GitHub repository.
+6. Confirm the linking of the heroku app to the correct GitHub repository.
 
-6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+7. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
 
-7. Set the following config vars:
+8. Set the following config vars:
 
 | Key | Value |
 --- | ---
@@ -427,43 +427,37 @@ MONGO_URI | `<your URI to your MongoDB database>`
 PORT | `<your port>`
 SECRET_KEY | `<your secret key>`
 
-8. From the command line of your local IDE:
-    - Enter the heroku postres shell 
-    - Migrate the database models 
-    - Create your superuser account in your new database
-    
-     Instructions on how to do these steps can be found in the 
-     [heroku devcenter documentation](https://devcenter.heroku.com/articles/heroku-postgresql).
-
 9. In your heroku dashboard, click "Deploy". Scroll down to "Manual Deploy", select the master branch then click "Deploy Branch".
 
 10. Once the build is complete, click the "View app" button provided.
 
-12. Once instances of these items exist in your database your heroku site will run as expected.
+12. Your heroku site should run as expected.
 
 # Credits
 
+## Content
+- Register, log in, log out, and add book form provided by [Bootsnipp](https://bootsnipp.com/). 
+
 ## Images
-- Project images were taken from Code Institutes mini projects that we had to complete.
-    - [Resume](https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4)
-    - [Love Running](https://github.com/Code-Institute-Solutions/Love-Running-Solutions)
-    - [Codders CoffeeHouse](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+CSE101+2020_Q2/courseware/d6dd40a51a9543e78b59924c739abff5/2f123befba874366823427fa9f2a2262/)
-- The profile image was taken from my personal collection of photos. 
+- Book cover images were taken from the Goodreads website.
+    - [Goodreads](https://www.goodreads.com/)
+- The founder image was taken from my personal collection of photos. 
+- The 'Why The Bookshelf?' image was created by myself with Powerpoint. 
 
 ## Code
 
-- The following websites helped me undestand and create my website, by viewing examples and explanatons.
+- The following websites helped me understand and create my website, by viewing examples and explanatons.
     - [W3schools](https://www.w3schools.com/)
     - [Bootsnipp](https://bootsnipp.com/)
+    - [Code with Mosh](https://codewithmosh.com/)
 
 - The following website provided inspiration for my website.
-    - [Website Inspiration](https://www.webdesign-inspiration.com/web-designs/style/dark)
+    - [Reese's Book Club](https://reesesbookclub.com/picks/)
 
-- The README file was taken from both Tim Nelson's 'IATA Map' project and Anna Greave's 'The House of Mouse' project to use as a template.
+- The README file was taken from Anna Greave's 'The House of Mouse' project to use as a template.
     - [The House of Mouse by Anna Greaves ](https://github.com/AJGreaves/thehouseofmouse)
-    - [IATA Map](https://github.com/TravelTimN/ci-milestone02-ifd) 
 
 ## Acknowledgements
 
- - Special thanks to my mentor Precious, for his time, and guidance with this project. 
+ - Special thanks to my mentor Moosa, for his time, and guidance with this project. 
  - Code Institute tutors for helping support and guide me in the right direction with my code.
