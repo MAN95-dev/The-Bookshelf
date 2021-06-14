@@ -22,6 +22,7 @@ share their own books that they have read and enjoyed.
         - [Club picks](#club-picks)
         - [Your picks](#your-picks)
         - [Add book](#add-book)
+        - [Edit book](#edit-book)
    	    - [Log out](#log-out)
     - [Features for Future Releases](#features-for-future-releases)
 
@@ -152,7 +153,6 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - [Your picks](/static/images/wireframes/wireframe-your-picks.png)
 - [Your picks modal](/static/images/wireframes/wireframe-your-picks-modal.png)
 - [Add book](/static/images/wireframes/wireframe-add-book.png)
-- [Log out](/static/images/wireframes/wireframe-log-out.png)
 
 # Features
  
@@ -232,10 +232,17 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ![Log in](/static/images/login.png)
 
+- The login page features a standard login form asking for username and password.
+- Validation for this form is handled in the back end and a flash message displays 'Welcome (username)'. 
+- Once logged in they are taken directly to their profile page. 
+
 ### Register
 
 ![Register](/static/images/register.png)
 
+- A user who is not logged in can create a new account using the register page. The page on this form includes a username 
+ (which must be unique), and a password. 
+- If a user who already has an account tries to register, a flash message display 'Username already exists'. 
 
 ### Club picks
 
@@ -253,13 +260,29 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ### Add book
 
-- 
+![Add book](/static/images/add-book.png)
+
+- This page contains a form for members to add a book to their profile for other memebers to see. 
+- It includes a section for the book title, author, a link to the book cover, a link to the Amazon store for the book, a synopsis, 
+  and the members personal reviiew of the book. 
+- Once the book has been added, a flash message displays 'Book successfully added'. 
+
+### Edit book
+
+![Edit book](/static/images/edit-book.png)
+
+- This page is accessed within the edit button of the Your picks modal. It contains a form for members to edit a book that they have 
+  previously added.  
+- It is identical to the Add book page. 
+- Once the book has been edited, a flash message displays 'Book successfully updated'.
+- Members only have access to edit their own books, and are unable to edit other members books. 
 
 ### Log out
 
 ![Log out](/static/images/logout.png)
 
-- 
+- Any user who clicks on "Log out" from the navigation bar is automatically logged out and their session data cleared. They are informed
+  that they have been logged out with an flash message displaying 'You have been logged out'. 
 
 ## Features for Future Releases
 
