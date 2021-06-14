@@ -28,20 +28,21 @@ share their own books that they have read and enjoyed.
 3. [Information Arcitecture](#information-architecture)
 	- [Database choice](#database-choice)
 
-3. [Technologies Used](#technologies-used)
+4. [Technologies Used](#technologies-used)
     - [Tools](#tools)
+    - [Databases](#databases)
     - [Libraries](#libraries)
     - [Languages](#languages)
 
 5. [Testing](#testing)
-    - See seperate [TESTING.md](https://github.com/PillowFishSticks/My-Resume/blob/master/TESTING.md) file.
+    - See seperate [TESTING.md]() file.
 
 6. [Deployment](#deployment)
     - [How to run this project locally](#how-to-run-this-project-locally)
     - [Heroku Deployment](#heroku-deployment)
  
 7. [Credits](#credits)
-- [Content](#content)
+    - [Content](#content)
     - [Images](#images)
     - [Code](#code)
     - [Acknowledgements](#acknowledgements)
@@ -293,22 +294,27 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 # Technologies Used
 
 ### Tools
-- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03) to handle version control.
+
 - [GitHub](https://github.com/) to store and share all project code remotely. 
+- [Gitpod](https://www.gitpod.io/) - IDE (Integrated Development Environment) used to write the code.
 - [Balsamiq](https://balsamiq.com/) to create the wireframes for this project.
+- [Heroku](https://id.heroku.com/) - Container-based cloud platform for deployment and running of apps.
+
+### Databases
+- [MongoDB](https://www.postgresql.org/) a NoSQL database program, using JSON-like documents. 
 
 ### Libraries
-- [JQuery](https://jquery.com) to ensure a responsive mobile navbar.
+- [JQuery](https://jquery.com) to simplify DOM manipulation.
 - [Bootstrap](https://www.bootstrapcdn.com/) to simplify the structure of the website and make the website responsive easily.
-- [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for the footer.
+- [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for The House of Mouse webshop.
 - [Google Fonts](https://fonts.google.com/) to style the website fonts.
 
 ### Languages
-- This project uses HTML, CSS, and JavaScript programming languages.
+- This project uses HTML, CSS, JavaScript and Python programming languages.
 
 # Testing 
  
-- See seperate [TESTING.md](https://github.com/PillowFishSticks/My-Resume/blob/master/TESTING.md) file. 
+- See seperate [TESTING.md]() file. 
 
 # Deployment
 
