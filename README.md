@@ -55,7 +55,7 @@ share their own books that they have read and enjoyed.
 
 ### Visitor Goals
 
-The target audience for the resume website are:
+The target audience for The Bookshelf are:
 - People who enjoy reading. 
 - People who are interested in joining an online book club.
 - People who want to share good books they read. 
@@ -148,7 +148,9 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - [Log in](/static/images/wireframes/wireframe-log-in.png)
 - [Register](/static/images/wireframes/wireframe-register.png)
 - [Club picks](/static/images/wireframes/wireframe-club-picks.png)
+- [Club picks modal](/static/images/wireframes/wireframe-club-picks-modal.png)
 - [Your picks](/static/images/wireframes/wireframe-your-picks.png)
+- [Your picks modal](/static/images/wireframes/wireframe-your-picks-modal.png)
 - [Add book](/static/images/wireframes/wireframe-add-book.png)
 - [Log out](/static/images/wireframes/wireframe-log-out.png)
 
@@ -442,11 +444,12 @@ SECRET_KEY | `<your secret key>`
 # Credits
 
 ## Content
-- Register, log in, log out, and add book form provided by [Bootsnipp](https://bootsnipp.com/). 
+- Register, log in, log out, and add book form provided by [Bootsnipp](https://bootsnipp.com/).
+- Book synopses were taken from the [Goodreads](https://www.goodreads.com/) website. 
+- Book reviews were taken from the [Kirkus](https://www.kirkusreviews.com/) website.  
 
 ## Images
-- Book cover images and synopses were taken from the [Goodreads](https://www.goodreads.com/) website. 
-- Book reviews were taken from the [Kirkus](https://www.kirkusreviews.com/) website. 
+- Book cover images were taken from the [Goodreads](https://www.goodreads.com/) website. 
 - The founder image was taken from my personal collection of photos. 
 - The 'Why The Bookshelf?' image was created by myself with Powerpoint. 
 
