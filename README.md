@@ -246,32 +246,63 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ### Club picks
 
-![Clubs picks](/assets/img/resume-website/resume.png)
+![Clubs picks](/static/images/club-picks.png)
+
+- This page displays all The Bookshelf's books added each month. There are four books in each row. 
+- The book is displayed by its cover image with a button under each book, displaying the month and year it was added. 
+- If the button is clicked on, it brings up a modal with futher information about the book. 
 
 **Modals**
+
+![Clubs picks modal](/static/images/club-picks-modal.png)
+
+- The modal is divided into two parts. The first being further information about the book, and the second being a review of the 
+  book by The Bookshelf. 
+- The first part contains the books image, when it was added, the title of the book, the author, a synopsis, and a link to Amazon
+  store if the member wishes to purchase the book. 
+- The second part is just a detailed review of the book by The Bookshelf. 
+- To close the modal, the member has the option of clicking the x icon on the top right hand side of the modal or the done button at 
+  the bottom of the modal. 
 
 ### Your picks
 
-![Your picks](/assets/img/resume-website/project.png)
+![Your picks](/static/images/your-picks.png)
 
-- 
+- The top of the page displays the members name, username's picks, indicating that this is their profile. 
+- This page displays all if The Bookshelf's members books added. There are four books in each row. 
+- The book is displayed by its cover image with a button under each book, displaying the member's name who added it. 
+- If the button is clicked on, it brings up a modal with futher information about the book. 
 
 **Modals**
+
+![Your picks](/static/images/your-picks-modal.png)
+
+- The modal is divided into two parts. The first being further information about the book, and the second being a review of the 
+  book by the member. 
+- The first part contains the books image, when it was added, the title of the book, the author, a synopsis, and a link to Amazon
+  store if the member wishes to purchase the book. 
+- The second part is just a detailed review of the book by The Bookshelf. 
+- The modal also give the option of editing or deleting the book. Clicking on the edit button will take the member to the edit book page,
+  which is detailed further down. 
+- If the user clicks on the delete button, they are met with another modal that pops up asking if they are sure they want to delete the 
+  book. If they click cancel, it takes them back to their profile page. If they click delete, the book is deleted from their profile.  
+- To close the modal, the member has the option of clicking the x icon on the top right hand side of the modal or the done button at 
+  the bottom of the modal. 
 
 ### Add book
 
 ![Add book](/static/images/add-book.png)
 
-- This page contains a form for members to add a book to their profile for other memebers to see. 
+- This page contains a form for members to add a book to their profile for other members to see. 
 - It includes a section for the book title, author, a link to the book cover, a link to the Amazon store for the book, a synopsis, 
-  and the members personal reviiew of the book. 
+  and the members personal review of the book. 
 - Once the book has been added, a flash message displays 'Book successfully added'. 
 
 ### Edit book
 
 ![Edit book](/static/images/edit-book.png)
 
-- This page is accessed within the edit button of the Your picks modal. It contains a form for members to edit a book that they have 
+- This page is accessed within the edit button of the book modals in Your picks. It contains a form for members to edit a book that they have 
   previously added.  
 - It is identical to the Add book page. 
 - Once the book has been edited, a flash message displays 'Book successfully updated'.
