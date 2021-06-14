@@ -439,8 +439,8 @@ SECRET_KEY | `<your secret key>`
 - Register, log in, log out, and add book form provided by [Bootsnipp](https://bootsnipp.com/). 
 
 ## Images
-- Book cover images were taken from the Goodreads website.
-    - [Goodreads](https://www.goodreads.com/)
+- Book cover images and synopses were taken from the [Goodreads](https://www.goodreads.com/) website. 
+- Book reviews were taken from the [Kirkus](https://www.kirkusreviews.com/) website. 
 - The founder image was taken from my personal collection of photos. 
 - The 'Why The Bookshelf?' image was created by myself with Powerpoint. 
 
