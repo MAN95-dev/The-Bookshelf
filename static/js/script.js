@@ -9,8 +9,9 @@ for (i = 0; i < close.length; i++) {
         setTimeout(function () { div.style.display = "none"; }, 600);
     }
 }
-// Flash messages //
+// End of Flash messages //
 
+// Navbar collapse //
 $(function() {
   
   $('#bs-example-navbar-collapse-1')
@@ -29,11 +30,9 @@ $('nav').affix({
         top: $('header').height()
       }
 })
+// End of Navbar collapse //
 
-
-
-
-/* Login page */
+/* Login / Registration page */
 
 $("#signup").click(function() {
 $("#first").fadeOut("fast", function() {
@@ -46,8 +45,6 @@ $("#second").fadeOut("fast", function() {
 $("#first").fadeIn("fast");
 });
 });
-
-
   
          $(function() {
            $("form[name='login']").validate({
@@ -108,4 +105,4 @@ $(function() {
     }
   });
 });
-/* Login page */
+/* End of Login / Registration page */

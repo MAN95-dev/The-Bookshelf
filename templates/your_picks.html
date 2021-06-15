@@ -7,7 +7,7 @@
 
 <section class="row">
     {% for your_picks in your_picks %}
-    <div class="col-md-3 col-sm-4 col-6">
+    <div class="col-lg-3 col-md-4 col-6">
         <div class="category-tile">
             <a href="{{ url_for('your_picks', username=your_picks._id) }}"></a><img src="{{ your_picks.img_url }}"
                 alt="{{ your_picks.book_name }}"></a>
@@ -29,11 +29,11 @@
                 </div>
                 <div class="modal-body about-book">
                     <div class="row">
-                        <div class="col-md-4 book-tile">
+                        <div class="col-md-4 col-sm-12 book-tile">
                             <img src="{{ your_picks.img_url }}" alt="{{ your_picks.book_name }}">
                             <span>{{ your_picks.created_by }}'s pick</span>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 about">
                             <h3 class="fw-bold">{{ your_picks.book_name }}</h3>
                             <h5 class="fw-bold">{{ your_picks.author_name }}</h5><br>
                             <h5 class="fw-bold">Synopsis</h5>

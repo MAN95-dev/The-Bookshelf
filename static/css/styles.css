@@ -3,6 +3,7 @@ body {
     font-size: 18px;
     color: black;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 /** Flash messages **/
@@ -96,7 +97,7 @@ nav li {
     color: black;
     background-color: #ffff66;
     width: 100%;
-    position: absolute;
+    bottom: 0px;
     font-family: 'RocknRoll One', sans-serif;
 }
 
@@ -409,6 +410,15 @@ footer p u:hover {
     line-height: .75;
 }
 
+nav li {
+    display: inline-block;
+    height: 100%;
+    padding-right: 40px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 15px;
+}
+
+
 .active a:hover {
     border-bottom: 1px solid black;
 }
@@ -443,6 +453,35 @@ footer p u:hover {
   border-radius: 50%;
 }
 
+/** Who we are **/
+.about h2 {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 45px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+.founder img {
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+.about-us {
+    height: 610px;
+}
+
+.why-us img {
+    width: 75%;
+    height: 75%;
+    margin-left: 110px;
+}
+
+/** Modals **/
+.modal-btn {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
 /** Your picks page **/
 #your-picks-title {
     padding: 60px;
@@ -465,6 +504,12 @@ footer p u:hover {
   background-color: #87cefa;
   color: black;
   opacity: .8;
+}
+
+/** Login / Register page **/
+.myform {
+    margin-top: 150px;
+	max-width: 600px;
 }
 }
 
@@ -512,6 +557,33 @@ nav li {
   border-radius: 50%;
 }
 
+/** Modals **/
+.book-tile img {
+    width: 200px;
+    height: 280px; 
+    margin-left: 90px;
+}
+
+.book-tile span {
+  position: absolute;
+  display: block; 
+  margin-top: 20px; 
+  margin-left: 140px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #87cefa;
+  color: black;
+  opacity: .8;
+}
+
+.about-book {
+    text-align: justify;
+}
+
+.about {
+    margin-top: 200px;
+}
+
 /** Your picks page **/
 #your-picks-title {
     padding: 60px;
@@ -522,6 +594,7 @@ nav li {
 .category-tile img {
     width: 140px;
     height: 200px; 
+    margin-left: 30px;
 }
 
 .category-tile span {
