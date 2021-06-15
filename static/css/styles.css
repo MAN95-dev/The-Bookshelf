@@ -464,8 +464,11 @@ nav li {
 }
 
 .founder img {
-    margin-top: 150px;
     margin-left: 30px;
+    margin-top: 150px;
+    height: 350px;
+    width: 300px;
+    border-radius: 50%;
 }
 
 .about-us {
@@ -518,7 +521,23 @@ nav li {
 /** Small devices only **/
 @media (min-width: 768px) and (max-width: 991px) {
 
+/** Flash messages **/
+.alert {
+  width: 70%;
+  left: 15%;
+}   
+
 /** Header **/
+.navbar-brand h1{
+    font-family: 'RocknRoll One', sans-serif;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
 nav li {
     display: inline-block;
     height: 100%;
@@ -535,7 +554,7 @@ nav li {
 
 /** Footer **/
 #subscribe {
-    padding:70px; 
+    padding: 60px; 
     font-size: 13px;
     text-align: center;
     display: inline-block;
@@ -559,32 +578,100 @@ nav li {
   border-radius: 50%;
 }
 
-/** Modals **/
-.book-tile img {
-    width: 200px;
-    height: 280px; 
-    margin-left: 90px;
+/** Who we are **/
+.about h2 {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 40px;
+    margin-top: 60px;
 }
 
-.book-tile span {
-  position: absolute;
-  display: block; 
-  margin-top: 20px; 
-  margin-left: 140px;
-  text-align: center;
-  font-size: 16px;
-  background-color: #87cefa;
-  color: black;
-  opacity: .8;
+.founder img {
+    height: 300px;
+    width: 250px;
+    border-radius: 50%;
 }
 
-.about-book {
+.about p {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.about-us {
+    background-image: linear-gradient(#ffcc99, #ffff66);
+    height: 1000px;
+}
+
+.why-us h3{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-family: 'RocknRoll One', sans-serif;
     text-align: center;
 }
 
-.about {
-    margin-top: 200px;
+.why-us img {
+    width: 90%;
+    height: 70%;
+    margin-left: 15px;
 }
+
+.donate-books {
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.donate-books h3 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+.donate-books h5 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.donate-books h6 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.donate-books p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.donate-books-container {
+    background-color: #F5F5F5;
+    margin-top: 100px;
+}
+
+/** Modals **/
+.modal-btn {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.book-tile img {
+    width: 150px;
+    height: 220px;
+    margin-top: 70px;
+}
+
+.about-book {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.about {
+    margin-right: 5px;
+}
+
 
 /** Your picks page **/
 #your-picks-title {
