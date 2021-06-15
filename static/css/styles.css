@@ -128,13 +128,6 @@ footer p u:hover {
 /** End of footer **/
 
 /** Who we are **/
-.founder img {
-    margin-top: 120px;
-    margin-left: 50px;
-    height: 350px;
-    width: 300px;
-    border-radius: 50%;
-}
 
 .about {
     margin-top: 60px;
@@ -368,6 +361,15 @@ footer p u:hover {
   border-radius: 50%;
 }
 
+/** Who we are page **/
+.founder img {
+    margin-left: 50px;
+    margin-top: 120px;
+    height: 350px;
+    width: 300px;
+    border-radius: 50%;
+}
+
 /** Your picks page **/
 #your-picks-title {
     padding: 60px;
@@ -577,7 +579,7 @@ nav li {
 }
 
 .about-book {
-    text-align: justify;
+    text-align: center;
 }
 
 .about {
@@ -607,10 +609,37 @@ nav li {
   color: black;
   opacity: .8;
 }
+
+/** Login / Register page **/
+.myform {
+    margin-left: 0px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 1rem;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 170%;
+	pointer-events: auto;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 1.1rem;
+	outline: 0;
+    max-width: 500px;
+}
 }
 
 /** Extra small devices only **/
 @media (max-width: 767px) {
+
+ /** Flash messages **/
+.alert {
+  width: 70%;
+  left: 15%;
+}   
 
 /** Header **/
 .navbar-brand h1{
@@ -667,6 +696,123 @@ nav li {
   border-radius: 50%;
 }
 
+/** Who we are **/
+
+.founder img {
+    margin-left: 50px;
+    margin-top: -90px;
+    height: 300px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.about h2 {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 32px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.about p {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.about-us {
+    background-image: linear-gradient(#ffcc99, #ffff66);
+    height: 1000px;
+}
+
+.why-us h3{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 32px;
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
+}
+
+.why-us img {
+    width: 90%;
+    height: 70%;
+    margin-left: 15px;
+}
+
+.donate-books {
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.donate-books h3 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 32px;
+}
+
+.donate-books h5 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.donate-books h6 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.donate-books p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.donate-books-container {
+    background-color: #F5F5F5;
+    margin-top: 100px;
+}
+/** End of Who we are **/
+
+/** Modals **/
+.modal-btn {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.book-tile img {
+    width: 200px;
+    height: 280px; 
+    margin-left: 40px;
+}
+
+.book-tile span {
+    margin-left: 100px;
+}
+
+.about-book {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.about-book h3 {
+    margin-top: 70px;
+}
+
+.about-book h3, h4, h5 {
+    text-align: center;
+}
+
+#amazon {
+    margin-bottom: auto;
+}
+
+.about {
+    margin-right: 5px;
+}
+
+
 /** Your picks page **/
 #your-picks-title {
     padding: 60px;
@@ -677,7 +823,7 @@ nav li {
 .category-tile img {
     width: 140px;
     height: 200px; 
-    margin-left: 20px; 
+    margin-left: 5px; 
 }
 
 .category-tile span {
@@ -693,50 +839,3 @@ nav li {
 }
 }
 
-.books,
-.book-heading {
-    margin: 80px 40px 0 40px;
-}
-
-.books,
-.container-book-lists {
-    height: 80%;
-    overflow: scroll;
-}
-
-.book {
-    height: 250px;
-}
-
-.book img {
-    height: 180px;
-    width: 130px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
-            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
-    cursor: pointer;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
-}
-
-.book img:active {
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
-}
-
-.title p {
-    max-width: 130px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    margin: 0 auto
-}
-
-.title p:first-child {
-    font-size: 0.8rem;
-    margin-top: 3px;
-}
