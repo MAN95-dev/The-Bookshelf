@@ -15,23 +15,26 @@
                         <div class="form-group">
                             <i class="fa fa-book" aria-hidden="true"></i>
                             <label for="book_name">Title</label>
-                            <input value="{{ your_picks.book_name }}" type="text" class="validate form-control" id="book_name" name="book_name" required>
+                            <input value="{{ your_picks.book_name }}" type="text" class="validate form-control"
+                                id="book_name" name="book_name" required>
                         </div>
                         <div class="form-group">
                             <i class="fa fa-user" aria-hidden="true"></i>
                             <label for="author_name">Author</label>
-                            <input value="{{ your_picks.author_name }}" type="text" class="validate form-control" id="author_name" name="author_name"
-                                required>
+                            <input value="{{ your_picks.author_name }}" type="text" class="validate form-control"
+                                id="author_name" name="author_name" required>
                         </div>
                         <div class="form-group">
                             <i class="fa fa-file-image-o" aria-hidden="true"></i>
                             <label for="img_url">Image URL</label>
-                            <input value="{{ your_picks.img_url }}" type="text" class="validate form-control" id="img_url" name="img_url" required>
+                            <input value="{{ your_picks.img_url }}" type="text" class="validate form-control"
+                                id="img_url" name="img_url" required>
                         </div>
                         <div class="form-group">
                             <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                             <label for="buy_url">Amazon store URL</label>
-                            <input value="{{ your_picks.buy_url }}" type="text" class="validate form-control" id="buy_url" name="buy_url" required>
+                            <input value="{{ your_picks.buy_url }}" type="text" class="validate form-control"
+                                id="buy_url" name="buy_url" required>
                         </div>
                         <div class="form-group">
                             <i class="fa fa-comment" aria-hidden="true"></i>
@@ -48,8 +51,9 @@
                             </textarea>
                         </div>
                         <div class="col-md-12 text-center ">
-                            <a class="btn btn-block mybtn btn-danger " href="{{ url_for('your_picks', username=session['user']) }}" role="button">Cancel</a>
-                            <button type="submit" class="btn btn-block mybtn btn-primary">Edit</button>
+                            <a class="btn btn-block mybtn btn-danger "
+                                href="{{ url_for('your_picks', username=session['user']) }}" role="button">Cancel</a>
+                            <button type="submit" class="btn btn-block mybtn btn-primary">Save</button>
                         </div>
                     </form>
                 </div>

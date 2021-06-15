@@ -59,6 +59,7 @@ nav {
    padding-top: 35px;
    padding-left: 30px;  
 }
+
 nav li {
     display: inline-block;
     height: 100%;
@@ -213,10 +214,12 @@ footer p u:hover {
   width: 100%;
   height: auto;
 }
+
 .category-tile { 
   position: relative;
   margin-bottom: 100px; 
 }
+/** End of Club picks  **/
 
 /** Modals **/
 .modal-btn {
@@ -244,7 +247,7 @@ footer p u:hover {
     margin-left: 40px;
     margin-right: 40px;
 }
-/** End of Club picks page **/
+/** End of modals **/
 
 /** Your picks page **/
 .responsive {
@@ -329,9 +332,11 @@ footer p u:hover {
     margin-bottom: 0;
     line-height: .75;
 }
+
 .active a:hover {
     border-bottom: 1px solid black;
 }
+
 .active {
   border-bottom: 1px solid black;
 }
@@ -344,12 +349,14 @@ footer p u:hover {
     display: inline-block;
     height: 100%;
 }
+
 #social-media { 
     padding: 60px; 
     text-align: center;
     display: inline-block;
     height: 100%;
 }
+
 .fa {
   padding: 20px;  
   font-size: 30px;
@@ -366,13 +373,16 @@ footer p u:hover {
     margin-top: 60px;
     font-size: 30px; 
 }
+
 .category-tile {
     padding-left: 60px;
 }
+
 .category-tile img {
     width: 200px;
     height: 280px; 
 }
+
 .category-tile span {
   position: absolute;
   display: block; 
@@ -398,9 +408,11 @@ footer p u:hover {
     margin-bottom: 0;
     line-height: .75;
 }
+
 .active a:hover {
     border-bottom: 1px solid black;
 }
+
 .active {
   border-bottom: 1px solid black;
 }
@@ -413,12 +425,14 @@ footer p u:hover {
     display: inline-block;
     height: 100%;
 }
+
 #social-media { 
     padding: 60px; 
     text-align: center;
     display: inline-block;
     height: 100%;
 }
+
 .fa {
   padding: 20px;  
   font-size: 30px;
@@ -435,10 +449,12 @@ footer p u:hover {
     margin-top: 60px;
     font-size: 30px; 
 }
+
 .category-tile img {
     width: 160px;
     height: 240px; 
 }
+
 .category-tile span {
   position: absolute;
   display: block; 
@@ -478,12 +494,14 @@ nav li {
     display: inline-block;
     height: 100%;
 }
+
 #social-media { 
     padding: 50px; 
     text-align: center;
     display: inline-block;
     height: 100%;
 }
+
 .fa {
   padding: 15px;  
   font-size: 20px;
@@ -500,10 +518,12 @@ nav li {
     margin-top: 60px;
     font-size: 30px; 
 }
+
 .category-tile img {
     width: 140px;
     height: 200px; 
 }
+
 .category-tile span {
   position: absolute;
   display: block; 
@@ -528,10 +548,12 @@ nav li {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .navbar-brand h1 {
    padding-top: 35px;
    padding-left: 20px;  
 }
+
 nav li {
     display: inline-block;
     height: 100%;
@@ -545,6 +567,7 @@ nav li {
    margin-bottom: 20px;
    background-color: white;
 }
+
 /** Footer **/
 #subscribe {
     padding: 20px; 
@@ -553,12 +576,14 @@ nav li {
     display: inline-block;
     height: 100%;
 }
+
 #social-media { 
     padding: 20px; 
     text-align: center;
     display: inline-block;
     height: 100%;
 }
+
 .fa {
   padding: 15px;  
   font-size: 20px;
@@ -575,11 +600,13 @@ nav li {
     margin-top: 40px;
     font-size: 20px; 
 }
+
 .category-tile img {
     width: 140px;
     height: 200px; 
     margin-left: 20px; 
 }
+
 .category-tile span {
   position: absolute;
   display: block; 

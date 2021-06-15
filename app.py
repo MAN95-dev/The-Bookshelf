@@ -93,6 +93,7 @@ def login():
     return render_template("login.html")
 
 
+# profile page
 @app.route("/your_picks/<username>", methods=["GET", "POST"])
 def your_picks(username):
     # grab the session user's username from db
@@ -101,14 +102,12 @@ def your_picks(username):
 
     if session["user"]:
         your_picks = mongo.db.your_picks.find()
-        #TODO: Get your_picks from database and add to render template - see line 36 for similar query
-        # print([i for i in your_picks])
         return render_template("your_picks.html", username=username, your_picks=your_picks)
 
     return redirect(url_for("login"))
 
 
-
+# add book
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
     if request.method == "POST":
@@ -129,6 +128,7 @@ def add_book():
     return render_template("add_book.html")
 
 
+# edit book
 @app.route("/edit_book/<your_picks_id>", methods=["GET", "POST"])
 def edit_book(your_picks_id):
     if request.method == "POST":
@@ -149,6 +149,7 @@ def edit_book(your_picks_id):
     return render_template("edit_book.html", your_picks=your_picks)
 
 
+# delete book from db 
 @app.route("/delete_book/<your_picks_id>")
 def delete_book(your_picks_id):
     mongo.db.your_picks.remove({"_id": ObjectId(your_picks_id)})
