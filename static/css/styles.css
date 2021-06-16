@@ -6,12 +6,6 @@ body {
     height: 100%;
 }
 
-main {
-min-height: 70vh;
-height: 100%; 
-margin: 0 auto -30px;
-}
-
 /** Flash messages **/
 .alert {
   padding: 20px;
@@ -143,13 +137,13 @@ footer p u:hover {
 .about h2 {
     font-family: 'RocknRoll One', sans-serif;
     font-size: 50px;
-    margin-left: 60px;
+    margin-left: 160px;
     margin-top: 60px;
 }
 
 .about p {
     margin-top: 30px;
-    margin-left: 60px;
+    margin-left: 160px;
     font-size: 18px;
     line-height: 35px;
 }
@@ -170,12 +164,13 @@ footer p u:hover {
 .why-us img {
     width: 75%;
     height: 75%;
-    margin-left: 140px;
+    margin-left: 160px;
 }
 
 .donate-books {
     text-align: center;
     font-family: 'RocknRoll One', sans-serif;
+    margin-bottom: 40px;
 }
 
 .donate-books h3 {
@@ -197,9 +192,10 @@ footer p u:hover {
 .donate-books p {
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     text-align: justify;
+    word-spacing:-2px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -263,7 +259,7 @@ footer p u:hover {
 /** Login / Register page **/
 .myform {
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 	position: relative;
 	display: -ms-flexbox;
 	display: flex;
@@ -277,7 +273,7 @@ footer p u:hover {
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 1.1rem;
 	outline: 0;
-	max-width: 500px;
+    max-width: 500px;
 }
 
 .form-group{
@@ -321,6 +317,12 @@ footer p u:hover {
 
 /** Large devices only **/
 @media (min-width: 1200px) {
+
+main {
+min-height: 70vh;
+height: 100%; 
+margin: 0 auto -30px;
+}
 
 /** Header **/
 .navbar-brand h1{
@@ -475,6 +477,10 @@ nav li {
     margin-top: 60px;
 }
 
+.about p {
+    margin-left: 60px;
+}
+
 .founder img {
     margin-left: 30px;
     margin-top: 150px;
@@ -496,7 +502,7 @@ nav li {
 /** Modals **/
 .modal-btn {
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 60px;
 }
 
 /** Your picks page **/
@@ -509,6 +515,7 @@ nav li {
 .category-tile img {
     width: 160px;
     height: 240px; 
+    margin-left: 35px;
 }
 
 .category-tile span {
@@ -798,7 +805,7 @@ nav li {
 /** Who we are **/
 
 .founder img {
-    margin-left: 40px;
+    margin-left: 45px;
     margin-top: -70px;
     height: 300px;
     width: 250px;
@@ -815,13 +822,13 @@ nav li {
 .about p {
     margin-top: 30px;
     margin-left: 20px;
-    font-size: 18px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .about-us {
     background-image: linear-gradient(#ffcc99, #ffff66);
-    height: 1050px;
+    height: 900px;
 }
 
 .why-us h3{
@@ -844,8 +851,8 @@ nav li {
 }
 
 .donate-books h3 {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 32px;
 }
 
@@ -865,7 +872,10 @@ nav li {
     margin-left: 10px;
     margin-right: 10px;
     text-align: justify;
+    word-spacing:-2px;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .donate-books-container {
@@ -893,6 +903,8 @@ nav li {
 .about-book {
     margin-left: 5px;
     margin-right: 5px;
+    text-align: justify;
+    word-spacing:-2px;
 }
 
 .about-book h3 {
