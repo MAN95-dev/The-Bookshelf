@@ -150,6 +150,9 @@ footer p u:hover {
 
 .about-us {
     background-image: linear-gradient(#ffcc99, #ffff66);
+     background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     height: 530px;
 }
 
@@ -699,7 +702,7 @@ nav li {
 
 /** Login / Register page **/
 .myform {
-    margin-left: 0px;
+    padding-right: 70px;
     margin-top: 100px;
     margin-bottom: 50px;
 	position: relative;
@@ -708,14 +711,14 @@ nav li {
 	padding: 1rem;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	width: 170%;
+	width: 100%;
 	pointer-events: auto;
 	background-color: #fff;
 	background-clip: padding-box;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 1.1rem;
 	outline: 0;
-    max-width: 500px;
+    width: 900px;
 }
 }
 

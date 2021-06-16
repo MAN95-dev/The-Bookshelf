@@ -1,17 +1,15 @@
-# The House of Mouse - Testing details
+# The Bookshelf - Testing details
 
 [Main README.md file](README.md)
 
-[View website on Heroku](https://thehouseofmouse.herokuapp.com/)
+[View website on Heroku](https://the-bookshelf-milestone.herokuapp.com/)
 
 ## Table of Contents
 
 1. [Automated Testing](#automated-testing)
     - [Validation services](#validation-services)
-    - [Jasmine](#jasmine)
     - [Python Testing](#python-testing)
     - [Coverage](#coverage)
-    - [Travis](#travis)
 2. [User Stories Testing](#user-stories-testing)
 3. [Manual Testing](#manual-testing)
     - [Testing undertaken on desktop](#testing-undertaken-on-desktop)
