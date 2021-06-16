@@ -7,7 +7,7 @@ for (i = 0; i < close.length; i++) {
         var div = this.parentElement;
         div.style.opacity = "0";
         setTimeout(function () { div.style.display = "none"; }, 600);
-    }
+    };
 }
 // End of Flash messages //
 
@@ -29,7 +29,7 @@ $('nav').affix({
       offset: {
         top: $('header').height()
       }
-})
+});
 // End of Navbar collapse //
 
 /* Login / Registration page */

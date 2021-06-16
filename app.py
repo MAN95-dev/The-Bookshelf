@@ -17,14 +17,15 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 # Display home page 
 @app.route("/")
 @app.route("/home")
 def home():
-    #Check if there is a user in session 
+    # Check if there is a user in session 
     if "user" in session:
         user = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
+            {"username": session["user"]})["username"]
         return render_template("index.html", user=user)
     else:
         return render_template("index.html")
@@ -74,7 +75,7 @@ def login():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+                    existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     flash("Welcome, {}".format(
                         request.form.get("username")))
@@ -102,7 +103,8 @@ def your_picks(username):
 
     if session["user"]:
         your_picks = mongo.db.your_picks.find()
-        return render_template("your_picks.html", username=username, your_picks=your_picks)
+        return render_template(
+            "your_picks.html", username=username, your_picks=your_picks)
 
     return redirect(url_for("login"))
 
@@ -123,7 +125,6 @@ def add_book():
         mongo.db.your_picks.insert_one(your_picks)
         flash("Book Successfully Added")
         return redirect(url_for("your_picks", username=session["user"]))
-
 
     return render_template("add_book.html")
 

@@ -8,8 +8,6 @@
 
 1. [Automated Testing](#automated-testing)
     - [Validation services](#validation-services)
-    - [Python Testing](#python-testing)
-    - [Coverage](#coverage)
 2. [User Stories Testing](#user-stories-testing)
 3. [Manual Testing](#manual-testing)
     - [Testing undertaken on desktop](#testing-undertaken-on-desktop)
@@ -30,85 +28,9 @@ The following validation services and linter were used to check the validity of 
 
 - [JSHint](https://jshint.com/) was used to validate JavaScript.
 
-    - To save on loading times and to keep my JavaScript code organized I chose to break up the JS into several separate files. 
-    - When running JSHint, the errors `undefined variable` and `unused variable` appear when one file either creates or uses a function that is utilized or created in another file. As validates one JS file at a time, it is not aware of the other files. 
-    - To double-check that no errors occur with the entire files loaded I pasted in all the JavaScript code into JSHint and then it ran with no errors. 
+- [PEP8 online check](http://pep8online.com/) was used to check Python code for PEP8 requirements.
 
-- [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and [Pylint-django](https://pypi.org/project/pylint-django/) was used to validate Python.
-
-**IMPORTANT**
-
-If you wish to run any of these tests for yourself, before going further please make sure you have already cloned this project from the [The House of Mouse GitHub repository](https://github.com/AJGreaves/thehouseofmouse) 
-by following the steps in the [README.md](readme.md#how-to-run-this-project-locally) under "How to run this project locally" and that you have the entire project running on your own IDE.
-
-### Jasmine
-
-- When creating this project I chose to use Python to handle almost all of the logic needed for the functionality of the site. Meaning that the javascript written was mainly to handle alert messages, fetch and ajax requests. This meant that there was not a lot of javascript for me to test with jasmine, so these tests are very short compared to previous projects I have made. I did do extensive Python unittesting on the python code however.
-
-- [Jasmine-Jquery CDN](https://github.com/velesin/jasmine-jquery) has been imported into the jasmine testing to allow for jQuery within the JavaScript functions.
-
-The files for jasmine testing The House of Mouse can be found here:
-- HTML page to run jasmine tests from: [jasmine-testing.html](testing/jasmine/jasmine-testing.html)
-- JavaScript specifications (tests): [thehouseofmouseSpec.js](testing/jasmine/spec/thehouseofmouseSpec.js)
-- The House of Mouse JavaScript functions to be tested are in the [js directory](static/js)
-
-#### How to run Jasmine tests
-
-To run the Jasmine tests: 
-1. Open [jasmine-testing.html](testing/jasmine/jasmine-testing.html).
-2. Run the html file and view it in your browser to see the test results. 
-
-#### How to create Jasmine tests
-
-To create Jasmine tests: 
-1. Open the [thehouseofmouseSpec.js](testing/jasmine/spec/thehouseofmouseSpec.js) file.
-2. Write your own tests using the jasmine 3.1 framework.
-3. Save [thehouseofmouseSpec.js](testing/jasmine/spec/thehouseofmouseSpec.js), and then run/refresh [jasmine-testing.html](testing/jasmine/jasmine-testing.html).
-
-### Python Testing
-
-#### How to run Python tests
-
-To run the existing Python tests:
-1. Activate your virtual environment.
-2. In the terminal enter the following command:
-```
-python manage.py test
-```
-3. If you wish to run the tests within a specific app only you can specify with: 
-```
-python manage.py test <app name here>
-```
-4. The test results will be shown within the terminal.
-
-_NOTE: The `python` part of these commands assumes you are working with a windows operating system. Your Python command may differ, such as `python3` or `py`_
-
-
-### A note about TDD
-
-This project did not utilize Test Driven Development. The reason for this was that I was learning how Django works and functions and found it impossible to write tests for methods and classes that I did not understand well as I went along. 
-
-The automated tests for this project were created after the vast majority of the project was already complete, once I had a firmer grasp of how my code was working and what its expected output was. Now that I have a better understanding of how automated tests work, I intend to attempt TDD with my next project.
-
-### Coverage
-
-[Coverage.py](https://coverage.readthedocs.io/en/v4.5.x/) was used to provide feedback during testing to check that enough of my code had been tested.
-
-#### How to run coverage
-
-1. Activate your virtual environment.
-2. In the terminal enter the following command:
-```
-coverage html
-```
-3. Open the newly created `htmlcov` directory in the root of your project folder. 
-4. Open the `index.html` file inside it.
-5. Run the file in the browser to see the output.
-
-### Travis
-
-- [Travis](https://travis-ci.org/) was used throughout the unit testing of this project to provide continuous integration with the deployed site. The [Travis Documentation](https://docs.travis-ci.com/) provides all the info needed to set it up.
-- I set the heroku deployment settings for this project to only allow deployment when the travis had passed the latest push to the master branch on GitHub.
+- [Pylint](https://pypi.org/project/validator/) was used to validate Python.
 
 ## User Stories Testing
 

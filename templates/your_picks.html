@@ -10,7 +10,7 @@
     <div class="col-lg-3 col-md-4 col-6">
         <div class="category-tile">
             <a href="{{ url_for('your_picks', username=your_picks._id) }}"></a><img src="{{ your_picks.img_url }}"
-                alt="{{ your_picks.book_name }}"></a>
+                alt="{{ your_picks.book_name }}">
             <!-- Modal button -->
             <button type="button" class="modal-btn btn btn-info" data-bs-toggle="modal"
                 data-bs-target="#book-{{ your_picks._id }}">
@@ -20,8 +20,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="book-{{ your_picks._id }}" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="book-{{ your_picks._id }}" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -63,12 +62,10 @@
             </div>
         </div>
     </div>
-    </div>
     <!-- Close Modal -->
 
     <!-- Modal for Delete Book -->
-    <div class="modal fade" id="modal-delete{{ your_picks._id }}" tabindex="-1" aria-labelledby="modal-delete-label"
-        aria-hidden="true">
+    <div class="modal fade" id="modal-delete{{ your_picks._id }}" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">

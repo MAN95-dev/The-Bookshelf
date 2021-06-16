@@ -1,89 +1,87 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="row about-us">
-        <div class="col-sm-7 about">
-            <h2>Only The Best<br>Bookclub Ever!</h2>
-            <p>Welcome to The Bookshelf, I'm Michelle and that's me on the right. I created The
-                Bookshelf to be able to share all the books I love with others. I choose a book
-                each month and share my review with members. Members are also able to add books
-                to their profile, which other members can see. The Bookshelf is a great way to
-                find new books and explore suggestions by others. Let's build a book community
-                together! So go ahead, put a book on The Bookshelf.
-            </p>
-        </div>
-        <div class="col-sm-5 founder">
-            <img src="{{url_for('static', filename='images/founder.png')}}" alt="Picture of the founder">
-        </div>
+<div class="row about-us">
+    <div class="col-sm-7 about">
+        <h2>Only The Best<br>Bookclub Ever!</h2>
+        <p>Welcome to The Bookshelf, I'm Michelle and that's me on the right. I created The
+            Bookshelf to be able to share all the books I love with others. I choose a book
+            each month and share my review with members. Members are also able to add books
+            to their profile, which other members can see. The Bookshelf is a great way to
+            find new books and explore suggestions by others. Let's build a book community
+            together! So go ahead, put a book on The Bookshelf.
+        </p>
     </div>
-    <div class="row why-us">
-        <div class="col-md-12">
-            <h3>Why The Bookshelf?</h3>
-            <img src="{{url_for('static', filename='images/the-bookshelf.png')}}"
-                alt="Why The Bookshelf description ">
-        </div>
+    <div class="col-sm-5 founder">
+        <img src="{{url_for('static', filename='images/founder.png')}}" alt="Picture of the founder">
     </div>
-    <div class="row donate-books-container">
-        <div class="col-md-12 donate-books">
-            <h3>Donate books</h3>
-        </div>
-        <div class="col-md-4 donate-books">
-            <h5>Who?</h5>
-            <h6>Better World Books</h6>
-            <p>Better World Books is a certified B-Corporation and a for-profit global e-retailer that collects and
-                sells
-                new and used books online matching each purchase with a book donation, Book-for-Book™. Each sale
-                generates
-                funds for literacy and education initiatives in the UK, US, and around the world. Since its launch in
-                2003,
-                Better World Books has raised more than $27 million for libraries and literacy, donated over 26 million
-                books,
-                and reused or recycled over 300 million books. To learn more how Better World Books Cares, visit
-                <a href="https://www.betterworldbooks.com" target="_blank">Cares.BetterWorldBooks.com.</a>
-            </p>
-            <p>
-                <i>“The more that you read, the more things you will know. The more that you learn, the more places
-                    you’ll go.”
-                    - Dr. Seuss</i>
-            </p>
-        </div>
-        <div class="col-md-4 donate-books">
-            <h5>Why?</h5>
-            <h6>Better World Book Grant</h6>
-            <p>Our Annual Literacy Grants fund literacy and educational nonprofits and libraries for specific projects
-                — the front lines of the fight to reduce global poverty through education.
-            </p>
-            <h6>Book for Book</h6>
-            <p>It’s simple: Every time you purchase a book from BetterWorldBooks.com, we donate a book to someone in
-                need.
-                The books we donate go through hundreds of non-profit organizations.
-            </p>
-            <h6>Reducing Landfill</h6>
-            <p>Better World Books brings new life to used books ensuring each book continues to make an impact. As part
-                of
-                our commitment to environmental sustainability, we never, ever throw away a book. Any book we cannot
-                find a
-                proper home for is recycled.
-            </p>
-        </div>
-        <div class="col-md-4 donate-books">
-            <h5>How?</h5>
-            <h6>Individuals</h6>
-            <p>Find one of our handy book drop boxes at a location near you nd donate your books today.</p>
-            <h6>Libraries</h6>
-            <p>Better World Books will ship, process, and sell your discards and donations, then donate or recycle
-                what’s left
-                for free. We serve thousands of academic, public and special libraries located in Canada, France,
-                Ireland, the
-                Netherlands, the United Kingdom and the United States.
-            </p>
-            <h6>Drop Box</h6>
-            <p>No books to donate, but want to help out? We are looking to place Drop Boxes at nationally recognized big
-                box
-                retailers, grocery-anchored shopping malls, and public libraries. 
-            </p>
-            </p>
-        </div>
+</div>
+<div class="row why-us">
+    <div class="col-md-12">
+        <h3>Why The Bookshelf?</h3>
+        <img src="{{url_for('static', filename='images/the-bookshelf.png')}}" alt="Why The Bookshelf description ">
     </div>
+</div>
+<div class="row donate-books-container">
+    <div class="col-md-12 donate-books">
+        <h3>Donate books</h3>
+    </div>
+    <div class="col-md-4 donate-books">
+        <h5>Who?</h5>
+        <h6>Better World Books</h6>
+        <p>Better World Books is a certified B-Corporation and a for-profit global e-retailer that collects and
+            sells
+            new and used books online matching each purchase with a book donation, Book-for-Book™. Each sale
+            generates
+            funds for literacy and education initiatives in the UK, US, and around the world. Since its launch in
+            2003,
+            Better World Books has raised more than $27 million for libraries and literacy, donated over 26 million
+            books,
+            and reused or recycled over 300 million books. To learn more how Better World Books Cares, visit
+            <a href="https://www.betterworldbooks.com" target="_blank">Cares.BetterWorldBooks.com.</a>
+        </p>
+        <p>
+            <i>“The more that you read, the more things you will know. The more that you learn, the more places
+                you’ll go.”
+                - Dr. Seuss</i>
+        </p>
+    </div>
+    <div class="col-md-4 donate-books">
+        <h5>Why?</h5>
+        <h6>Better World Book Grant</h6>
+        <p>Our Annual Literacy Grants fund literacy and educational nonprofits and libraries for specific projects
+            — the front lines of the fight to reduce global poverty through education.
+        </p>
+        <h6>Book for Book</h6>
+        <p>It’s simple: Every time you purchase a book from BetterWorldBooks.com, we donate a book to someone in
+            need.
+            The books we donate go through hundreds of non-profit organizations.
+        </p>
+        <h6>Reducing Landfill</h6>
+        <p>Better World Books brings new life to used books ensuring each book continues to make an impact. As part
+            of
+            our commitment to environmental sustainability, we never, ever throw away a book. Any book we cannot
+            find a
+            proper home for is recycled.
+        </p>
+    </div>
+    <div class="col-md-4 donate-books">
+        <h5>How?</h5>
+        <h6>Individuals</h6>
+        <p>Find one of our handy book drop boxes at a location near you nd donate your books today.</p>
+        <h6>Libraries</h6>
+        <p>Better World Books will ship, process, and sell your discards and donations, then donate or recycle
+            what’s left
+            for free. We serve thousands of academic, public and special libraries located in Canada, France,
+            Ireland, the
+            Netherlands, the United Kingdom and the United States.
+        </p>
+        <h6>Drop Box</h6>
+        <p>No books to donate, but want to help out? We are looking to place Drop Boxes at nationally recognized big
+            box
+            retailers, grocery-anchored shopping malls, and public libraries.
+        </p>
+    </div>
+</div>
 
 {% endblock %}
