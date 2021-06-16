@@ -36,7 +36,7 @@ share their own books that they have read and enjoyed.
     - [Languages](#languages)
 
 5. [Testing](#testing)
-    - See seperate [TESTING.md]() file.
+    - See seperate [TESTING.md](TESTING.md) file.
 
 6. [Deployment](#deployment)
     - [How to run this project locally](#how-to-run-this-project-locally)
@@ -371,7 +371,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 # Testing 
  
-- See seperate [TESTING.md]() file. 
+- See seperate [TESTING.md](TESTING.md) file. 
 
 # Deployment
 

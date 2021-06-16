@@ -34,89 +34,52 @@ The following validation services and linter were used to check the validity of 
 
 ## User Stories Testing
 
-The following section goes through the user stories identified in the [Ux section of README.md](README.md#UX) to check that the site meets those needs.
+The following section goes through the user stories identified in the [Ux section of README.md](README.md#UX) to check that the site 
+meets those needs.
 
-**As a visitor to The House of Mouse website I expect/want/need:**
+**As a visitor to The Bookshelf website I expect/want/need:**
 
-1. **To easily find what I am looking for, I want the layout of the site to make sense so I am not confused or put off using it.**
-    - Arrangement of site elements such as navbar, footer, icons, carousels, products lists, search, contact, FAQs and forms conform to expected placement. Breadcrumbs are provided on pages where the user has moved deeper into the hierarchical data structure of the website to make it easier for the user to tell where they are and how they can return to previous pages they were on.
-    - The key pages of the site can be accessed from both the navigation bar and the footer, which can be found on all pages of the site (except the checkout pages).
+1. **To be able to easily find the information I am looking for, the layout needs to make sense so that I am not put off.**
+    - Arrangement of site elements such as navbar, footer, icons, and forms conform to expected placement.
 
-1. **The information I am presented with to be laid out in a way that is easy for me to navigate and digest, so that I find what I need quickly and efficiently.**
-    - As the user moves through the site from the surface layers like the home page, to more detailed pages like an individual listing page, the information needed at each stage is displayed at the appropriate level. 
-    - At the main shop results page only product images, titles and prices are displayed so that all the information can be scanned quickly by a user to find what they are most interested in. 
+1. **The site to be laid out in a way that is easy to navigate, so that I can find what I need.**
+    - The navbar offers easy navigation for the user and is clearly labeled.
     - Icons and images are used to help the user digest information quickly.
-    - Common frequently asked question are put into a separate page, so that they can be found easily when needed.
 
-1. **The ability to search through small amounts of information to find what I need, and then be able to easily click to get more detailed information when I need it.**
-    - Some points for this already covered in previous user story details.
-    - Once the user moves to a listing detail page the user can access more detailed information on that product. 
-    - Shop list pages can be sorted by category, price high to low or price low to high.
-    - The search page allows the user to run a text search through all products titles, descriptions and tags to find what they are looking for.
+1. **The site to be responsive and navigable for various device sizes; desktop, tablet, and phone. For the content to look good on all of the devices.**
+    - The user can load the website on mobile, tablet, and desktop devices.
+    - The navbar has a collapsed menu for tablet and mobile viewing, this makes navigation easier for smaller devices.
 
-1. **The site to be easily navigable from any device, desktop, tablet or phone. For the content to look good and be useable on all of these devices.**
+1. **To learn more about The Bookshelf.**
     - A lot of attention was paid to mobile-first design throughout the project, from wireframes to completion. 
     - All elements have been given a responsive design, so nothing to too squashed, squeezed or hard to read on any screen size a user might be using.
     - The use of the site has been extensively tested on desktop, tablet and phone size screens as well as all screen sizes available to simulate in Chrome Developer Tools.
 
-1. **To learn more about the shop owner and their process, so that I can be assured I am buying from a small handmade business.** 
+1. **To be able to connect to The Bookshelf’s social media accounts.** 
     - A short but compelling About page is included in the site. With enough information to satisfy a users curiosity without overloading them with more than they need.
 
-1. **To be able to read reviews of this shop from previous customers, to build trust in my purchase.**
+1. **To be able to click on books for further information about them.**
     - The home page featured 5 testimonials from past customers, displayed in a carousel. A button in this section leads the user to the Etsy feedback page where 100s of other reviews for this shop can be read.
 
-1. **For all information and images to be laid out in a clear and easy to understand way, on whatever size screen I am viewing the website on.**
+1. **A purchase link to be provided for each book, in the event that I would like to buy it.**
     - Attention has been paid to ensuring product images are clean and professional, never squashed or squeezed and that the users operation of the site pages work on all devices. Text is never too large or too small, buttons are always large enough to click with a finger easily on touch screen devices.
 
-1. **Plenty of high quality images of the products for sale, so I have a clear idea of what I am buying and can see the quality of the products up close.**
+1. **To be able to add, edit, and delete books that I would like to share with others.**
     - Each product listing can hold up to 6 images, so the user can see the product, packaging and scale in detail. Image files have been optimized to keep the file size low while not sacrificing the professional image quality.
 
-1. **To be able to easily find out all the information I need to make an informed purchase. I expect information about materials, measurements, safety and packaging to be available on every listing page.**
+1. **To be able to write reviews about the books I would like to share.**
     - Information about product materials, measurements, safety and package are available on every listing page under the listing description.
 
-1. **To be informed if I try to order more items than are available in stock.**
+1. **To be able to log in and out with ease.**
     - Whenever a user adds an item to their cart or adjusts the quantity in their cart the current stock level for that item is checked from its database entry. A modal will alert the user if they attempt to add more to their cart than is available in stock, and their cart will be updated to reflect the maximum number available.
 
-1. **For recorded stock levels to be accurate, so there are no delays in receiving my order.**
+1. **To be notified that I have logged in or out of my account.**
     - Each listing detail quantity selection will only go up to the maximum number in stock. 
     - Whenever an item is purchased, the stock level for it in the database is updated.
     - The shop owner can access and update stock levels from the admin panel.
 
-1. **A text search function so that I can quickly narrow down my search when looking for something specific.**
+1. **To be notified about changes that are made, inlcluding adding, editing, and deleting books.**
     - A text search is available on the search page. It searches through the products titles, description and tags to find and rank the results for the user.
-
-1. **A clear terms and conditions and privacy policy.**
-    - Terms and conditions, and privacy policy pages are included in the site and linked to in the footer of each page.
-
-1. **There to be a frequently asked questions page for any further questions I might have about my order.**
-    - A FAQs page is provided and linked to in the navigation and footer.
-
-1. **To be able to see a summary of my order on every page of the checkout process.**
-    - The order summary is indeed on every page of the checkout process, provided on the right side of the screen on large screens, and in a dropdown button on mobile.
-
-1. **That once I am logged in I can access my account details and update them if I need to.** 
-    - The Account page gives the logged in user the ability to update their username, email address, first and last names. 
-    - At the moment the user cannot change their password - see [Features for Future Releases](README.md#features-for-future-releases) for more details.
-
-1. **To be able to find information on my past orders and how to cancel an order.** 
-    - The Account page provides a list of all the users previous purchases, with full details of their order, date it was placed, products, quantities and total amount paid. 
-    - A link is provided in each order summary for the user to contact the seller to cancel their order.
-    - Order summary's also include information on if the relevant order has been shipped yet.
-
-1. **To be able to connect to the businesses social media channels and/or newsletter, to keep up to date with new listings on the site.**
-    - The footer contains a link to the Mailchimp newsletter signup form for this shop.
-    - The active social media channel for this shop is on Facebook, so an icon and link to that is provided in the footer. When/if this shop becomes active on social media again their other social media platforms can easily be added in the same place.
-
-1. **To be able to easily get in contact with the shop owner via a contact form.**
-    - The contact page is easily located from the navigation bar and footer.
-    - The contact page is linked to in various relevant places throughout the site to encourage users to get in contact if they need to.
-    - The contact form provides an easy on site way for the user to send an email to the shop owner.
-    - The email sent to the shop owner includes all the needed info to reply directly to the sender.
-
-1. **Feedback from the website I am using when I interact with it, I expect pop ups and modals to inform me when my forms have been completed and sent correctly. Or to let me know when an error has ocurred and what to do next.**
-    - HTTP responses provide feedback to the user if there is a problem with their input values in forms.
-    - Beautiful animated popups appear to inform the user when their forms are completed, contact message is sent or when items are added to their cart.
-    - Error messages are also returned to the user when there is a problem with the site's functionality.
 
 ## Manual Testing
 Below is a detailed account of all the manual testing that has been done to confirm all areas of the site work as expected. 
@@ -143,7 +106,7 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Exp
     - Click the facebook icon, confirm that it opens a new tab and takes the user to The House of Mouse facebook page.
     - Check date of copyright information, confirm year displayed matches the current year.
 
-#### Home Page
+#### Who we are
 
 1. Hero Slider
     - Click slider buttons, confirm that they work as expected.
@@ -168,44 +131,25 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Exp
     - Reload the page, confirm that a new random selection of featured listings are shown.
     - Click each listing picture, confirm that it takes the user to the relevant listing detail page.
 
-#### Shop Page
+#### Log in
 
-1. Breadcrumbs
-    - Click breadcrumb links, confirm they work and go to the correct locations.
+- Reload the login page, confirm that the message for a new account is not visible.
+- Attempt to log in with a username not in the database, confirm the relevant error message is shown.
+- Attempt to log in with a correct username but wrong password, confirm the relevant error message is shown.
+- Log in with a correct username and password, confirm that the user is logged in and that they are redirected to their cart page.
+- Try to return to the login page url when already logged in, confirm that the user is redirected to the cart page.
 
-2. Shop section buttons
-    - Hover over section buttons, confirm the hover effects work as expected.
-    - Click all section buttons, confirm they work and take the user to the correct pages.
+#### Register
 
-3. Sorting options
-    - Select the different sorting options from the menu one by one, confirm that the products are sorted in the orders selected.
+- Try to go to the register url when already logged in, confirm that the user is redirected to the home page.
+- Log out then go to the register page again. Confirm that the register form is displayed as expected.
+- Fill in the form with a username already in the database, confirm that the user is informed that they must use a unique username.
+- Fill in the email input with a non-email address, confirm the user is shown an error asking the to use an email address.
+- Go into devtools, change the `type` attribute on the email form to `text`, attempt to send the form. confirm that the Django validation catches the error and tells the user to enter an email address.
+- Fill in the form with two different passwords, confirm the error is caught again and the user is informed of their mistake.
+- Fill in the registration for correctly, confirm that the user is automatically directed to the login page, and the message "Your account has been created `<username>`. You can now log in." is displayed above the login page. 
 
-4. Product cards
-    - Hover over product cards, confirm the hover effect works as expected.
-    - Confirm that the photos, images and prices displayed are correct.
-    - Click multiple products, confirm that the user is taken to the correct product listing pages.
-    - Confirm that one of each product is displayed in total. 
-    - Check that there are no duplicates or missing products.
-
-5. Pagination
-    - Click all pagination links, confirm that they work as desired.
-
-#### Search Page
-
-1. Breadcrumbs
-    - Click breadcrumb links, confirm they work and go to the correct locations.
-
-2. Search bar
-    - Load search page, confirm that the search bar is visible and no product listing results are shown.
-    - Enter a search word that applies to many listings. 
-        - Confirm that the listing returned match the search term.
-        - Confirm that the results are paginated and that the pagination works correctly.
-    - Enter a search word that does not apply to any listings. Confirm that the message "There are currently no listings that match this search" is displayed when hitting enter.
-
-3. Footer on search page
-    - Confirm that footer stays stuck to the bottom of the screen even when there are no listings to fill up the space.
-
-#### Listing Page
+#### Club picks
 
 1. Listing breadcrumbs
     - Check that breadcrumbs show the relevant category of the product listing in them.
@@ -236,20 +180,20 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Exp
     - Confirm that the modal provides two buttons to the user: to go to cart or to continue shopping. Click both to confirm they operate as expected.
     - Add more to the cart from the same product, making the total go over the max number in stock. Confirm that the modal alerting the user to too many of the product in their cart is launch. Confirm that the quantity in the cart is reset to the max number in stock.
 
-#### About Page
+#### Your picks
 
 - Go to account page, confirm that the title and subheading displays as expected. 
 - Check that the photograph is on the left side of the screen and the text on the right. 
 - Check that the proportions of the page are as expected.
 - Click the "visit shop" call to action button, confirm it takes the user to the main shop page.
 
-#### FAQs Page
+#### Add book
 
 - Go to FAQs page. Confirm that each question is in the main heading font and pink, to make it easy for users to scan the questions to find the ones relevant to their needs.
 - Check that the questions are clear and the answers given are sufficient.
 - Click the "contact" and "subscribe" links provided on this page, confirm they take the user to the contact page.
 
-#### Contact Page
+#### Edit book
 
 - Go to the contact page. Confirm that the contact form is laid out as expected.
 - Confirm that for a logged in user the email address field has already been populated. 
@@ -258,101 +202,11 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Exp
 - Try to enter a non-email address into the email field, confirm that the user is alerted to fill in an email address.
 - Send a complete form, confirm that the message is sent to my email address with all the information included.
 
-#### Register Page
-
-- Try to go to the register url when already logged in, confirm that the user is redirected to the home page.
-- Log out then go to the register page again. Confirm that the register form is displayed as expected.
-- Fill in the form with a username already in the database, confirm that the user is informed that they must use a unique username.
-- Fill in the email input with a non-email address, confirm the user is shown an error asking the to use an email address.
-- Go into devtools, change the `type` attribute on the email form to `text`, attempt to send the form. confirm that the Django validation catches the error and tells the user to enter an email address.
-- Fill in the form with two different passwords, confirm the error is caught again and the user is informed of their mistake.
-- Fill in the registration for correctly, confirm that the user is automatically directed to the login page, and the message "Your account has been created `<username>`. You can now log in." is displayed above the login page. 
-
-#### Login Page
-
-- Reload the login page, confirm that the message for a new account is not visible.
-- Attempt to log in with a username not in the database, confirm the relevant error message is shown.
-- Attempt to log in with a correct username but wrong password, confirm the relevant error message is shown.
-- Log in with a correct username and password, confirm that the user is logged in and that they are redirected to their cart page.
-- Try to return to the login page url when already logged in, confirm that the user is redirected to the cart page.
-
-#### Account Page
-
-- Go to the account page of a newly created user. Confirm that te profile info form is populated with the users username and email address.
-- Confirm that the first name and last name fields are also available.
-- Fill in the form with a non-email address, confirm that the applicable error is shown to the user
-- Fill in the form correctly, confirm that the "Your account info has been updated." message is shown to the user and that the reloaded form is now populated with the new data.
-- Confirm that a user with no previous orders has the "no orders to show" text in the Orders section.
-- Make 2 separate orders on the website. 
-- Return to the account page, confirm that the orders are displayed in the Orders section of the account page. With the top order being the most recent and open to show the full details. Confirm that all orders after it in the list are closed accordions, but that can be opened with a click.
-- Confirm that all data in the orders on the account page is accurate.
-- Go into the admin panel, mark one of the orders as shipped. Confirm that the information to the user in their account page is updated to show that the order selected has been shipped.
-
-#### Log Out Page
+#### Log out
 
 - Add a new product to the users cart. Click the "log out" link in the navigation bar. Confirm that the user is logged out and their cart has been cleared.
 - Click the "Log in again" link on this page, confirm that the user is taken back to the login page.
 - Confirm that the footer stays stuck to the bottom of the screen even when there is not enough content on the page to push it down.
-
-#### Cart Page
-
-- Go to the cart page when not logged in to the site, confirm that the user is taken to the login page to sign in.
-- Log in and go to the cart page with nothing in the cart. Confirm that the message "Your cart is empty!" is shown and the call to action button "Let's go shopping" is provided.
-- Click the button and confirm it takes the user to the main shop page.
-- Add items to the cart and return to the cart page, confirm that all items in the cart are displayed correctly, with the correct amounts requested by the user.
-- Adjust the quantity field, confirm that the shopping cart subtotal is updated to reflect the change.
-- Adjust the quantity field up higher than the number of that item in stock. Confirm that a modal alerts the user to the maximum number available and adjust the cart to reflect that amount.
-- Click the `x` delete button on a listing, confirm that the cart page is reloaded with that item removed from the cart.
-- Delete all items from the cart, confirm that the cart page is reloaded to reflect the empty cart.
-
-#### Checkout Pages
-
-- Navigate to the checkout page urls without anything in the cart. Confirm that the user is redirected to the cart page.
-
-##### Info Page
-
-- Go to the info page with items in users cart. Confirm that the items are displayed correctly in the order summary, that the subtotal is correct, and that the "change" link on the order summary returns the user to the cart page if clicked.
-- Confirm that the progress bar at the top of the page highlights the correct stage in the checkout process.
-- Try to click the "continue to shipping" button without adding any information to the shipping info form. Confirm that the appropriate error message is given to the user.
-- Try to send the form without all the required fields filled in. Confirm that the appropriate error message is given to the user.
-- Click the "My country is not in the list?" link, confirm that the information modal is launched and that the buttons on this modal work as expected.
-- Click the links at the bottom of the page, confirm that they work as expected.
-- After adding shipping information and going to the next page, return to the Info page and confirm that the shipping info is populated in the form.
-
-##### Shipping Page
-
-- Go to the shipping page. Confirm that the items are displayed correctly in the order summary and that the "change" link on the order summary returns the user to the cart page if clicked.
-- Confirm that the shipping price is correct for the country selected, and has now been added to the total. 
-- Test the shipping price by changing the country destination to different areas that have different prices.
-- Confirm that the progress bar at the top of the page highlights the correct stage in the checkout process.
-- Check that the email address of the user is displayed and is correct. 
-- Check that the address given by the user is also displayed correctly.
-- Click the links at the bottom of the page, confirm that they work as expected.
-- Click the "Continue to payment" button, confirm it takes the user to the Stripe checkout page.
-
-##### Payment Page
-
-- Cancel the payment, confirm that the user is taken back to the all products page of the website.
-- Return to the payment page , use the stripe checkout test [card numbers](https://stripe.com/docs/testing) to check the various responses to different errors.
-- Make a successful payment. Confirm that the user is returned to The House of Mouse website and the confirm order page.
-
-##### Confirmation Page
-
-- Check that the conformation page loads as expected.
-- Confirm that the progress bar at the top of the page highlights the correct stage in the checkout process. 
-- Check that the shipping address provided by the user is also correct.
-- Check that the estimated shipping time given is correct for the country selected by the user.
-- Check that the links provided on this page work as expected.
-- Click the "return to shop" button, confirm that the user is taken back to the main shop page.
-
-#### Terms and Conditions Page
-
-- Check that the page loads and displays as expected. Confirm that the links in the text work as needed.
-
-#### Privacy Policy Page
-
-- Check that the page loads and displays as expected. Confirm that the links in the text work as needed.
-
 
 ### Testing undertaken on tablet and phone devices
 All steps below were repeated to test mobile and tablet specific elements on my Samsung phone and tablet, in both the firefox browser and samsung internet browser.
@@ -383,7 +237,6 @@ Responsive design was also tested in the Chrome Developer Tools device simulator
 5. All pages
     - Navigate to all pages on the site, check that the layout is as expected for the screen size.
     - Check that all buttons, menus, forms and other elements are the correct proportions and easily clickable with a finger.
-
 
 ### Bugs discovered: 
 #### Solved bugs
@@ -471,7 +324,6 @@ else:
 1. **Sorting category results with pagination**
     - Getting the operation of pagination in shop categories in combination with the sort function throws multiple bugs and errors. The first pagination page will show correctly, but when the user tries to go to the next page the results are either reset as if the page was never sorted, or throws an error.
     - Given that the number of listings in the largest shop section is 15 - which is only 3 more than the usual pagination number of 12 - I decided to remove pagination in the shop sections and leave tackling this bug for a future release. 
-
 
 ## Further testing: 
 1. Asked fellow students, friends and family to look at the site on their devices and report any issues they found.
