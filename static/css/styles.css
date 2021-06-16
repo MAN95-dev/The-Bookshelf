@@ -6,6 +6,12 @@ body {
     height: 100%;
 }
 
+main {
+min-height: 70vh;
+height: 100%; 
+margin: 0 auto -30px;
+}
+
 /** Flash messages **/
 .alert {
   padding: 20px;
@@ -150,9 +156,6 @@ footer p u:hover {
 
 .about-us {
     background-image: linear-gradient(#ffcc99, #ffff66);
-     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
     height: 530px;
 }
 
@@ -403,6 +406,12 @@ footer p u:hover {
 
 /** Medium devices only **/
 @media (min-width: 992px) and (max-width: 1199px) {
+
+main {
+min-height: 80vh;
+height: 100%; 
+margin: 0 auto -30px;
+}
 
 /** Header **/
 .navbar-brand h1{
