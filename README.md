@@ -172,7 +172,8 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 - A user or visitor who is not logged in will see the options of Who we are, Log in, and Register. 
 
-- **In tablet and mobile view** 
+- **In tablet and mobile view**  the name remains in the left side of the navigation bar, where users would expect it to be. The burger 
+  icon to display the full navigation menu is on the far right. 
 
 #### Footer
 
