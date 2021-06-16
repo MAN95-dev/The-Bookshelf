@@ -145,7 +145,7 @@ footer p u:hover {
     margin-top: 30px;
     margin-left: 160px;
     font-size: 18px;
-    line-height: 35px;
+    line-height: 30px;
 }
 
 .about-us {
@@ -197,6 +197,7 @@ footer p u:hover {
     text-align: justify;
     word-spacing:-2px;
     font-family: 'Roboto', sans-serif;
+    line-height: 30px;
 }
 
 .donate-books-container {
@@ -601,17 +602,20 @@ nav li {
 .about h2 {
     font-family: 'RocknRoll One', sans-serif;
     font-size: 40px;
-    margin-top: 60px;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 .founder img {
     height: 300px;
     width: 250px;
     border-radius: 50%;
+    margin-left: 5px;
 }
 
 .about p {
     margin-top: 30px;
+    margin-left: 20px;
     font-size: 18px;
     line-height: 35px;
 }
@@ -673,7 +677,7 @@ nav li {
 /** Modals **/
 .modal-btn {
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .book-tile img {
@@ -702,7 +706,7 @@ nav li {
 .category-tile img {
     width: 140px;
     height: 200px; 
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .category-tile span {
