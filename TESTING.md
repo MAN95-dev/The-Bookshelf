@@ -47,25 +47,29 @@ meets those needs.
     - Icons and images are used to help the user digest information quickly.
 
 1. **The site to be responsive and navigable for various device sizes; desktop, tablet, and phone. For the content to look good on all of the devices.**
+    - The use of the site has been extensively tested on desktop, tablet and phone size screens.
     - The user can load the website on mobile, tablet, and desktop devices.
+    - All elements have been given a responsive design, so nothing to too squashed, squeezed or hard to read on any screen size a user might be using.
     - The navbar has a collapsed menu for tablet and mobile viewing, this makes navigation easier for smaller devices.
 
 1. **To learn more about The Bookshelf.**
-    - A lot of attention was paid to mobile-first design throughout the project, from wireframes to completion. 
-    - All elements have been given a responsive design, so nothing to too squashed, squeezed or hard to read on any screen size a user might be using.
-    - The use of the site has been extensively tested on desktop, tablet and phone size screens as well as all screen sizes available to simulate in Chrome Developer Tools.
+    - The home page 'Who we are' offers more information about The Bookshelf, including some of the features it has. 
+    - The footer contains links to The Bookshelf's different social media accounts for more information. 
 
 1. **To be able to connect to The Bookshelf’s social media accounts.** 
-    - A short but compelling About page is included in the site. With enough information to satisfy a users curiosity without overloading them with more than they need.
+    - The footer contains links to The Bookshelf's different social media accounts, including Facebook, Instagram, and Twitter. 
 
 1. **To be able to click on books for further information about them.**
-    - The home page featured 5 testimonials from past customers, displayed in a carousel. A button in this section leads the user to the Etsy feedback page where 100s of other reviews for this shop can be read.
+    - Each book contains a modal button under the book cover, which can be clicked on for further information on each of the books. 
+    - The modal contains the book cover image, title, author, synopsis, link to the Amazon store, and a review. 
 
 1. **A purchase link to be provided for each book, in the event that I would like to buy it.**
-    - Attention has been paid to ensuring product images are clean and professional, never squashed or squeezed and that the users operation of the site pages work on all devices. Text is never too large or too small, buttons are always large enough to click with a finger easily on touch screen devices.
+    - Each book modal contains a link to the Amazon store, and has the option of hardcover, paperback, or kindle. 
 
 1. **To be able to add, edit, and delete books that I would like to share with others.**
-    - Each product listing can hold up to 6 images, so the user can see the product, packaging and scale in detail. Image files have been optimized to keep the file size low while not sacrificing the professional image quality.
+    - The Add book page allows members to add books that they would like to share with others, by filling in the form and submitting the 
+      information. 
+    - Members are able to edit their own book additions, by clicking the edit button within their book modal. 
 
 1. **To be able to write reviews about the books I would like to share.**
     - Information about product materials, measurements, safety and package are available on every listing page under the listing description.
