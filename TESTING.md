@@ -69,21 +69,28 @@ meets those needs.
 1. **To be able to add, edit, and delete books that I would like to share with others.**
     - The Add book page allows members to add books that they would like to share with others, by filling in the form and submitting the 
       information. 
-    - Members are able to edit their own book additions, by clicking the edit button within their book modal. 
+    - Members are able to edit their own book additions by clicking the edit button within their book modal. The edit book page allows
+      members to cancel or save their edited book information. 
+    - Members are able to delete their own book additions by clicking the delete button within their book modal. This brings up a modal
+      askng whether thehy are sure they want to delete this book, giving them the option to cancel or delete. 
 
 1. **To be able to write reviews about the books I would like to share.**
-    - Information about product materials, measurements, safety and package are available on every listing page under the listing description.
+    - The Add book page requires members to add a review about the book they read before adding it, these reviews appear in the books 
+      modal. 
 
 1. **To be able to log in and out with ease.**
-    - Whenever a user adds an item to their cart or adjusts the quantity in their cart the current stock level for that item is checked from its database entry. A modal will alert the user if they attempt to add more to their cart than is available in stock, and their cart will be updated to reflect the maximum number available.
+    - Both log in and log out pages are displayed in the navbar, making it easy to do both functions. 
+    - The log in form is able to store your username and password if desired, making it easier and faster to log in. 
 
 1. **To be notified that I have logged in or out of my account.**
-    - Each listing detail quantity selection will only go up to the maximum number in stock. 
-    - Whenever an item is purchased, the stock level for it in the database is updated.
-    - The shop owner can access and update stock levels from the admin panel.
+    - When a member logs into their account, they are taken to their profile page, where a flash message displays 'Welcome, (Username)'.
+    - When logged out, a flash message displays 'You have been logged out', and bringing them back to the log in page. 
 
 1. **To be notified about changes that are made, inlcluding adding, editing, and deleting books.**
-    - A text search is available on the search page. It searches through the products titles, description and tags to find and rank the results for the user.
+    - Flash messages have been designed to notify members when any changes have been made. 
+    - When a member had added a book, a flash message displays 'Book successfully added'. 
+    - When a book has been edited, a flash message displays 'Book successfully updated'.
+    - When a member deletes a book, a flash message displays 'Book successfully deleted'.
 
 ## Manual Testing
 Below is a detailed account of all the manual testing that has been done to confirm all areas of the site work as expected. 
