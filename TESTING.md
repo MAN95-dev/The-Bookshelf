@@ -12,9 +12,7 @@
 3. [Manual Testing](#manual-testing)
     - [Testing undertaken on desktop](#testing-undertaken-on-desktop)
     - [Testing undertaken on tablet and phone devices](#testing-undertaken-on-tablet-and-phone-devices)
-4. [Bugs discovered](#bugs-discovered)
-    - [Solved bugs](#solved-bugs)
-    - [Unsolved bugs](#unsolved-bugs)
+4. [Solved bugs](#solved-bugs)
 5. [Further Testing](#further-testing)
 
 ## Automated Testing
@@ -103,62 +101,39 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and Safari.
 
 1. Navbar 
     - Clicked each link in the navbar to confirm that it leads to the correct page.
-    - Confirm that when logged out the options "Register" and "Log in" are visible and that "Account" and "Log out" are not.
-    - Log into the site, confirm that options "Account" and "Log out" are visible and that "Register" and "Log in" are not.
-    - Click the "Shop" link in the navbar, confirm that all sections of the shop are listed in the dropdown menu.
-    - Add an item to the users cart, confirm that the counter appears over the shopping cart icon with the correct number of items displays.
-    - Add more than 10 items to the cart, confirm that the counter shows `9+`.
-    - Delete all items from the users cart, confirm that the counter is no longer visible in the navbar.
+    - Confirm that when logged out the options "Register" and "Log in" are visible and that "Club picks", "Your picks", "Add book" and 
+      "Log out" are not.
+    - Log into the site, confirm that options ""Club picks", "Your picks", "Add book" and "Log out" are visible and that "Register" and 
+      "Log in" are not.
 
 2. Footer
-    - Click subscribe button, confirmed it opens a new tab and takes the user to the correct subscription page on the MailChimp website.
-    - Hover over links in the footer, confirm the color change animation works as expected.
+    - Hover over links in the footer, confirm that they change color. 
     - Click all links in the footer, confirm that they take the user to the relevant pages within the site.
-    - Click the facebook icon, confirm that it opens a new tab and takes the user to The House of Mouse facebook page.
-    - Check date of copyright information, confirm year displayed matches the current year.
+    - Click the facebook, instagram, and twitter icons, confirm that they open a new tab and take the user to the differnt social media sites. 
 
 #### Who we are
 
-1. Hero Slider
-    - Click slider buttons, confirm that they work as expected.
+1. About The Bookshelf 
     - Adjust width of browser window, confirm image is always cropped in an attractive way.
 
-2. Call to action buttons
-    - Hover over all buttons, confirm the color change and shadow on hover appear as expected.
-    - Click all buttons, confirm they take the user to the correct links and open new tabs when links go away from the website.
+2. Why The Bookshelf?
+    - Adjust width of browser window, confirm image is always cropped in an attractive way.
 
-3. Shop section images
-    - Hover over each section image, confirm shadow size increases and image looks as it if is being lifted up on the page.
-    - Confirm all titles laid over on images can be easily read.
-
-4. Testimonials carousel
-    - Click carousel buttons, confirm that they work as expected.
-    - Check each slide to be sure the elements fit within the slider.
-    - Confirm all text can be easily read.
-
-5. Featured listings
-    - Confirm that on desktop 4 featured listings are visible in one row.
-    - Confirm that on tablet 6 featured listings are visible over two rows.
-    - Reload the page, confirm that a new random selection of featured listings are shown.
-    - Click each listing picture, confirm that it takes the user to the relevant listing detail page.
+3. Donate books
+    - Click link to confirm it takes the user to the correct page, in a new tab. 
 
 #### Log in
 
-- Reload the login page, confirm that the message for a new account is not visible.
 - Attempt to log in with a username not in the database, confirm the relevant error message is shown.
 - Attempt to log in with a correct username but wrong password, confirm the relevant error message is shown.
-- Log in with a correct username and password, confirm that the user is logged in and that they are redirected to their cart page.
-- Try to return to the login page url when already logged in, confirm that the user is redirected to the cart page.
+- Log in with a correct username and password, confirm that the user is logged in and that they are redirected to the Your picks page.
 
 #### Register
 
-- Try to go to the register url when already logged in, confirm that the user is redirected to the home page.
-- Log out then go to the register page again. Confirm that the register form is displayed as expected.
-- Fill in the form with a username already in the database, confirm that the user is informed that they must use a unique username.
-- Fill in the email input with a non-email address, confirm the user is shown an error asking the to use an email address.
-- Go into devtools, change the `type` attribute on the email form to `text`, attempt to send the form. confirm that the Django validation catches the error and tells the user to enter an email address.
-- Fill in the form with two different passwords, confirm the error is caught again and the user is informed of their mistake.
-- Fill in the registration for correctly, confirm that the user is automatically directed to the login page, and the message "Your account has been created `<username>`. You can now log in." is displayed above the login page. 
+- Log out then go to the register page. Confirm that the register form is displayed as expected.
+- Fill in the form with a username already in the database, confirm that the user is informed that the username already exists. 
+- Fill in the registration form correctly, confirm that the user is automatically directed to the Your picks page, and the message 
+  "Weclome `<username>`." is displayed above the Your picks page. 
 
 #### Club picks
 
@@ -220,56 +195,37 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and Safari.
 - Confirm that the footer stays stuck to the bottom of the screen even when there is not enough content on the page to push it down.
 
 ### Testing undertaken on tablet and phone devices
-All steps below were repeated to test mobile and tablet specific elements on my Samsung phone and tablet, in both the firefox browser and samsung internet browser.
+All steps below were repeated to test mobile and tablet specific elements on my iPhone and iPad, in both the Safari browser and Google 
+Chrome browser.
 
 Responsive design was also tested in the Chrome Developer Tools device simulators on all options and orientations.
 
 #### Elements on every page
 
 1. Navbar 
-    - Open the website on mobile, confirm that the navbar is collapsed into a burger icon
+    - Open the website on mobile and tablet, confirm that the navbar is collapsed into a burger icon
     - click the burger icon, confirm that the navbar list appears are expected.
-    - Click the "Shop" dropdown menu, confirm that the shop sections are displayed. 
-    - Add something to the cart, confirm that the user shopping cart icon counter appears and displays correctly.
 
 2. Footer
-    - Scroll to the bottom of the page, confirm that the footer contents is displayed as expected with the bootstrap grid.
+    - Scroll to the bottom of the page, confirm that the footer content is displayed as expected with the bootstrap grid.
     - No content squashed or squeezed or disproportionate in size.
     - Confirm that all links and buttons in footer are easy to click with a finger on the smallest screen sizes.
 
-3. Shop pages
-    - Confirm that the product list is displayed one on top of each other on mobile, and 3 to a row on tablet.
+3. Club picks and Your picks pages
+    - Confirm that the books ar displayed 2 to a row on mobile, and 3 to a row on tablet.
     - Confirm that all clicks and swipes operate as expected on touch screen.
-
-4. Checkout pages
-    - Confirm that the order summary is displayed as a closed accordion, and can be opened with a click.
-    - Check that the display of elements matches the expected layout for mobile and tablet devices.
+    - Check that modals are the correct proportions and that all their buttons are easily clickable with a finger.
 
 5. All pages
     - Navigate to all pages on the site, check that the layout is as expected for the screen size.
-    - Check that all buttons, menus, forms and other elements are the correct proportions and easily clickable with a finger.
+    - Check that all buttons, forms and other elements are the correct proportions and easily clickable with a finger.
 
-### Bugs discovered: 
-#### Solved bugs
+## Solved bugs
 
 1. **Flash messages not displaying**
    - None of the flash messages were displaying when logging in and out. 
    - Flash messages were hidden by the navbar. 
    - To fix this I increased the top margin of the flash messages, so that they appeared below the navbar. 
-  
-    ```css
-    .alert {
-  padding: 20px;
-  background-color: #f44336;
-  color: white;
-  opacity: 1;
-  transition: 0.6s;
-  margin-top: 90px;
-  width: 30%;
-  text-align: center;
-  left: 35%;
-}
-    ```
 
 2. **When running the app.py file the js file was displaying a 404 error in the terminal**
    - When running the app.py file I was getting the following message in the terminal `J"GET /%7Burl_for('static',%20filename='js/script.js')%20%7D%7D HTTP/1.1" 404`
@@ -301,7 +257,8 @@ Responsive design was also tested in the Chrome Developer Tools device simulator
  ```html
  <a href="{{ url_for('your_picks', book_name=your_picks._id) }}"></a>
  ```
-    to 
+     
+     to 
 
  ```html
  <a href="{{ url_for('your_picks', username=your_picks._id) }}"></a>
@@ -343,9 +300,6 @@ Responsive design was also tested in the Chrome Developer Tools device simulator
     - This bug was fixed by adding the container-fluid class to the <main> element in the base.html page and deleting all container classes
       in the other templates. 
 
-#### Unsolved bugs
-
-
-## Further testing: 
-1. Asked fellow students, friends and family to look at the site on their devices and report any issues they found.
-2. The House of Mouse viewed on all devices and orientations available in Chrome DevTools, as well at a local tech store.
+## Further testing
+1. Asked friends and family to look at the site on their devices and report any issues they found.
+2. The Bookshelf viewed on all devices and orientations available in Chrome DevTools. 
