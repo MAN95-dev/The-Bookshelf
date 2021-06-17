@@ -97,7 +97,7 @@ Below is a detailed account of all the manual testing that has been done to conf
 
 ### Testing undertaken on desktop
 
-All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Explorer and on two different desktop screen sizes.
+All steps on desktop were repeated in browsers: Firefox, Chrome and Safari. 
 
 #### Elements on every page
 
@@ -252,89 +252,99 @@ Responsive design was also tested in the Chrome Developer Tools device simulator
 ### Bugs discovered: 
 #### Solved bugs
 
-1. **On running the python server, large errors appeared in terminal**
-    - Any time a page was loaded, the terminal filled with around 100 lines of errors. This turned out to be a bug with Python 3.7.3 [See bug report on bugs.python.org](https://bugs.python.org/issue27682)
-    - Bug was partially resolved by upgrading my version of python to python 3.7.5, although this threw new errors at me.
-    - Bug finally fixed by replacing my `python manage.py runserver` command with `python manage.py runserver 8000` (with thanks to Chris Zielinski, Code Institute Mentor for this solution)
+1. **Flash messages not displaying**
+   - None of the flash messages were displaying when logging in and out. 
+   - Flash messages were hidden by the navbar. 
+   - To fix this I increased the top margin of the flash messages, so that they appeared below the navbar. 
+  
+    ```css
+    .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: 0.6s;
+  margin-top: 90px;
+  width: 30%;
+  text-align: center;
+  left: 35%;
+}
+    ```
 
-2. **Duplicate items added to OrderItems database**
-    - As I was using a nested loop to compare the items in my sessions storage cart to the items in the database Order, I was ending up with duplicate items when more than 1 item was already in the database.
-    - After multiple different attempts to fix the problem the solution was pretty simple: if the Order already existed I deleted all the OrderItems from the database and rebuilt them from the session variable instead.
-```python
-order = Order.objects.filter(customer=request.user, paid=False).first()
-checkout_cart = request.session['cart']
+2. **When running the app.py file the js file was displaying a 404 error in the terminal**
+   - When running the app.py file I was getting the following message in the terminal `J"GET /%7Burl_for('static',%20filename='js/script.js')%20%7D%7D HTTP/1.1" 404`
+   - The js link at the bottom of the base.html page was missing a curly bracket. When this was added the 404 error disappeared. 
 
-# if new order, create instance of order
-if not order:
-    order = Order.objects.create(customer=request.user)
+3. **Alert boxes displaying flash messages won't close when the x icon is clicked**
+   - Any time a flash messaged displayed, I was unable to close it. 
+   - To fix this bug I added the following on click function `onclick="this.parentElement.style.display='none';"` to the alert box button. 
 
-# if unpaid order exists in database already:
-else:
-    # get items in session storage cart
-    session_cart = checkout_cart['orderItems']
+   ```html
+   <div class="alert success flashes">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>{{ message }}</strong>
+        </div>
+    ```
 
-    # get items currently in Order
-    items_in_order = OrderItem.objects.filter(order=order)
+4. **Modals are not updating with the correct book content**
+   - When each of the book modals are clicked on, they are all appearing with the first books' content on not their own content. 
+   - To fix this I gave each books' modal button a unique data-bs-target that matched the modal's id.  
 
-    # delete all order items in the list
-    for orderitem in items_in_order:
-        orderitem.delete()
+5. **A book was added to the database, but was not displaying on the members profile**
+   - When adding a book via the Add book page, it would display the flash message 'Book successfully added', but was not displaying on 
+     the members profile. I checked the database to ensure the data had been added, and it had. 
+   - This bug was fixed by changing the href in the Your picks page to access the username instead of the book_name when displaying the 
+     book's image. 
 
-    # loop through all cart items and create new instances of OrderItem for them
-    for item in session_cart:
-        _id = int(item['listingId'])
-        quantity = int(item['quantity'])
+     From 
 
-        # filter out items in session storage that have had their quantities reduced to 0
-        if quantity > 0:
-            product = Product.objects.filter(id=_id).first()
-            order_item = OrderItem(order=order, product=product, quantity=quantity)
-            order_item.save()
+ ```html
+ <a href="{{ url_for('your_picks', book_name=your_picks._id) }}"></a>
+ ```
+    to 
+
+ ```html
+ <a href="{{ url_for('your_picks', username=your_picks._id) }}"></a>
+ ```
+
+6. **The author's name was not displaying in the book modals**
+   - When opening the book modals, none of the author's names were displaying. When I checked the database 'null' was displayed next to
+     author_name. 
+   - In the Add book template, book_author was used in the label, name and id, instead of author_name. Once this was changed, the authors'
+     names were displaying in the modals.  
+
+7. **Horizontal scroll present on home page**
+   - To fix this bug, the footer was deleted from the home page template, as the home page was extended from the base template, which already
+     included the footer. 
+
+8. **Your picks page and modal displaying incorrect names of the members who added books**
+   - If a book was uploaded by another member, it does not display that members name on the Your picks page or in the modal. Instead,
+     it displays the name of the member logged in. 
+   - This bug was fixed by changing `{{ username }}’s review` which displayed the name of whoever was logged in, to 
+     `{{ your_picks.created_by }}'s review`, which displays the name of the member who added the book. 
+
+9. **When deleting a book, the incorrect book was deleted**
+   - When deleting a book, the previous book added by a member was deleted, whether it was their book they uploaded or another member's book. 
+   - This bug was fixed by appending {{ your_picks._id }} to the delete modal button's data-bs-target and the delete modal's id. 
+
+```html
+ <!-- Modal button for Delete Book modal -->
+                    <button class="btn btn-danger" data-bs-target="#modal-delete{{ your_picks._id }}"
+                        data-bs-toggle="modal" data-bs-dismiss="modal">Delete</button>
 ```
 
-5. **Django code for search vectors not working with sqlite3 database**
-    - The more refined search functions from `django.contrib.postgres.search`, such as `SearchQuery, SearchRank, SearchVector` would not work with my local sqlite3 database.
-    - Temporarily solved this by using this simpler search code:
+```html
+<!-- Modal for Delete Book -->
+    <div class="modal fade" id="modal-delete{{ your_picks._id }}" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+```
 
-    ```python
-    from django.db.models import Q
-    results = Product.objects.filter(Q(title__icontains=query) | Q(description__icontains=query) | Q(tags__icontains=query))
-    ```
-
-    - Once my site was deployed, I connected to the postgres database and then replaced the above code with the more robust and accurate django postgres search code.
-
-
-    ```python
-    from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
-
-    vector = SearchVector('title', weight='A') + SearchVector('description', weight='B') + SearchVector('tags', weight='C')
-    query = SearchQuery(query)
-    results = Product.objects.annotate(rank=SearchRank(vector, query)).filter(rank__gte=0.1).order_by('rank')
-    ```
-
-4. **VScode unable to access postgreSQL database for testing**
-    - Due to the free Hobby-dev postgres package selected when setting up the heroku database, I was not able to set the permissions necessary to alow Django to create a test database when running `manage.py test`. 
-    - To fix this I reverted to accessing my sqlite3 database on my local machine for testing, and checked Travis regularly to check my tests written locally were passing when tested against the production database too.
-
-5. **Duplicate listings showing up in All-Products view**
-    - This was initially caused due to trying to sort results from the database by a boolean value (featured), but this turned out to be a known nofix issue with django. 
-    - First I attempted to fix this by ordering by random, but the same problem continued.
-    - Eventually I used the following code to grab both querysets for featured and not featured and concatenate them into one list to send to the page view.
-
-
-    ```python
-    from itertools import chain
-
-    featured = Product.objects.filter(featured=True)
-    not_featured = Product.objects.filter(featured=False)
-    queryset = list(chain(featured, not_featured))
-    ```
+10. **The background color on the home page not stretching the full browser width**
+    - This bug was fixed by adding the container-fluid class to the <main> element in the base.html page and deleting all container classes
+      in the other templates. 
 
 #### Unsolved bugs
 
-1. **Sorting category results with pagination**
-    - Getting the operation of pagination in shop categories in combination with the sort function throws multiple bugs and errors. The first pagination page will show correctly, but when the user tries to go to the next page the results are either reset as if the page was never sorted, or throws an error.
-    - Given that the number of listings in the largest shop section is 15 - which is only 3 more than the usual pagination number of 12 - I decided to remove pagination in the shop sections and leave tackling this bug for a future release. 
 
 ## Further testing: 
 1. Asked fellow students, friends and family to look at the site on their devices and report any issues they found.
