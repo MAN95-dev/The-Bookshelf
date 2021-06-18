@@ -137,62 +137,44 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and Safari.
 
 #### Club picks
 
-1. Listing breadcrumbs
-    - Check that breadcrumbs show the relevant category of the product listing in them.
-    - Click all breadcrumb links, confirm that they take the user to the correct pages.
-
-2. Listing details
-    - Confirm that the listing title, price, and description match those in the database for the product.
-
-3. Listing photographs
-    - Click the thumbnails provided for extra images of the product. Confirm that the large photograph is updated to reflect the thumbnails clicked.
-    - Confirm that the standard photograph of the product packaging, and the one provided to show scale are visible with the other listing photographs.
-
-4. Listing information
-    - Confirm that all information on measurements, materials, safety and customisations can be found on the listing detail page under the description. 
-    - Click the contact page link in the listing info, confirm it takes the user to the contact page.
-
-5. More like this
-    - Check that the listings featured in the "more like this" section are from the same category as the listing detail currently open.
-    - Check that the current listing is excluded from the selection of products shown.
-    - Click the products in this section, confirm that their links and hover effects work as expected.
-    - Click the "browse more" button, confirm it takes the user to the correct category section of the shop.
-
-6. Quantity selection
-    - Click the quantity selection. Confirm that the highest number available to select matches the number in stock of this product.
-
-7. Add to cart button
-    - Click the "add to cart" button. Confirm that the applicable modal is launched, stating the name of the product added to the cart, and that the cart counter in the navigation bar is updated to reflect the new quantity.
-    - Confirm that the modal provides two buttons to the user: to go to cart or to continue shopping. Click both to confirm they operate as expected.
-    - Add more to the cart from the same product, making the total go over the max number in stock. Confirm that the modal alerting the user to too many of the product in their cart is launch. Confirm that the quantity in the cart is reset to the max number in stock.
+- Go to the Club picks page and check that it is laid out correctly, 4 books to a row. 
+- Click the modal button below each book cover to ensure the modal works. 
+- Check that that the modal is laid out correctly, with all necessary information present. 
+- Click on the Amazon link, to ensure it opens up a new tab and takes you to the correct book to purchase. 
+- Click all the buttons, making sure they close the modal. 
 
 #### Your picks
 
-- Go to account page, confirm that the title and subheading displays as expected. 
-- Check that the photograph is on the left side of the screen and the text on the right. 
-- Check that the proportions of the page are as expected.
-- Click the "visit shop" call to action button, confirm it takes the user to the main shop page.
+- Go to the Your picks page and check that it is laid out correctly, 4 books to a row. 
+- Confirm that above the Your picks page, the heading "`<username>`'s picks" is displayed, depending on who is logged in. 
+- Click the modal button below each book cover to ensure the modal works. 
+- Check that that the modal is laid out correctly, with all necessary information present. 
+- Click on the Amazon link, to ensure it opens up a new tab and takes you to the correct book to purchase. 
+- Click the edit button on a modal to make sure it takes you to the Edit book page with all previous book information entered. 
+- Click the delete button on a modal to check whether an additional modal pops up asking if the user is sur they want to delete this book. 
+  Click the delete button to delete the book and ensure it is deleted from the Your picks page and the database. 
 
 #### Add book
 
-- Go to FAQs page. Confirm that each question is in the main heading font and pink, to make it easy for users to scan the questions to find the ones relevant to their needs.
-- Check that the questions are clear and the answers given are sufficient.
-- Click the "contact" and "subscribe" links provided on this page, confirm they take the user to the contact page.
+- Go to Add book page and ensure the form is laid out correctly. 
+- Try and submit the form with information missing to ensure that it doesn't send. 
+- Fill out the form correctly and click the submit button, ensure that the user is redirected to the Your picks page and that the message 
+  "Book successfully added" displays at the top of the page. 
+- Check that when a book has been added, that is displays on the Your picks page and the information is added to the database. 
 
 #### Edit book
 
-- Go to the contact page. Confirm that the contact form is laid out as expected.
-- Confirm that for a logged in user the email address field has already been populated. 
-- Confirm that for a user who is not logged in the email address field is blank.
-- Try to send the form with no fields filled in, confirm that the user is alerted to fill in the required fields.
-- Try to enter a non-email address into the email field, confirm that the user is alerted to fill in an email address.
-- Send a complete form, confirm that the message is sent to my email address with all the information included.
+- Go to the Ypur picks page and click on a modal of a book I added. Click on the edit button to open up the Edit book page. 
+- Check that the form is laid out correctly, with all previous book information present in the form. 
+- Edit the content and click the submit button, ensure that the user is redirected to the Your picks page and that the message 
+  "Book successfully updated" displays at the top of the page. 
+- Check that when a book has been edited, that the changes are displayed on the Your picks page and the information has been updated in 
+  the database. 
 
 #### Log out
 
-- Add a new product to the users cart. Click the "log out" link in the navigation bar. Confirm that the user is logged out and their cart has been cleared.
-- Click the "Log in again" link on this page, confirm that the user is taken back to the login page.
-- Confirm that the footer stays stuck to the bottom of the screen even when there is not enough content on the page to push it down.
+- Click Logout in the navbar to eensure that the user is logged out and redirected to the log in page with the following message 
+  displayed "You have been logged out". 
 
 ### Testing undertaken on tablet and phone devices
 All steps below were repeated to test mobile and tablet specific elements on my iPhone and iPad, in both the Safari browser and Google 
