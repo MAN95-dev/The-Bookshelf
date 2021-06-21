@@ -61,6 +61,7 @@ The target audience for The Bookshelf are:
 - People who are interested in joining an online book club.
 - People who want to share good books they read. 
 - People looking for book recommendations. 
+- People looking for detailed book reviews for book recommendations. 
 
 User goals are:
 - To join an online book club. 
@@ -120,7 +121,7 @@ made bearing this in mind:
 
 ### Icons
 - Very few icons were used, as to avoid overcrowding. 
-- The following icons were used in [Add book]() page to emphasize each sections purpose:        
+- The following icons were used in [Add book](https://the-bookshelf-milestone.herokuapp.com/add_book) page to emphasize each sections purpose:        
    - The **book** icon was placed next to 'Title'. 
    - The **user** icon was placed next to 'Author'.
    - The **file image** icon was placed next to 'Image URL'. 
@@ -283,7 +284,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - The first part contains the books image, when it was added, the title of the book, the author, a synopsis, and a link to Amazon
   store if the member wishes to purchase the book. 
 - The second part is just a detailed review of the book by The Bookshelf. 
-- The modal also give the option of editing or deleting the book. Clicking on the edit button will take the member to the edit book page,
+- The modal also gives the option of editing or deleting the book. Clicking on the edit button will take the member to the edit book page,
   which is detailed further down. 
 - If the user clicks on the delete button, they are met with another modal that pops up asking if they are sure they want to delete the 
   book. If they click cancel, it takes them back to their profile page. If they click delete, the book is deleted from their profile.  
@@ -313,8 +314,8 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ![Log out](/static/images/logout.png)
 
-- Any user who clicks on "Log out" from the navigation bar is automatically logged out and their session data cleared. They are informed
-  that they have been logged out with an flash message displaying 'You have been logged out'. 
+- Any user who clicks on 'Log out' from the navigation bar is automatically logged out and their session data cleared. They are informed
+  that they have been logged out with a flash message displaying 'You have been logged out'. 
 
 ## Features for Future Releases
 

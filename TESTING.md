@@ -70,7 +70,7 @@ meets those needs.
     - Members are able to edit their own book additions by clicking the edit button within their book modal. The edit book page allows
       members to cancel or save their edited book information. 
     - Members are able to delete their own book additions by clicking the delete button within their book modal. This brings up a modal
-      askng whether thehy are sure they want to delete this book, giving them the option to cancel or delete. 
+      askng whether they are sure they want to delete this book, giving them the option to cancel or delete. 
 
 1. **To be able to write reviews about the books I would like to share.**
     - The Add book page requires members to add a review about the book they read before adding it, these reviews appear in the books 
@@ -173,7 +173,7 @@ All steps on desktop were repeated in browsers: Firefox, Chrome and Safari.
 
 #### Log out
 
-- Click Logout in the navbar to eensure that the user is logged out and redirected to the log in page with the following message 
+- Click Logout in the navbar to ensure that the user is logged out and redirected to the log in page with the following message 
   displayed "You have been logged out". 
 
 ### Testing undertaken on tablet and phone devices
