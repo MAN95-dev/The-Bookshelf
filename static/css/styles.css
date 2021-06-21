@@ -79,7 +79,6 @@ nav li {
     background-image: url( 
  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 } 
-
 /** End of header **/
 
 /** Footer **/
@@ -107,8 +106,8 @@ nav li {
 }
 
 .fa-instagram {
-  background: #125688;
-  color: white;
+    background: #125688;
+    color: white;
 }
 
 footer p u:hover {
@@ -118,7 +117,6 @@ footer p u:hover {
 /** End of footer **/
 
 /** Who we are **/
-
 .about {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -198,13 +196,13 @@ footer p u:hover {
 
 /** Club picks  **/
 .responsive {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .category-tile { 
-  position: relative;
-  margin-bottom: 100px; 
+    position: relative;
+    margin-bottom: 100px; 
 }
 /** End of Club picks  **/
 
@@ -220,14 +218,14 @@ footer p u:hover {
 }
 
 .book-tile span {
-  position: absolute;
-  display: block; 
-  margin-top: 20px; 
-  text-align: center;
-  font-size: 16px;
-  background-color: #87cefa;
-  color: black;
-  opacity: .8;
+    position: absolute;
+    display: block; 
+    margin-top: 20px; 
+    text-align: center;
+    font-size: 16px;
+    background-color: #87cefa;
+    color: black;
+    opacity: .8;
 }
 
 .about-book {
@@ -238,12 +236,12 @@ footer p u:hover {
 
 /** Your picks page **/
 .responsive {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 .category-tile { 
-  position: relative;
-  margin-bottom: 100px; 
+    position: relative;
+    margin-bottom: 100px; 
 }
 /** End of Your picks page **/
 
@@ -310,9 +308,9 @@ footer p u:hover {
 @media (min-width: 1200px) {
 
 main {
-min-height: 70vh;
-height: 100%; 
-margin: 0 auto -30px;
+    min-height: 70vh;
+    height: 100%; 
+    margin: 0 auto -30px;
 }
 
 /** Header **/
@@ -331,7 +329,7 @@ margin: 0 auto -30px;
 }
 
 .active {
-  border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 /** Footer **/
@@ -351,13 +349,13 @@ margin: 0 auto -30px;
 }
 
 .fa {
-  padding: 20px;  
-  font-size: 30px;
-  width: 70px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 5px;
-  border-radius: 50%;
+    padding: 20px;  
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
 }
 
 /** Who we are page **/
@@ -401,9 +399,9 @@ margin: 0 auto -30px;
 @media (min-width: 992px) and (max-width: 1199px) {
 
 main {
-min-height: 80vh;
-height: 100%; 
-margin: 0 auto -30px;
+    min-height: 80vh;
+    height: 100%; 
+    margin: 0 auto -30px;
 }
 
 /** Header **/
@@ -431,7 +429,7 @@ nav li {
 }
 
 .active {
-  border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 /** Footer **/
@@ -451,13 +449,13 @@ nav li {
 }
 
 .fa {
-  padding: 20px;  
-  font-size: 30px;
-  width: 70px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 5px;
-  border-radius: 50%;
+    padding: 20px;  
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
 }
 
 /** Who we are **/
@@ -510,15 +508,15 @@ nav li {
 }
 
 .category-tile span {
-  position: absolute;
-  display: block; 
-  margin-top: 20px; 
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  background-color: #87cefa;
-  color: black;
-  opacity: .8;
+    position: absolute;
+    display: block; 
+    margin-top: 20px; 
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #87cefa;
+    color: black;
+    opacity: .8;
 }
 
 /** Login / Register page **/
@@ -532,15 +530,15 @@ nav li {
 @media (min-width: 768px) and (max-width: 991px) {
 
 main {
-min-height: 80vh;
-height: 100%; 
-margin: 0 auto -30px;
+    min-height: 80vh;
+    height: 100%; 
+    margin: 0 auto -30px;
 }
 
 /** Flash messages **/
 .alert {
-  width: 70%;
-  left: 15%;
+    width: 70%;
+    left: 15%;
 }   
 
 /** Header **/
@@ -585,13 +583,13 @@ nav li {
 }
 
 .fa {
-  padding: 15px;  
-  font-size: 20px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 5px;
-  border-radius: 50%;
+    padding: 15px;  
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
 }
 
 /** Who we are **/
@@ -702,14 +700,14 @@ nav li {
 }
 
 .category-tile span {
-  position: absolute;
-  display: block; 
-  margin-top: 20px; 
-  text-align: center;
-  font-size: 16px;
-  background-color: #87cefa;
-  color: black;
-  opacity: .8;
+    position: absolute;
+    display: block; 
+    margin-top: 20px; 
+    text-align: center;
+    font-size: 16px;
+    background-color: #87cefa;
+    color: black;
+    opacity: .8;
 }
 }
 
@@ -718,8 +716,8 @@ nav li {
 
  /** Flash messages **/
 .alert {
-  width: 70%;
-  left: 15%;
+    width: 70%;
+    left: 15%;
 }   
 
 /** Header **/
@@ -765,17 +763,16 @@ nav li {
 }
 
 .fa {
-  padding: 15px;  
-  font-size: 20px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 5px;
-  border-radius: 50%;
+    padding: 15px;  
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
 }
 
 /** Who we are **/
-
 .founder img {
     margin-left: 45px;
     margin-top: -70px;
@@ -854,7 +851,6 @@ nav li {
     background-color: #F5F5F5;
     margin-top: 100px;
 }
-/** End of Who we are **/
 
 /** Modals **/
 .modal-btn {
@@ -895,7 +891,6 @@ nav li {
     margin-right: 5px;
 }
 
-
 /** Your picks page **/
 #your-picks-title {
     padding: 60px;
@@ -910,14 +905,14 @@ nav li {
 }
 
 .category-tile span {
-  position: absolute;
-  display: block; 
-  margin-top: 20px; 
-  margin-left: 20px;
-  text-align: center;
-  font-size: 16px;
-  background-color: #87cefa;
-  color: black;
-  opacity: .8;
+    position: absolute;
+    display: block; 
+    margin-top: 20px; 
+    margin-left: 20px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #87cefa;
+    color: black;
+    opacity: .8;
 }
 }
